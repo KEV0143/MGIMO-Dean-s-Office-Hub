@@ -10,7 +10,7 @@ import { beginTurn } from '#modules/assistant/server/assistant.repository.server
 import { answer } from '#modules/assistant/server/assistant.service.server.ts';
 import type { ChatInput } from '#modules/assistant/assistant.types.ts';
 import type { RequestHandler } from './$types';
-export const POST: RequestHandler = async ({ locals, request, url }) => {
+export const POST: RequestHandler = async ({ locals, request, url, platform }) => {
   if (!locals.user) error(401, 'Сессия истекла. Войдите в личный кабинет.');
   const user = requireUser(locals.user);
   if (request.headers.get('origin') !== url.origin) error(403, 'Недопустимый источник запроса.');
@@ -39,7 +39,7 @@ export const POST: RequestHandler = async ({ locals, request, url }) => {
   )
     error(400, 'Введите вопрос длиной до 2000 символов.');
   input.message = input.message.trim();
-  const demonstration = isLocalDemo(url) || isContestDemo(url);
+  const demonstration = isLocalDemo(url, platform?.browserSession) || isContestDemo(url);
   const turn = await beginTurn(user.id, input);
   const abort = new AbortController();
   const encoder = new TextEncoder();
