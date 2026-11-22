@@ -1,3 +1,4 @@
+import { portalHref } from '#shared/portal-paths.ts';
 import { randomUUID } from 'node:crypto';
 import { error, fail, isHttpError, redirect } from '@sveltejs/kit';
 import { requireRole } from '#modules/auth/server/auth.service.server.ts';
@@ -31,6 +32,6 @@ export const actions = {
         return fail(err.status, { message: err.body.message, id, details: details.slice(0, 2000) });
       throw err;
     }
-    redirect(303, '/requests/' + saved);
+    redirect(303, portalHref('/requests/' + saved));
   }
 } satisfies Actions;

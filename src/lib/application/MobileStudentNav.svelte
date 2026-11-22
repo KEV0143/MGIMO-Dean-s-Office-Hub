@@ -1,4 +1,5 @@
 <script lang="ts">
+  import { portalHref, portalPath } from '#shared/portal-paths.ts';
   import { page } from '$app/state';
   import Icon from '#shared/ui/Icon.svelte';
 
@@ -8,13 +9,13 @@
     { href: '/requests', label: 'Заявления', icon: 'files' },
     { href: '/profile', label: 'Профиль', icon: 'cap' }
   ] as const;
-  const path = $derived(page.url.pathname);
+  const path = $derived(portalPath(page.url.pathname));
 </script>
 
 <nav aria-label="Быстрый доступ" class="mobile-student-nav">
   {#each links as link (link.href)}
     <a
-      href={link.href}
+      href={portalHref(link.href)}
       aria-current={path === link.href ? 'page' : undefined}
       class:active={path === link.href ||
         path.startsWith(link.href + '/') ||

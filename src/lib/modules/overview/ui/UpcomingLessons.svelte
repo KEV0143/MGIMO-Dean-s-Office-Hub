@@ -1,4 +1,5 @@
 <script lang="ts">
+  import { portalHref } from '#shared/portal-paths.ts';
   import Icon from '#shared/ui/Icon.svelte';
   import type { OverviewData } from '../overview.types';
   import type { User } from '#modules/auth/auth.types.ts';
@@ -15,7 +16,8 @@
     <div>
       <h2>{skipFirst ? 'После ближайшего занятия' : 'Ближайшие занятия'}</h2>
     </div>
-    <a class="link" href="/schedule">Всё расписание <Icon name="arrow" size={14} /></a>
+    <a class="link" href={portalHref('/schedule')}>Всё расписание <Icon name="arrow" size={14} /></a
+    >
   </div>
   {#if upcoming.length}<div class="lesson-list">
       {#each upcoming as lesson, i (lesson.id)}
@@ -29,8 +31,10 @@
           <div class="lesson-subject">
             <strong>{lesson.subject}</strong><span
               >{lesson.teacher} <b>·</b>
-              {#if route}<a class="room-link" href={route} aria-label={'Маршрут до ' + lesson.room}
-                  >{lesson.room}</a
+              {#if route}<a
+                  class="room-link"
+                  href={portalHref(route)}
+                  aria-label={'Маршрут до ' + lesson.room}>{lesson.room}</a
                 >
               {:else}{lesson.room}{/if}
             </span>

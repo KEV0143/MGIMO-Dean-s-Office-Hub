@@ -1,4 +1,5 @@
 <script lang="ts">
+  import { portalHref } from '#shared/portal-paths.ts';
   import Icon from '#shared/ui/Icon.svelte';
   import type { OverviewData } from '../overview.types';
   import type { User } from '#modules/auth/auth.types.ts';
@@ -9,10 +10,10 @@
 <section class="panel news-panel">
   <div class="panel-head">
     <h2>На повестке</h2>
-    <a class="link" href="/announcements">Все <Icon name="arrow" size={14} /></a>
+    <a class="link" href={portalHref('/announcements')}>Все <Icon name="arrow" size={14} /></a>
   </div>
   <div class="news-list">
-    {#each data.news as news}<a class="news-item" href={`/announcements#${news.id}`}
+    {#each data.news as news}<a class="news-item" href={portalHref(`/announcements#${news.id}`)}
         ><div class="row between">
           <span class="news-tag">{news.tag}</span><span class="news-date"
             >{shortDate(news.created_at)}</span

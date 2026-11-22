@@ -1,4 +1,5 @@
 <script lang="ts">
+  import { portalHref } from '#shared/portal-paths.ts';
   import Icon from '#shared/ui/Icon.svelte';
   import Brand from '#shared/ui/Brand.svelte';
   import { requestKinds } from '#modules/requests/request.labels.ts';
@@ -14,7 +15,7 @@
   /></svelte:head
 >
 <main class="verification">
-  <a href="/" class="wordmark" aria-label="Дека"><Brand /></a>
+  <a href={portalHref('/')} class="wordmark" aria-label="Дека"><Brand /></a>
   <section class="panel">
     <span class="verified"><Icon name="shield" size={34} /></span><span class="eyebrow"
       >Проверка по реестру</span

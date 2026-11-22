@@ -1,4 +1,5 @@
 <script lang="ts">
+  import { portalHref } from '#shared/portal-paths.ts';
   import StudentCard from './StudentCard.svelte';
   import Icon from '#shared/ui/Icon.svelte';
   import type { CardPresentation } from '../student-card.types.ts';
@@ -19,7 +20,7 @@
 <div class="card-view stack">
   <StudentCard presentation={data.presentation} />
   {#if !data.verification}<div class="row wrap card-actions">
-      <a class="btn" href="/student-card/download"
+      <a class="btn" href={portalHref('/student-card/download')}
         ><Icon name="download" size={16} />Скачать билет</a
       >
       <a

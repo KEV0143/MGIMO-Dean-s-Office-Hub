@@ -1,4 +1,5 @@
 <script lang="ts">
+  import { portalHref } from '#shared/portal-paths.ts';
   import { enhance } from '$app/forms';
   import Icon from '#shared/ui/Icon.svelte';
   import type { User } from '#modules/auth/auth.types.ts';
@@ -20,7 +21,7 @@
     <h1>Подать заявление</h1>
     <p>Выберите справку и проверьте текст перед отправкой.</p>
   </div>
-  <a class="btn outline" href="/requests">Мои заявления</a>
+  <a class="btn outline" href={portalHref('/requests')}>Мои заявления</a>
 </div>
 
 <nav class="templates" aria-label="Шаблоны справок">
@@ -86,7 +87,9 @@
     </section>
   {/key}
 {/if}
-<a class="link other" href="/requests/new">Другой тип заявления <Icon name="arrow" size={15} /></a>
+<a class="link other" href={portalHref('/requests/new')}
+  >Другой тип заявления <Icon name="arrow" size={15} /></a
+>
 
 <style>
   .templates {

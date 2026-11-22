@@ -1,4 +1,5 @@
 <script lang="ts">
+  import { portalHref } from '#shared/portal-paths.ts';
   import { goto } from '$app/navigation';
   import { page } from '$app/state';
   import { untrack } from 'svelte';
@@ -48,7 +49,7 @@
         'Найти аудиторию'}</strong
     ><span>Изменить</span><Icon name="down" size={15} /></summary
   >
-  <form method="GET" action={campusPath} class="planner">
+  <form method="GET" action={portalHref(campusPath)} class="planner">
     <input type="hidden" name="search" value="1" />
     <PlaceField
       name="from"
@@ -70,10 +71,12 @@
         ><input type="checkbox" name="mode" value="lift" checked={data.mode === 'lift'} />Между
         этажами на лифте</label
       >
-      {#if data.from && data.to}<a href={mapRouteHref(data.to.id, data.from.id, data.mode)}
+      {#if data.from && data.to}<a
+          href={portalHref(mapRouteHref(data.to.id, data.from.id, data.mode))}
           ><Icon name="swap" size={15} />Поменять местами</a
         >{/if}
-      {#if !data.from && data.to}<a href={mapRouteHref(mainEntrance, data.to.id, data.mode)}
+      {#if !data.from && data.to}<a
+          href={portalHref(mapRouteHref(mainEntrance, data.to.id, data.mode))}
           ><Icon name="route" size={15} />От главного входа</a
         >{/if}
     </div>
@@ -87,7 +90,9 @@
     {#if data.from.plan !== data.to.plan}
       <a
         class="link"
-        href={mapRouteHref(data.from.id, data.to.id, data.mode === 'lift' ? 'standard' : 'lift')}
+        href={portalHref(
+          mapRouteHref(data.from.id, data.to.id, data.mode === 'lift' ? 'standard' : 'lift')
+        )}
       >
         {data.mode === 'lift' ? 'По лестнице' : 'На лифте'}
       </a>
@@ -106,7 +111,7 @@
               data.plans.find(
                 (p) => p.building === e.currentTarget.value && p.floor === data.plan.floor
               ) ?? data.plans.find((p) => p.building === e.currentTarget.value);
-            if (target) void goto(showPlan(target.id), { reset: false });
+            if (target) void goto(portalHref(showPlan(target.id)), { reset: false });
           }}
         >
           {#each buildings as b}<option selected={b === data.plan.building} value={b}>{b}</option
@@ -116,7 +121,7 @@
       <nav class="floors" aria-label="Этаж">
         {#each levels as p}
           <a
-            href={showPlan(p.id)}
+            href={portalHref(showPlan(p.id))}
             data-sveltekit-noscroll
             aria-label={p.floor === '0' ? 'Цокольный этаж' : p.floor + ' этаж'}
             aria-current={data.plan.id === p.id ? 'page' : undefined}
@@ -155,7 +160,8 @@
         <Icon name="pin" size={16} />{data.toText}
         {#if !data.from && data.to.id !== mainEntrance}<a
             class="link"
-            href={mapRouteHref(mainEntrance, data.to.id, data.mode)}>От главного входа</a
+            href={portalHref(mapRouteHref(mainEntrance, data.to.id, data.mode))}
+            >От главного входа</a
           >{/if}
       </p>{/if}
   </section>
@@ -176,7 +182,7 @@
           {@const next = data.plans.find((p) => p.id === step.next)}
           <li>
             <a
-              href={showPlan(step.plan)}
+              href={portalHref(showPlan(step.plan))}
               data-sveltekit-noscroll
               aria-current={data.plan.id === step.plan ? 'step' : undefined}
             >

@@ -1,3 +1,4 @@
+import { portalHref } from '#shared/portal-paths.ts';
 import { error, redirect, type Cookies } from '@sveltejs/kit';
 import { query, transaction } from '#server/database/postgres.ts';
 import { hashToken, newToken, verifyPassword } from '#server/security/credentials.mjs';
@@ -8,12 +9,14 @@ const userSelect = `SELECT u.id,u.email,u.full_name,u.role,u.faculty_id,f.name f
  FROM users u LEFT JOIN faculties f ON f.id=u.faculty_id LEFT JOIN study_groups g ON g.id=u.group_id`;
 const cookieName = 'deka_session';
 const duration = 60 * 60 * 12;
+type BrowserSession = App.Platform['browserSession'];
 
-export function isLocalDemo(url: URL) {
+export function isLocalDemo(url: URL, browserSession?: BrowserSession) {
   return (
-    process.env.CONTEST_MODE !== 'true' &&
-    process.env.DEMO_MODE === 'true' &&
-    ['127.0.0.1', 'localhost'].includes(url.hostname)
+    Boolean(import.meta.env?.VITE_DEKA_PAGES_BASE && browserSession) ||
+    (process.env.CONTEST_MODE !== 'true' &&
+      process.env.DEMO_MODE === 'true' &&
+      ['127.0.0.1', 'localhost'].includes(url.hostname))
   );
 }
 
@@ -25,9 +28,9 @@ export function isContestDemo(url: URL) {
   );
 }
 
-function accountScope(url: URL) {
+function accountScope(url: URL, browserSession?: BrowserSession) {
   if (process.env.CONTEST_MODE === 'true') return isContestDemo(url) ? 'contest' : 'blocked';
-  return isLocalDemo(url) ? 'local' : 'standard';
+  return isLocalDemo(url, browserSession) ? 'local' : 'standard';
 }
 
 const allowedAccount = `CASE $2::text
@@ -36,14 +39,18 @@ const allowedAccount = `CASE $2::text
   WHEN 'standard' THEN u.email NOT LIKE '%@deka.test'
   ELSE false END`;
 
-export async function sessionUser(cookies: Cookies, url: URL): Promise<User | null> {
-  const token = cookies.get(cookieName);
+export async function sessionUser(
+  cookies: Cookies,
+  url: URL,
+  browserSession?: BrowserSession
+): Promise<User | null> {
+  const token = browserSession ? browserSession.token : cookies.get(cookieName);
   if (!token || !/^[A-Za-z0-9_-]{43}$/.test(token)) return null;
   const result = await query<User>(
     `${userSelect} JOIN sessions s ON s.user_id=u.id WHERE s.token_hash=$1 AND s.expires_at>now() AND u.active AND (${allowedAccount})`,
-    [hashToken(token), accountScope(url)]
+    [hashToken(token), accountScope(url, browserSession)]
   );
-  if (!result.rowCount) cookies.delete(cookieName, { path: '/' });
+  if (!result.rowCount) clearSession(cookies, browserSession);
   return result.rows[0] ?? null;
 }
 
@@ -66,9 +73,10 @@ export async function signIn(
   email: string,
   password: string,
   cookies: Cookies,
-  url: URL
+  url: URL,
+  browserSession?: BrowserSession
 ): Promise<boolean> {
-  const access = accountScope(url);
+  const access = accountScope(url, browserSession);
   if (access === 'blocked') return false;
   if (
     access === 'contest' &&
@@ -105,16 +113,25 @@ export async function signIn(
     return found.rows[0];
   });
   if (!account) return false;
-  await createSession(account.id, cookies, url.protocol === 'https:');
+  await createSession(account.id, cookies, url.protocol === 'https:', browserSession);
   return true;
 }
 
-async function createSession(userId: string, cookies: Cookies, secure: boolean) {
+async function createSession(
+  userId: string,
+  cookies: Cookies,
+  secure: boolean,
+  browserSession?: BrowserSession
+) {
   const token = newToken();
   await query(
     "INSERT INTO sessions(token_hash,user_id,expires_at) VALUES($1,$2,now()+interval '12 hours')",
     [hashToken(token), userId]
   );
+  if (browserSession) {
+    browserSession.token = token;
+    return;
+  }
   cookies.set(cookieName, token, {
     path: '/',
     httpOnly: true,
@@ -124,8 +141,13 @@ async function createSession(userId: string, cookies: Cookies, secure: boolean) 
   });
 }
 
-export async function quickSignIn(code: string, cookies: Cookies, url: URL) {
-  if (!isLocalDemo(url)) return false;
+export async function quickSignIn(
+  code: string,
+  cookies: Cookies,
+  url: URL,
+  browserSession?: BrowserSession
+) {
+  if (!isLocalDemo(url, browserSession)) return false;
   const account = previewAccounts.find((item) => item.code === code);
   if (!account) return false;
   const result = await query('SELECT id FROM users WHERE email=$1 AND role=$2 AND active', [
@@ -133,17 +155,22 @@ export async function quickSignIn(code: string, cookies: Cookies, url: URL) {
     account.role
   ]);
   if (!result.rowCount) return false;
-  await createSession(result.rows[0].id, cookies, url.protocol === 'https:');
+  await createSession(result.rows[0].id, cookies, url.protocol === 'https:', browserSession);
   return true;
 }
 
-export async function signOut(cookies: Cookies) {
-  const token = cookies.get(cookieName);
+function clearSession(cookies: Cookies, browserSession?: BrowserSession) {
+  if (browserSession) browserSession.token = null;
+  else cookies.delete(cookieName, { path: '/' });
+}
+
+export async function signOut(cookies: Cookies, browserSession?: BrowserSession) {
+  const token = browserSession ? browserSession.token : cookies.get(cookieName);
   if (token) await query('DELETE FROM sessions WHERE token_hash=$1', [hashToken(token)]);
-  cookies.delete(cookieName, { path: '/' });
+  clearSession(cookies, browserSession);
 }
 export function requireUser(user: User | null): User {
-  if (!user) redirect(303, '/login');
+  if (!user) redirect(303, portalHref('/login'));
   return user as User;
 }
 export function requireRole(user: User | null, ...roles: Role[]): User {

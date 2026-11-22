@@ -1,3 +1,4 @@
+import { portalHref } from '#shared/portal-paths.ts';
 import { redirect } from '@sveltejs/kit';
 import { mapRouteHref } from '#modules/campus/campus-links.ts';
 import { requireUser } from '#modules/auth/server/auth.service.server.ts';
@@ -15,7 +16,7 @@ export const load = (({ locals, url }) => {
     to = resolvePlace(toInput);
   const mode: CampusMode = ['lift', 'step-free'].includes(input('mode')) ? 'lift' : 'standard';
   if (url.searchParams.has('search') && (!fromInput || from) && (!toInput || to)) {
-    redirect(303, mapRouteHref(from?.id, to?.id, mode));
+    redirect(303, portalHref(mapRouteHref(from?.id, to?.id, mode)));
   }
   const route = from && to && from.id !== to.id ? campusRoute(from, to, mode) : null;
   const issue =

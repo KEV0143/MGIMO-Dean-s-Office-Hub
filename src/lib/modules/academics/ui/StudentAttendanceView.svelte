@@ -1,4 +1,5 @@
 <script lang="ts">
+  import { portalHref } from '#shared/portal-paths.ts';
   import type { AttendanceEntry } from '../attendance.types.ts';
   import { attendanceLabels } from '../attendance.labels.ts';
   import { countAttendance } from '../student-progress.policy.ts';
@@ -13,7 +14,7 @@
     <h1>Посещаемость</h1>
     <p>Прошедшие занятия группы за последние 30 дней.</p>
   </div>
-  <a class="btn outline" href="/grades/progress">К прогрессу</a>
+  <a class="btn outline" href={portalHref('/grades/progress')}>К прогрессу</a>
 </div>
 <section class="panel journal" aria-label="Журнал посещаемости">
   {#if entries.length}
@@ -50,7 +51,7 @@
     </ul>
   {:else}
     <p class="muted">Прошедших занятий пока нет.</p>
-    <a class="link" href="/schedule">Открыть расписание</a>
+    <a class="link" href={portalHref('/schedule')}>Открыть расписание</a>
   {/if}
 </section>
 

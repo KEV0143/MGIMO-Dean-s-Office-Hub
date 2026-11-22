@@ -4,7 +4,14 @@ on:
   push:
     branches: [main]
     paths:
+      - 'src/**'
+      - 'static/**'
+      - 'db/migrations/**'
+      - 'scripts/database/**'
+      - 'scripts/pages/**'
       - 'site/**'
+      - 'package*.json'
+      - 'vite.config.ts'
       - '.github/workflows/pages.yml'
   workflow_dispatch:
 
@@ -17,7 +24,7 @@ concurrency:
 jobs:
   prepare:
     runs-on: ubuntu-24.04
-    timeout-minutes: 5
+    timeout-minutes: 10
     permissions:
       contents: read
       pages: read
@@ -26,36 +33,20 @@ jobs:
         with:
           persist-credentials: false
       - uses: actions/configure-pages@45bfe0192ca1faeb007ade9deae92b16b8254a0d # v6.0.0
-      - name: Set project links
+      - uses: actions/setup-node@249970729cb0ef3589644e2896645e5dc5ba9c38 # v6
+        with:
+          node-version: '26.13.1'
+          cache: npm
+      - run: npm ci --engine-strict
+      - name: Build browser cabinet
         env:
           LIVE_PORTAL_URL: ${{ vars.LIVE_PORTAL_URL }}
         run: |
-          python3 - <<'PY'
-          import html
-          import os
-          from pathlib import Path
-          from urllib.parse import urlsplit
-
-          portal = os.environ['LIVE_PORTAL_URL'].strip()
-          if portal:
-              url = urlsplit(portal)
-              if url.scheme != 'https' or not url.hostname or url.username or url.password:
-                  raise SystemExit('LIVE_PORTAL_URL must be an HTTPS URL without credentials.')
-
-          index = Path('site/index.html')
-          page = index.read_text(encoding='utf-8')
-          repository = os.environ['GITHUB_SERVER_URL'] + '/' + os.environ['GITHUB_REPOSITORY']
-          links = {'deka-repository': repository, 'deka-portal': portal}
-          for name, value in links.items():
-              placeholder = f'name="{name}" content=""'
-              if page.count(placeholder) != 1:
-                  raise SystemExit(f'Expected one {name} placeholder.')
-              page = page.replace(placeholder, f'name="{name}" content="{html.escape(value, quote=True)}"')
-          index.write_text(page, encoding='utf-8')
-          PY
+          export VITE_DEKA_PAGES_BASE="/${GITHUB_REPOSITORY#*/}"
+          npm run build:pages
       - uses: actions/upload-pages-artifact@7b1f4a764d45c48632c6b24a0339c27f5614fb0b # v4
         with:
-          path: site
+          path: .local/pages/site
 
   publish:
     needs: prepare

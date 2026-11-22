@@ -1,4 +1,5 @@
 <script lang="ts">
+  import { portalPath } from '#shared/portal-paths.ts';
   import { afterNavigate } from '$app/navigation';
   import { page } from '$app/state';
   import { tick, type Snippet } from 'svelte';
@@ -12,7 +13,7 @@
   let { data, children }: { data: ApplicationData; children: Snippet } = $props();
   let menuOpen = $state(false),
     windowWidth = $state(1280);
-  const path = $derived(page.url.pathname);
+  const path = $derived(portalPath(page.url.pathname));
   const profile = $derived(path === '/profile' || path.startsWith('/profile/'));
   const cabinet = $derived(data.user.role === 'student' && profile);
   const section = $derived(path.split('/')[2] ?? '');

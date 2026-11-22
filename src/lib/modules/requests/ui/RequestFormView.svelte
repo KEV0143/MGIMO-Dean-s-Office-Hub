@@ -1,4 +1,5 @@
 <script lang="ts">
+  import { portalHref } from '#shared/portal-paths.ts';
   import { enhance } from '$app/forms';
   import Icon from '#shared/ui/Icon.svelte';
   import { requestKinds } from '#modules/requests/request.labels.ts';
@@ -12,7 +13,7 @@
 </script>
 
 <svelte:head><title>Новое заявление · Дека</title></svelte:head>
-<a class="back" href="/requests"><Icon name="left" size={15} />Все заявления</a>
+<a class="back" href={portalHref('/requests')}><Icon name="left" size={15} />Все заявления</a>
 <div class="page-head">
   <div>
     <h1>Новое заявление</h1>
@@ -55,7 +56,7 @@
       <div class="row">
         <button class="btn" disabled={pending}
           >{pending ? 'Отправляем…' : 'Отправить заявление'}<Icon name="arrow" size={16} /></button
-        ><a class="btn secondary" href="/requests">Отмена</a>
+        ><a class="btn secondary" href={portalHref('/requests')}>Отмена</a>
       </div>
     </form>
   </section>

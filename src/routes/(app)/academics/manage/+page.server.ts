@@ -1,3 +1,4 @@
+import { portalHref } from '#shared/portal-paths.ts';
 import { fail, redirect, isHttpError } from '@sveltejs/kit';
 import { requireRole } from '#modules/auth/server/auth.service.server.ts';
 import {
@@ -71,7 +72,7 @@ export const actions = {
     } catch (cause) {
       return recover(cause);
     }
-    redirect(303, '/academics/manage?tab=schedule&saved');
+    redirect(303, portalHref('/academics/manage?tab=schedule&saved'));
   },
   grade: async ({ locals, request }) => {
     let destination = '/academics/manage?tab=grades&saved';
@@ -87,7 +88,7 @@ export const actions = {
     } catch (cause) {
       return recover(cause);
     }
-    redirect(303, destination);
+    redirect(303, portalHref(destination));
   },
   cancel: async ({ locals, request }) => {
     const form = await request.formData();
@@ -100,7 +101,7 @@ export const actions = {
     } catch (cause) {
       return recover(cause);
     }
-    redirect(303, '/academics/manage?tab=schedule&saved');
+    redirect(303, portalHref('/academics/manage?tab=schedule&saved'));
   },
   preview: async ({ locals, request }) => {
     const user = requireRole(locals.user, 'dean', 'teacher'),
@@ -115,7 +116,7 @@ export const actions = {
     } catch (cause) {
       return recover(cause);
     }
-    redirect(303, `/academics/manage?tab=${kind}&draft=${id}`);
+    redirect(303, portalHref(`/academics/manage?tab=${kind}&draft=${id}`));
   },
   confirm: async ({ locals, request }) => {
     const form = await request.formData();
@@ -128,6 +129,6 @@ export const actions = {
     } catch (cause) {
       return recover(cause);
     }
-    redirect(303, `/academics/manage?tab=${kind}&saved`);
+    redirect(303, portalHref(`/academics/manage?tab=${kind}&saved`));
   }
 } satisfies Actions;

@@ -90,8 +90,8 @@ if (/^https:\/\/github\.com\/[\w.-]+\/[\w.-]+$/.test(repo)) {
 }
 const portal = document.querySelector('meta[name="deka-portal"]').content;
 if (portal) {
-  const url = new URL(portal);
-  if (url.protocol === 'https:' && !url.username && !url.password) {
+  const url = new URL(portal, location.href);
+  if ((url.origin === location.origin || url.protocol === 'https:') && !url.username && !url.password) {
     const link = document.querySelector('[data-portal]');
     link.href = url.href;
     link.hidden = false;

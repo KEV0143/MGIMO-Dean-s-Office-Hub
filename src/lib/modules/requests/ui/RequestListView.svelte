@@ -1,4 +1,5 @@
 <script lang="ts">
+  import { portalHref } from '#shared/portal-paths.ts';
   import Icon from '#shared/ui/Icon.svelte';
   import Status from '#modules/requests/ui/RequestStatusBadge.svelte';
   import {
@@ -36,7 +37,7 @@
         : 'Все обращения вашего факультета в одном месте.'}
     </p>
   </div>
-  {#if data.user.role === 'student'}<a class="btn" href="/requests/new"
+  {#if data.user.role === 'student'}<a class="btn" href={portalHref('/requests/new')}
       ><Icon name="plus" size={17} />Новое заявление</a
     >{/if}
 </div>
@@ -47,11 +48,11 @@
         <a
           class:chosen={data.filter === tab.id}
           aria-current={data.filter === tab.id ? 'page' : undefined}
-          href={listHref(tab.id)}>{tab.name}</a
+          href={portalHref(listHref(tab.id))}>{tab.name}</a
         >
       {/each}
     </nav>
-    <form class="search" method="get" action="/requests" role="search">
+    <form class="search" method="get" action={portalHref('/requests')} role="search">
       {#if data.filter !== 'all'}<input type="hidden" name="filter" value={data.filter} />{/if}
       <label>
         <Icon name="search" size={17} />
@@ -78,7 +79,7 @@
         ><tbody
           >{#each data.requests as request (request.id)}<tr
               ><td
-                ><a href={`/requests/${request.id}`}
+                ><a href={portalHref(`/requests/${request.id}`)}
                   ><strong>{requestKinds[request.kind]}</strong><small
                     >№ {String(request.number).padStart(4, '0')}</small
                   ></a
@@ -91,7 +92,7 @@
                 ><a
                   class="icon-btn"
                   aria-label={`Открыть заявление №${request.number}`}
-                  href={`/requests/${request.id}`}><Icon name="arrow" size={17} /></a
+                  href={portalHref(`/requests/${request.id}`)}><Icon name="arrow" size={17} /></a
                 ></td
               ></tr
             >{/each}</tbody
@@ -101,13 +102,13 @@
       <Icon name="inbox" size={32} />
       <h3>Заявлений не найдено</h3>
       <p>Уточните запрос или выберите другой фильтр.</p>
-      {#if data.page > 1}<a href={listHref(data.filter)}>К первой странице</a>{/if}
+      {#if data.page > 1}<a href={portalHref(listHref(data.filter))}>К первой странице</a>{/if}
     </div>{/if}
   {#if data.page > 1 || data.hasNext}
     <nav class="pagination" aria-label="Страницы заявлений">
-      {#if data.page > 1}<a href={listHref(data.filter, data.page - 1)}>Назад</a>{/if}
+      {#if data.page > 1}<a href={portalHref(listHref(data.filter, data.page - 1))}>Назад</a>{/if}
       <span>Страница {data.page}</span>
-      {#if data.hasNext}<a href={listHref(data.filter, data.page + 1)}>Вперёд</a>{/if}
+      {#if data.hasNext}<a href={portalHref(listHref(data.filter, data.page + 1))}>Вперёд</a>{/if}
     </nav>
   {/if}
 </section>

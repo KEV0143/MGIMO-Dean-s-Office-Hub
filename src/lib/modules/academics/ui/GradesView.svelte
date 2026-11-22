@@ -1,4 +1,5 @@
 <script lang="ts">
+  import { portalHref } from '#shared/portal-paths.ts';
   import Icon from '#shared/ui/Icon.svelte';
   import { numericScore, scoreName } from '#modules/academics/academic.labels.ts';
   import { shortDate } from '#shared/formatting.ts';
@@ -39,7 +40,7 @@
         : 'Текущие баллы по доступным вам дисциплинам и группам.'}
     </p>
   </div>
-  {#if data.user.role !== 'student'}<a class="btn" href="/academics/manage?tab=grades"
+  {#if data.user.role !== 'student'}<a class="btn" href={portalHref('/academics/manage?tab=grades')}
       ><Icon name="settings" size={16} />Внести результаты</a
     >{:else if data.rank}<span class="pill violet"
       >Место в группе: {data.rank.position} из {data.rank.total}</span

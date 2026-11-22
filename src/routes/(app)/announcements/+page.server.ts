@@ -1,3 +1,4 @@
+import { portalHref } from '#shared/portal-paths.ts';
 import { requireUser, requireRole } from '#modules/auth/server/auth.service.server.ts';
 import type { PageServerLoad } from './$types';
 import { announcements } from '#modules/announcements/server/announcement.repository.server.ts';
@@ -20,13 +21,13 @@ export const actions = {
       if (isHttpError(cause)) return fail(cause.status, { message: cause.body.message });
       throw cause;
     }
-    redirect(303, '/announcements');
+    redirect(303, portalHref('/announcements'));
   },
   remove: async ({ locals, request }) => {
     await removeAnnouncement(
       requireRole(locals.user, 'dean'),
       String((await request.formData()).get('id') ?? '')
     );
-    redirect(303, '/announcements');
+    redirect(303, portalHref('/announcements'));
   }
 } satisfies Actions;

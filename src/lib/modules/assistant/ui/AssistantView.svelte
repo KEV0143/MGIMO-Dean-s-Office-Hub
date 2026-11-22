@@ -1,4 +1,5 @@
 <script lang="ts">
+  import { portalHref } from '#shared/portal-paths.ts';
   import { tick, untrack } from 'svelte';
   import { goto, invalidateAll } from '$app/navigation';
   import Icon from '#shared/ui/Icon.svelte';
@@ -76,7 +77,7 @@
     await scroll();
     let succeeded = false;
     try {
-      const response = await fetch('/api/assistant/messages', {
+      const response = await fetch(portalHref('/api/assistant/messages'), {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ message: text, messageId, ...(threadId ? { threadId } : {}) }),
@@ -137,7 +138,7 @@
       controller = undefined;
     }
     if (succeeded && threadId) {
-      await goto(`/assistant?thread=${threadId}`, { replace: true, reset: false });
+      await goto(portalHref(`/assistant?thread=${threadId}`), { replace: true, reset: false });
       await invalidateAll();
       await scroll();
     }
@@ -157,7 +158,7 @@
 <div class="assistant-workspace">
   <aside class="chat-history panel">
     <a
-      href="/assistant"
+      href={portalHref('/assistant')}
       class="btn secondary"
       aria-disabled={pending}
       onclick={(event) => {
@@ -166,7 +167,7 @@
     ><span class="section-label">История</span>
     <nav aria-label="История чатов">
       {#each data.threads as thread}<a
-          href={`/assistant?thread=${thread.id}`}
+          href={portalHref(`/assistant?thread=${thread.id}`)}
           class:active={thread.id === threadId}
           aria-current={thread.id === threadId ? 'page' : undefined}
           onclick={(event) => {
@@ -183,7 +184,7 @@
       </div>
       <div class="row">
         <a
-          href="/assistant"
+          href={portalHref('/assistant')}
           class="icon-btn mobile-new-chat"
           aria-label="Новый чат"
           onclick={(event) => {
@@ -237,7 +238,7 @@
               </span>
               {#each message.sources as source}<a
                   class:draft-link={source.id === 'request-draft'}
-                  href={source.href}
+                  href={portalHref(source.href)}
                   ><Icon name="file" size={12} />{source.title}<Icon name="up" size={11} /></a
                 >{/each}
             </div>{/if}{#if message.status === 'failed' && message.content}<span class="small muted"

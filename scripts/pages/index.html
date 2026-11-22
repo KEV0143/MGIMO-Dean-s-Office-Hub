@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="deka-base" content="__BASE__" />
+    <title>Дека · Личный кабинет</title>
+    <link rel="icon" href="__BASE__/brand/deka-mark.svg" type="image/svg+xml" />
+    <style>
+      @font-face { font-family: Golos; src: url('__BASE__/fonts/golos-text-17d048ca05cb.woff2'); }
+      body { margin: 0; display: grid; place-items: center; min-height: 100vh; font-family: Golos,system-ui,sans-serif; background: #f3f5f9; color: #202838; }
+      main { max-width: 30rem; padding: 2rem; }
+      header { display: flex; align-items: center; gap: .65rem; }
+      h1 { margin: 0; font-size: 1.65rem; }
+      p { line-height: 1.5; }
+      a { color: #4338b5; }
+    </style>
+    <script src="__BASE__/boot.js" defer></script>
+  </head>
+  <body>
+    <main>
+      <header><img src="__BASE__/brand/deka-mark.svg" alt="" width="32" height="32" /><h1>Дека</h1></header>
+      <p id="status" role="status">Открываем личный кабинет…</p>
+      __LIVE_LINK__
+      <noscript><p>Для открытия кабинета включите JavaScript.</p></noscript>
+      <a href="__BASE__/about/">О проекте</a>
+    </main>
+  </body>
+</html>

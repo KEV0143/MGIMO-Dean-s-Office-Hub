@@ -1,4 +1,5 @@
 <script lang="ts">
+  import { portalHref } from '#shared/portal-paths.ts';
   import { enhance, type SubmitFunction } from '$app/forms';
   import { lessonKinds } from '#modules/academics/academic.labels.ts';
   import { shortDate, time } from '#shared/formatting.ts';
@@ -58,7 +59,7 @@
     <button class="btn outline" disabled={pending}>Сохранить</button>
   </form>
   {#if reminder && start - reminder * MINUTE_MS > now}
-    <a class="link" href={'/assistant/study-plan/calendar/' + item.id} download
+    <a class="link" href={portalHref('/assistant/study-plan/calendar/' + item.id)} download
       >Скачать событие (.ics)</a
     >
   {/if}

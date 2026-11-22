@@ -1,4 +1,5 @@
 <script lang="ts">
+  import { portalHref } from '#shared/portal-paths.ts';
   import Icon from '#shared/ui/Icon.svelte';
   import { initials, shortDate, time } from '#shared/formatting.ts';
   import { installation } from '#shared/installation.svelte.ts';
@@ -67,7 +68,7 @@
       {/each}
     </dl>
     <div class="education-actions">
-      <a href="/student-card"><Icon name="cap" size={15} /> Студенческий билет</a>
+      <a href={portalHref('/student-card')}><Icon name="cap" size={15} /> Студенческий билет</a>
       {#if installation.event}
         <button
           onclick={async () => {
@@ -90,7 +91,8 @@
         <h2 id="academic-heading">Баллы по дисциплинам</h2>
         {#if summary.scored}<p>{summary.below} из {summary.scored} ниже {PASSING_SCORE} баллов</p>
         {:else}<p>Баллы пока не опубликованы.</p>{/if}
-        <a href="/profile/debts">Открыть результаты <Icon name="arrow" size={14} /></a>
+        <a href={portalHref('/profile/debts')}>Открыть результаты <Icon name="arrow" size={14} /></a
+        >
         {#if summary.next}
           <p>
             {lessonKinds[summary.next.kind]} · {summary.next.subject} · {shortDate(
@@ -103,10 +105,10 @@
     <section class="card inbox" aria-labelledby="notification-heading">
       <div class="heading">
         <h2 id="notification-heading">Уведомления</h2>
-        <a href="/profile/news">Все уведомления</a>
+        <a href={portalHref('/profile/news')}>Все уведомления</a>
       </div>
       {#each summary.alerts as alert (alert.id)}
-        <form method="POST" action={'/notifications/' + alert.id}>
+        <form method="POST" action={portalHref('/notifications/' + alert.id)}>
           <button class="notification" type="submit">
             <Icon name="bell" size={17} />
             <span
@@ -128,7 +130,7 @@
   <ul>
     {#each services as service (service.href)}
       <li>
-        <a href={service.href}>
+        <a href={portalHref(service.href)}>
           <span class="subject-icon"><Icon name={service.icon} size={18} /></span>
           <strong>{service.label}</strong>
           <Icon name="arrow" size={15} />

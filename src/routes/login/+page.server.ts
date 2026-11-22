@@ -1,3 +1,4 @@
+import { portalHref } from '#shared/portal-paths.ts';
 import { fail, redirect } from '@sveltejs/kit';
 import {
   allowContestLogin,
@@ -27,22 +28,23 @@ function destinationAfterLogin(url: URL) {
   return '/overview';
 }
 
-export const load = (({ locals, url }) => {
-  if (locals.user) redirect(303, destinationAfterLogin(url));
-  const demo = isLocalDemo(url);
+export const load = (({ locals, url, platform }) => {
+  if (locals.user) redirect(303, portalHref(destinationAfterLogin(url)));
+  const demo = isLocalDemo(url, platform?.browserSession);
   return {
     demo,
+    browserDemo: Boolean(platform?.browserSession),
     accounts: demo ? previewAccounts : []
   };
 }) satisfies PageServerLoad;
 export const actions = {
-  default: async ({ request, cookies, url, getClientAddress }) => {
+  default: async ({ request, cookies, url, getClientAddress, platform }) => {
     const form = await request.formData();
     const next = destinationAfterLogin(url);
     if (form.has('account')) {
-      if (!(await quickSignIn(String(form.get('account')), cookies, url)))
+      if (!(await quickSignIn(String(form.get('account')), cookies, url, platform?.browserSession)))
         return fail(403, { message: 'Быстрый вход недоступен.' });
-      redirect(303, next);
+      redirect(303, portalHref(next));
     }
     const email = String(form.get('email') ?? '')
       .trim()
@@ -52,10 +54,10 @@ export const actions = {
       return fail(400, { message: 'Введите почту и пароль.' });
     if (isContestDemo(url) && !(await allowContestLogin(getClientAddress())))
       return fail(429, { message: 'Слишком много попыток входа. Повторите через 15 минут.' });
-    if (!(await signIn(email, password, cookies, url)))
+    if (!(await signIn(email, password, cookies, url, platform?.browserSession)))
       return fail(400, {
         message: 'Не удалось войти. Проверьте почту и пароль или повторите попытку через 15 минут.'
       });
-    redirect(303, next);
+    redirect(303, portalHref(next));
   }
 } satisfies Actions;

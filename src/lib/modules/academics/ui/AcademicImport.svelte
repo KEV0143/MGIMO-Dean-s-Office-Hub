@@ -1,4 +1,5 @@
 <script lang="ts">
+  import { portalHref } from '#shared/portal-paths.ts';
   import { enhance } from '$app/forms';
   import Icon from '#shared/ui/Icon.svelte';
   import type { ImportKind, ImportPreview } from '../academic-management.types.ts';
@@ -12,7 +13,7 @@
       <h2>Импорт из файла</h2>
       <p>CSV или XLSX, до 200 строк и 1 МБ.</p>
     </div>
-    <a class="text-link" href={`/academics/manage/template?kind=${kind}`}
+    <a class="text-link" href={portalHref(`/academics/manage/template?kind=${kind}`)}
       ><Icon name="download" size={15} />Шаблон CSV</a
     >
   </div>

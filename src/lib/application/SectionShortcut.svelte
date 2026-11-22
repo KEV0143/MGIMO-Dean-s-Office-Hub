@@ -1,10 +1,11 @@
 <script lang="ts">
+  import { portalHref } from '#shared/portal-paths.ts';
   import Icon from '#shared/ui/Icon.svelte';
 
   let { href, label, description }: { href: string; label: string; description: string } = $props();
 </script>
 
-<a class="shortcut" {href}>
+<a class="shortcut" href={portalHref(href)}>
   <span><strong>{label}</strong><small>{description}</small></span>
   <Icon name="arrow" size={19} />
 </a>

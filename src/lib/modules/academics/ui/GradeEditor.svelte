@@ -1,4 +1,5 @@
 <script lang="ts">
+  import { portalHref } from '#shared/portal-paths.ts';
   import { enhance } from '$app/forms';
   import { goto } from '$app/navigation';
   import GradeHistory from './GradeHistory.svelte';
@@ -43,7 +44,7 @@
     });
     loading = true;
     try {
-      await goto('/academics/manage?' + params, { reset: false, refreshAll: true });
+      await goto(portalHref('/academics/manage?' + params), { reset: false, refreshAll: true });
     } finally {
       loading = false;
     }
@@ -57,7 +58,7 @@
       <p>Выберите дисциплину и студента.</p>
     </div>
   </div>
-  <form method="GET" action="/academics/manage" class="selection" onsubmit={select}>
+  <form method="GET" action={portalHref('/academics/manage')} class="selection" onsubmit={select}>
     <input type="hidden" name="tab" value="grades" />
     <label
       >Дисциплина, группа и преподаватель<select

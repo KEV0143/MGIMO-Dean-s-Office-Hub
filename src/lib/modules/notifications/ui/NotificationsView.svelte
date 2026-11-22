@@ -1,4 +1,5 @@
 <script lang="ts">
+  import { portalHref } from '#shared/portal-paths.ts';
   import { enhance } from '$app/forms';
   import Icon from '#shared/ui/Icon.svelte';
   import { shortDate, time } from '#shared/formatting.ts';
@@ -21,7 +22,7 @@
     <section class="panel" aria-labelledby="assessment-reminders">
       <div class="panel-head">
         <h2 id="assessment-reminders">Напоминания об аттестациях</h2>
-        <a href="/assistant/study-plan" class="link">Учебный план</a>
+        <a href={portalHref('/assistant/study-plan')} class="link">Учебный план</a>
       </div>
       <ul class="reminders">
         {#each data.reminders as item (item.id)}
@@ -42,7 +43,10 @@
   {/if}
   <section class="panel" aria-label="Обновления и ответы деканата">
     <div class="notification-list">
-      {#each data.notifications as item}<form method="POST" action={`/notifications/${item.id}`}>
+      {#each data.notifications as item}<form
+          method="POST"
+          action={portalHref(`/notifications/${item.id}`)}
+        >
           <button class="notification" class:unread={!item.read_at} type="submit"
             ><span class="subject-icon"><Icon name="bell" size={19} /></span>
             <div>

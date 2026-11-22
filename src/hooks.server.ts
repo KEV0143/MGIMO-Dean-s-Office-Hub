@@ -2,7 +2,7 @@ import type { Handle } from '@sveltejs/kit/hooks';
 import { sessionUser } from '#modules/auth/server/auth.service.server.ts';
 
 export const handle: Handle = async ({ event, resolve }) => {
-  event.locals.user = await sessionUser(event.cookies, event.url);
+  event.locals.user = await sessionUser(event.cookies, event.url, event.platform?.browserSession);
   const response = await resolve(event);
   response.headers.set('X-Content-Type-Options', 'nosniff');
   response.headers.set('Referrer-Policy', 'strict-origin-when-cross-origin');

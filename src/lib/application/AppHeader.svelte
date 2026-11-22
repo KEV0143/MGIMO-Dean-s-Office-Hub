@@ -1,4 +1,5 @@
 <script lang="ts">
+  import { portalHref, portalPath } from '#shared/portal-paths.ts';
   import { page } from '$app/state';
   import Icon from '#shared/ui/Icon.svelte';
   import { initials } from '#shared/formatting.ts';
@@ -28,19 +29,19 @@
   </div>
   <div class="row topbar-right">
     <a
-      href="/notifications"
+      href={portalHref('/notifications')}
       class="icon-btn notification-icon"
       aria-label={`Уведомления: ${data.unread} непрочитанных`}
       ><Icon name="bell" />{#if data.unread}<i></i>{/if}</a
     >
     <div class="topbar-divider"></div>
     <a
-      href="/profile"
+      href={portalHref('/profile')}
       class="account"
       aria-label={(data.user.role === 'student' ? 'Личный кабинет студента' : 'Мой профиль') +
         ': ' +
         data.user.full_name}
-      aria-current={page.url.pathname === '/profile' ? 'page' : undefined}
+      aria-current={portalPath(page.url.pathname) === '/profile' ? 'page' : undefined}
       ><span class="avatar">{initials(data.user.full_name)}</span><span class="account-info"
         ><strong>{data.user.full_name}</strong><small>{roleNames[data.user.role]}</small></span
       ><Icon name="down" size={14} /></a

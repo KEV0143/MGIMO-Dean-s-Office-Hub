@@ -1,4 +1,5 @@
 <script lang="ts">
+  import { portalHref } from '#shared/portal-paths.ts';
   import { enhance } from '$app/forms';
   import Icon from '#shared/ui/Icon.svelte';
   import Status from '#modules/requests/ui/RequestStatusBadge.svelte';
@@ -51,7 +52,7 @@
 </script>
 
 <svelte:head><title>Заявление №{data.request.number} · Дека</title></svelte:head>
-<a class="back" href="/requests"><Icon name="left" size={15} />Все заявления</a>
+<a class="back" href={portalHref('/requests')}><Icon name="left" size={15} />Все заявления</a>
 <div class="page-head">
   <div>
     <div class="row">
@@ -64,7 +65,7 @@
     <p>Подано {fullDate(data.request.created_at)}</p>
   </div>
   {#if canIssueDocument(data.request.kind) && ['ready', 'done'].includes(data.request.status)}<a
-      href={`/requests/${data.request.id}/document`}
+      href={portalHref(`/requests/${data.request.id}/document`)}
       class="btn"><Icon name="file" size={17} />Открыть документ</a
     >{/if}
 </div>

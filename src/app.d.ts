@@ -4,6 +4,9 @@ declare global {
     interface Locals {
       user: User | null;
     }
+    interface Platform {
+      browserSession?: { token: string | null };
+    }
   }
 }
 export {};

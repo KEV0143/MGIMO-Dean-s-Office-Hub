@@ -1,4 +1,5 @@
 <script lang="ts">
+  import { portalHref, portalPath } from '#shared/portal-paths.ts';
   import { page } from '$app/state';
   import Icon from '#shared/ui/Icon.svelte';
   import Brand from '#shared/ui/Brand.svelte';
@@ -19,11 +20,11 @@
     onclose: () => void;
   } = $props();
   const navigation = $derived(navigationFor(data.user.role));
-  const path = $derived(page.url.pathname);
+  const path = $derived(portalPath(page.url.pathname));
 </script>
 
 <aside id="app-sidebar" class:open class="sidebar" inert={mobile && !open}>
-  <a href="/overview" class="brand" onclick={onclose}><Brand /></a>
+  <a href={portalHref('/overview')} class="brand" onclick={onclose}><Brand /></a>
   <div class="nav-caption">{cabinet ? 'Кабинет студента' : 'Личный кабинет'}</div>
   {#if cabinet}
     <CabinetNavigation unread={data.unread} {onclose} />
@@ -31,7 +32,7 @@
     <nav aria-label="Главная навигация">
       {#each navigation as item (item.href)}
         <a
-          href={item.href}
+          href={portalHref(item.href)}
           class:active={path === item.href || path.startsWith(item.href + '/')}
           aria-current={path === item.href ? 'page' : undefined}
           onclick={onclose}
@@ -47,7 +48,7 @@
   <div class="sidebar-bottom">
     <a
       class="profile-link"
-      href={data.user.role === 'student' ? '/profile/support' : '/announcements'}
+      href={portalHref(data.user.role === 'student' ? '/profile/support' : '/announcements')}
       onclick={onclose}
       ><Icon name="help" size={18} />{data.user.role === 'student'
         ? 'Поддержка'
@@ -56,13 +57,13 @@
     <a
       class="profile-link"
       class:active={!cabinet && path === '/profile'}
-      href={cabinet ? '/overview' : '/profile'}
+      href={portalHref(cabinet ? '/overview' : '/profile')}
       onclick={onclose}
       ><Icon name={cabinet ? 'left' : 'settings'} size={18} />{cabinet
         ? 'К обзору Деки'
         : 'Мой профиль'}</a
     >
-    <form method="POST" action="/logout">
+    <form method="POST" action={portalHref('/logout')}>
       <button class="profile-link"><Icon name="logout" size={18} />Выйти из аккаунта</button>
     </form>
   </div>

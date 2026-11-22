@@ -1,4 +1,5 @@
 <script lang="ts">
+  import { portalHref, portalPath } from '#shared/portal-paths.ts';
   import { afterNavigate, goto } from '$app/navigation';
   import Icon from '#shared/ui/Icon.svelte';
   import { shortDate, time } from '#shared/formatting.ts';
@@ -30,9 +31,10 @@
     timeZone: 'UTC'
   });
   afterNavigate(({ to }) => {
-    if (!to || to.url.pathname !== '/schedule' || to.url.searchParams.has('lesson')) return;
+    if (!to || portalPath(to.url.pathname) !== '/schedule' || to.url.searchParams.has('lesson'))
+      return;
     const id = lessonIdFromHash(to.url.hash);
-    if (id) void goto(scheduleHref(id), { replace: true });
+    if (id) void goto(portalHref(scheduleHref(id)), { replace: true });
   });
   const firstWeek = $derived(data.outsideWeek ?? scheduleWeek(data.today));
   const lastWeek = $derived(data.outsideWeek ?? scheduleWeek(addScheduleDays(data.today, 30)));
@@ -83,9 +85,11 @@
     </p>
   </div>
   <div class="row wrap">
-    <a class="btn secondary" href="/schedule/calendar"
+    <a class="btn secondary" href={portalHref('/schedule/calendar')}
       ><Icon name="download" size={16} />В календарь</a
-    >{#if data.user.role === 'dean'}<a class="btn" href="/academics/manage?tab=schedule"
+    >{#if data.user.role === 'dean'}<a
+        class="btn"
+        href={portalHref('/academics/manage?tab=schedule')}
         ><Icon name="settings" size={16} />Управление</a
       >{/if}
   </div>
@@ -102,7 +106,7 @@
       </div>
       <div class="row week-navigation">
         {#if data.outsideWeek}
-          <a class="btn secondary" href="/schedule">Сегодня</a>
+          <a class="btn secondary" href={portalHref('/schedule')}>Сегодня</a>
         {:else}
           <button class="btn secondary" onclick={today}>Сегодня</button>
         {/if}
@@ -180,7 +184,7 @@
                 </div>
                 {#if route}<a
                     class="room room-link"
-                    href={route}
+                    href={portalHref(route)}
                     aria-label={'Маршрут до ' + lesson.room}
                     ><Icon name="pin" size={15} />{lesson.room}</a
                   >
@@ -204,7 +208,7 @@
                 >{#if lesson.note}<span class="lesson-note">{lesson.note}</span>{/if}
               </div>
               {#if directions}
-                <a class="room-link moved-directions" href={directions.href}>
+                <a class="room-link moved-directions" href={portalHref(directions.href)}>
                   <Icon name="pin" size={15} />
                   {directions.label}
                 </a>

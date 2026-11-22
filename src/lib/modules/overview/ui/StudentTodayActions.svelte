@@ -1,4 +1,5 @@
 <script lang="ts">
+  import { portalHref } from '#shared/portal-paths.ts';
   import type { Grade } from '#modules/academics/academic.types.ts';
   import { lessonKinds } from '#modules/academics/academic.labels.ts';
   import { scheduleDay, scheduleHref } from '#modules/academics/schedule-navigation.ts';
@@ -56,7 +57,12 @@
   options: RowOptions = {}
 )}
   <li>
-    <a {href} class="entry" class:warning={options.warning} class:timed={options.start}>
+    <a
+      href={portalHref(href)}
+      class="entry"
+      class:warning={options.warning}
+      class:timed={options.start}
+    >
       {#if options.start}
         <span class="action-time">
           <span>{time(options.start)}</span>
@@ -78,7 +84,7 @@
     {#if options.route || options.reason}
       <div class="entry-links">
         {#if options.route}
-          <a class="directions" href={options.route.href}>
+          <a class="directions" href={portalHref(options.route.href)}>
             <Icon name="pin" size={14} />{options.route.label}
           </a>
         {/if}
@@ -100,7 +106,7 @@
 >
   <div class="panel-head">
     <h2 id="today-actions">Изменения и сроки</h2>
-    <a class="link" href="/assistant/study-plan#focus-title">
+    <a class="link" href={portalHref('/assistant/study-plan#focus-title')}>
       План подготовки <Icon name="arrow" size={14} />
     </a>
   </div>

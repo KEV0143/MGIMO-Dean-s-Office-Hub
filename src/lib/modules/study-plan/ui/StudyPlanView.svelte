@@ -1,4 +1,5 @@
 <script lang="ts">
+  import { portalHref } from '#shared/portal-paths.ts';
   import { enhance, type SubmitFunction } from '$app/forms';
   import { lessonKinds, scoreName } from '#modules/academics/academic.labels.ts';
   import { shortDate, time } from '#shared/formatting.ts';
@@ -44,7 +45,7 @@
     <h1>План подготовки</h1>
     <p>Экзамены и зачёты на 30 дней, текущие баллы и шаги подготовки.</p>
   </div>
-  <a class="btn outline" href="/assistant">К помощнику</a>
+  <a class="btn outline" href={portalHref('/assistant')}>К помощнику</a>
 </div>
 
 <div class="stack">
@@ -144,7 +145,7 @@
             </div>
           {/each}
         </div>
-        <a class="link all-grades" href="/grades">Вся успеваемость</a>
+        <a class="link all-grades" href={portalHref('/grades')}>Вся успеваемость</a>
       {:else}
         <p class="muted">Преподаватели ещё не добавили результаты.</p>
       {/if}
@@ -169,7 +170,7 @@
       </div>
     {:else}
       <p class="muted">На ближайшие 30 дней экзамены и зачёты не назначены.</p>
-      <a class="link all-grades" href="/schedule">Открыть расписание</a>
+      <a class="link all-grades" href={portalHref('/schedule')}>Открыть расписание</a>
     {/if}
   </section>
 </div>

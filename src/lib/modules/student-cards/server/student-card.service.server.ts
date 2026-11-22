@@ -3,6 +3,7 @@ import { transaction, query } from '#server/database/postgres.ts';
 import type { User } from '#modules/auth/auth.types.ts';
 import type { StudentCard } from '../student-card.types.ts';
 import { isUuid } from '#shared/validation.ts';
+import { portalHref } from '#shared/portal-paths.ts';
 import QRCode from 'qrcode';
 
 const select = `SELECT c.student_id,c.number::text,c.verification_code,c.issued_at,u.full_name,f.name faculty_name,g.name group_name,g.program,g.course FROM student_cards c JOIN users u ON u.id=c.student_id JOIN study_groups g ON g.id=u.group_id JOIN faculties f ON f.id=g.faculty_id`;
@@ -44,7 +45,7 @@ export function cardNumber(number: string) {
   return `ДК-${number.padStart(7, '0')}`;
 }
 export async function cardPresentation(card: StudentCard, origin: string) {
-  const verificationUrl = `${origin}/student-card/verify/${card.verification_code}`;
+  const verificationUrl = origin + portalHref(`/student-card/verify/${card.verification_code}`);
   return {
     card,
     number: cardNumber(card.number),

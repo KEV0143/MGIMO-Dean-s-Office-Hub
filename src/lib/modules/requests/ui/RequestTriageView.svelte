@@ -1,4 +1,5 @@
 <script lang="ts">
+  import { portalHref } from '#shared/portal-paths.ts';
   import { requestKinds } from '../request.labels.ts';
   import { WAITING_DAYS, type RequestTriage } from '../request-triage.types.ts';
   import Status from './RequestStatusBadge.svelte';
@@ -13,7 +14,7 @@
     <h1>Очередь деканата</h1>
     {#if faculty}<p>{faculty}</p>{/if}
   </div>
-  <a class="btn outline" href="/requests">Все заявления</a>
+  <a class="btn outline" href={portalHref('/requests')}>Все заявления</a>
 </div>
 
 <div class="stack">
@@ -51,7 +52,7 @@
         {#each queue.items as item (item.id)}
           <li>
             <div>
-              <a class="link" href={'/requests/' + item.id}>
+              <a class="link" href={portalHref('/requests/' + item.id)}>
                 № {item.number} · {requestKinds[item.kind]}
               </a>
               <p>{item.student_name} · {item.group_name}</p>

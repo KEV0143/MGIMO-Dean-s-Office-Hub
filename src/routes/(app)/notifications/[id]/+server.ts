@@ -1,3 +1,4 @@
+import { portalHref } from '#shared/portal-paths.ts';
 import { error, redirect } from '@sveltejs/kit';
 import { requireUser } from '#modules/auth/server/auth.service.server.ts';
 import { readNotification } from '#modules/notifications/server/notification.repository.server.ts';
@@ -10,5 +11,5 @@ export const POST: RequestHandler = async ({ locals, params, url }) => {
   const href = await readNotification(user.id, params.id);
   if (!href || !href.startsWith('/') || URL.parse(href, url.origin)?.origin !== url.origin)
     error(404, 'Уведомление не найдено.');
-  redirect(303, resolveScheduleNotification(href));
+  redirect(303, portalHref(resolveScheduleNotification(href)));
 };

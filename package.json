@@ -15,6 +15,7 @@
   "scripts": {
     "dev": "vite dev --host 127.0.0.1 --port 5180 --strictPort",
     "build": "vite build",
+    "build:pages": "node scripts/pages/build.mjs",
     "preview": "vite preview --host 127.0.0.1 --port 5181",
     "start": "node --env-file-if-exists=.local/config/application.env .output/index.js",
     "check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json && tsc --noEmit --project src/service-worker/tsconfig.json",
@@ -33,12 +34,17 @@
     "svelte": "5.57.3"
   },
   "devDependencies": {
+    "@electric-sql/pglite": "0.5.17",
+    "@noble/hashes": "2.4.0",
     "@sveltejs/adapter-node": "6.0.1",
     "@sveltejs/kit": "3.1.1",
     "@sveltejs/vite-plugin-svelte": "7.3.1",
     "@types/node": "24.19.2",
     "@types/pg": "8.23.1",
     "@types/qrcode": "1.5.6",
+    "buffer": "6.0.3",
+    "esbuild": "0.28.2",
+    "pngjs": "5.0.0",
     "prettier": "3.9.10",
     "prettier-plugin-svelte": "4.1.1",
     "svelte-check": "4.7.8",

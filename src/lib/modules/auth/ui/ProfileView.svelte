@@ -1,4 +1,5 @@
 <script lang="ts">
+  import { portalHref } from '#shared/portal-paths.ts';
   import Icon from '#shared/ui/Icon.svelte';
   import { initials } from '#shared/formatting.ts';
   import { roleNames } from '#modules/auth/auth.labels.ts';
@@ -34,7 +35,9 @@
       >Данные предоставлены университетом. Если нашли ошибку, обратитесь к администратору.</span
     >
   </div>
-  {#if data.profile.role === 'student'}<a class="btn student-link" href="/student-card"
+  {#if data.profile.role === 'student'}<a
+      class="btn student-link"
+      href={portalHref('/student-card')}
       ><Icon name="cap" size={18} />Студенческий билет<Icon name="arrow" size={16} /></a
     >{/if}
   {#if installation.event}<button

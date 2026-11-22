@@ -1,4 +1,5 @@
 <script lang="ts">
+  import { portalHref, portalPath } from '#shared/portal-paths.ts';
   import { page } from '$app/state';
   import Icon from '#shared/ui/Icon.svelte';
   import {
@@ -8,7 +9,7 @@
   } from '#modules/cabinet/cabinet-navigation.ts';
 
   let { unread, onclose }: { unread: number; onclose: () => void } = $props();
-  const path = $derived(page.url.pathname);
+  const path = $derived(portalPath(page.url.pathname));
   const entries = [
     { href: '/profile', label: 'Профиль', icon: 'home' },
     { href: cabinetPath('news'), label: cabinetSections.news, icon: 'news' },
@@ -20,7 +21,7 @@
   {#each entries as item (item.href)}
     <a
       class="nav-row"
-      href={item.href}
+      href={portalHref(item.href)}
       aria-current={path === item.href ? 'page' : undefined}
       onclick={onclose}
     >
@@ -43,7 +44,7 @@
           {#each group.sections as section (section)}
             <a
               class="nav-row"
-              href={cabinetPath(section)}
+              href={portalHref(cabinetPath(section))}
               aria-current={path === cabinetPath(section) ? 'page' : undefined}
               onclick={onclose}>{cabinetSections[section]}</a
             >

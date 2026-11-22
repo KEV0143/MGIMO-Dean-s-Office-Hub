@@ -1,4 +1,5 @@
 <script lang="ts">
+  import { portalHref } from '#shared/portal-paths.ts';
   import Icon from '#shared/ui/Icon.svelte';
   import { fullDate } from '#shared/formatting.ts';
   import { requestKinds } from '#modules/requests/request.labels.ts';
@@ -20,9 +21,9 @@
     <p>Электронный экземпляр</p>
   </div>
   <div class="row">
-    <a href={`/requests/${data.request.id}`} class="btn secondary">К заявлению</a><button
-      class="btn"
-      onclick={() => window.print()}><Icon name="download" size={16} />Печать / PDF</button
+    <a href={portalHref(`/requests/${data.request.id}`)} class="btn secondary">К заявлению</a
+    ><button class="btn" onclick={() => window.print()}
+      ><Icon name="download" size={16} />Печать / PDF</button
     >
   </div>
 </div>

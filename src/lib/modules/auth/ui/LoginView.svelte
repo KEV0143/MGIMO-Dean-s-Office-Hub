@@ -1,4 +1,5 @@
 <script lang="ts">
+  import { portalHref } from '#shared/portal-paths.ts';
   import { enhance } from '$app/forms';
   import Icon from '#shared/ui/Icon.svelte';
   import Brand from '#shared/ui/Brand.svelte';
@@ -6,6 +7,7 @@
   type PageProps = {
     data: {
       demo: boolean;
+      browserDemo: boolean;
       accounts: ReadonlyArray<(typeof import('../preview-accounts.ts').previewAccounts)[number]>;
     };
     form?: { message?: string } | null;
@@ -60,7 +62,7 @@
 <svelte:head><title>Вход · Дека</title></svelte:head>
 <div class="login-page">
   <section class="welcome">
-    <a class="brand" href="/" aria-label="Дека"><Brand /></a>
+    <a class="brand" href={portalHref('/')} aria-label="Дека"><Brand /></a>
     <div class="welcome-body">
       <h2>Личный кабинет студента</h2>
       <p>Расписание, оценки и справки.</p>
@@ -70,7 +72,11 @@
   <main class="login-main">
     <div class="login-form">
       <h1>{data.demo ? 'Попробуйте Деку' : 'Вход в Деку'}</h1>
-      <p class="login-help">Конкурсный прототип. Все данные вымышлены.</p>
+      <p class="login-help">
+        {data.browserDemo
+          ? 'Тестовые профили. Изменения сохраняются в этом браузере.'
+          : 'Конкурсный прототип. Все данные вымышлены.'}
+      </p>
       {#if form?.message}<p class="form-error" role="alert">{form.message}</p>{/if}
       {#if data.demo}<div class="demo">
           {#each accountGroups as group (group.label)}

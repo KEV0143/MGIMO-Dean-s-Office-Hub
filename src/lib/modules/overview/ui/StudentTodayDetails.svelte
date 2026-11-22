@@ -1,4 +1,5 @@
 <script lang="ts">
+  import { portalHref } from '#shared/portal-paths.ts';
   import Icon from '#shared/ui/Icon.svelte';
   import { shortDate, time } from '#shared/formatting.ts';
   import { lessonKinds } from '#modules/academics/academic.labels.ts';
@@ -14,14 +15,14 @@
     <section class="panel" aria-labelledby="overview-assessments">
       <div class="panel-head">
         <h2 id="overview-assessments">Аттестации</h2>
-        <a class="link" href="/assistant/study-plan"
+        <a class="link" href={portalHref('/assistant/study-plan')}
           >План подготовки <Icon name="arrow" size={14} /></a
         >
       </div>
       <ul>
         {#each home.assessments as item (item.id)}
           <li>
-            <a class="record" href={'/assistant/study-plan#assessment-' + item.id}>
+            <a class="record" href={portalHref('/assistant/study-plan#assessment-' + item.id)}>
               <span>
                 <strong>{item.subject}</strong>
                 <small
@@ -43,9 +44,15 @@
   </div>
 
   <nav class="overview-links" aria-label="Учёба и заявления">
-    <a class="link" href="/schedule/attendance">Посещаемость <Icon name="arrow" size={14} /></a>
-    <a class="link" href="/grades/progress">Динамика результатов <Icon name="arrow" size={14} /></a>
-    <a class="link" href="/requests/templates">Виды заявлений <Icon name="arrow" size={14} /></a>
+    <a class="link" href={portalHref('/schedule/attendance')}
+      >Посещаемость <Icon name="arrow" size={14} /></a
+    >
+    <a class="link" href={portalHref('/grades/progress')}
+      >Динамика результатов <Icon name="arrow" size={14} /></a
+    >
+    <a class="link" href={portalHref('/requests/templates')}
+      >Виды заявлений <Icon name="arrow" size={14} /></a
+    >
   </nav>
 </details>
 
@@ -53,12 +60,14 @@
   <section class="panel" aria-labelledby="overview-alerts">
     <div class="panel-head">
       <h2 id="overview-alerts">Уведомления</h2>
-      <a class="link" href="/notifications">Все уведомления <Icon name="arrow" size={14} /></a>
+      <a class="link" href={portalHref('/notifications')}
+        >Все уведомления <Icon name="arrow" size={14} /></a
+      >
     </div>
     <ul>
       {#each home.alerts as item (item.id)}
         <li>
-          <form method="POST" action={'/notifications/' + item.id}>
+          <form method="POST" action={portalHref('/notifications/' + item.id)}>
             <button class="record" type="submit">
               <span>
                 <strong>{item.title}</strong>

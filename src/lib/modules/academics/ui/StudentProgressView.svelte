@@ -1,4 +1,5 @@
 <script lang="ts">
+  import { portalHref } from '#shared/portal-paths.ts';
   import Icon from '#shared/ui/Icon.svelte';
   import { shortDate, time } from '#shared/formatting.ts';
   import { PASSING_SCORE } from '#modules/study-plan/study-plan.policy.ts';
@@ -13,13 +14,13 @@
     <h1>Прогресс по дисциплинам</h1>
     <p>Текущие баллы, аттестации на 30 дней и отметки за последние 30 дней.</p>
   </div>
-  <a class="btn outline" href="/grades">Все оценки</a>
+  <a class="btn outline" href={portalHref('/grades')}>Все оценки</a>
 </div>
 
 <div class="summary">
   <div><strong>{courses.length}</strong><span>Дисциплины в сводке</span></div>
   <div><strong>{below}</strong><span>Ниже {PASSING_SCORE} баллов</span></div>
-  <a href="/assistant/study-plan#focus-title"
+  <a href={portalHref('/assistant/study-plan#focus-title')}
     ><Icon name="chat" size={20} /><span>План подготовки</span></a
   >
 </div>
@@ -54,7 +55,10 @@
           </p>
         {/if}
         {#if course.assessment}
-          <a class="exam" href={'/assistant/study-plan#assessment-' + course.assessment.id}>
+          <a
+            class="exam"
+            href={portalHref('/assistant/study-plan#assessment-' + course.assessment.id)}
+          >
             <Icon name="calendar" size={18} />
             <span
               ><strong
@@ -76,7 +80,7 @@
       </section>
     {/each}
   </div>
-  <a class="link attendance" href="/schedule/attendance"
+  <a class="link attendance" href={portalHref('/schedule/attendance')}
     >Весь журнал посещаемости <Icon name="arrow" size={15} /></a
   >
 {:else}

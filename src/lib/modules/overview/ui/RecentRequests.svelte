@@ -1,4 +1,5 @@
 <script lang="ts">
+  import { portalHref } from '#shared/portal-paths.ts';
   import Icon from '#shared/ui/Icon.svelte';
   import type { OverviewData } from '../overview.types';
   import type { User } from '#modules/auth/auth.types.ts';
@@ -18,7 +19,7 @@
         {student ? 'Статусы и ответы деканата' : 'Обращения студентов вашего факультета'}
       </p>
     </div>
-    <a class="link" href="/requests">Все заявления <Icon name="arrow" size={14} /></a>
+    <a class="link" href={portalHref('/requests')}>Все заявления <Icon name="arrow" size={14} /></a>
   </div>
   {#if data.requests.length}<div class="table-wrap">
       <table class="data-table">
@@ -30,7 +31,7 @@
         ><tbody
           >{#each data.requests as request}<tr
               ><td
-                ><a href={`/requests/${request.id}`}
+                ><a href={portalHref(`/requests/${request.id}`)}
                   ><div class="row">
                     <span class="file-icon"><Icon name="file" size={17} /></span><span
                       ><strong>{requestKinds[request.kind]}</strong><small
@@ -44,7 +45,7 @@
               ><td><Status status={request.status} waiting={request.awaiting_student} /></td><td
                 ><a
                   class="icon-btn"
-                  href={`/requests/${request.id}`}
+                  href={portalHref(`/requests/${request.id}`)}
                   aria-label={`Открыть заявление №${request.number}`}
                   ><Icon name="arrow" size={16} /></a
                 ></td
@@ -60,7 +61,7 @@
           ? 'Когда понадобится справка или помощь, создайте обращение.'
           : 'Новые заявления студентов появятся здесь.'}
       </p>
-      {#if student}<a class="link" href="/requests/new"
+      {#if student}<a class="link" href={portalHref('/requests/new')}
           >Создать заявление <Icon name="plus" size={14} /></a
         >{/if}
     </div>{/if}

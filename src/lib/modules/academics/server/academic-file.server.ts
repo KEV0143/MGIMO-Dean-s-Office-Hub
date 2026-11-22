@@ -1,8 +1,14 @@
 import { parse } from 'csv-parse/sync';
-import { Worker } from 'node:worker_threads';
 import { error } from '@sveltejs/kit';
 
-async function excelRows(buffer: Buffer): Promise<unknown[][]> {
+async function excelRows(file: File): Promise<unknown[][]> {
+  if (import.meta.env.VITE_DEKA_PAGES_BASE) {
+    const { readSheet } = await import('read-excel-file/browser');
+    return readSheet(file);
+  }
+
+  const { Worker } = await import('node:worker_threads');
+  const buffer = Buffer.from(await file.arrayBuffer());
   // Parse uploaded archives outside the HTTP worker, with bounded memory and execution time.
   return new Promise((resolve, reject) => {
     const worker = new Worker(
@@ -38,7 +44,7 @@ export async function readAcademicFile(file: File) {
   if (!file.size || file.size > 1024 * 1024) error(400, 'Выберите CSV или XLSX размером до 1 МБ.');
   let matrix: unknown[][] | undefined;
   try {
-    if (/\.xlsx$/i.test(file.name)) matrix = await excelRows(Buffer.from(await file.arrayBuffer()));
+    if (/\.xlsx$/i.test(file.name)) matrix = await excelRows(file);
     else if (/\.csv$/i.test(file.name)) {
       const text = (await file.text()).replace(/^\uFEFF/, '');
       const header = text.split(/\r?\n/, 1)[0];

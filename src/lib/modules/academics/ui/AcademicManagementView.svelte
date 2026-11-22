@@ -1,4 +1,5 @@
 <script lang="ts">
+  import { portalHref } from '#shared/portal-paths.ts';
   import { enhance } from '$app/forms';
   import LessonEditor from './LessonEditor.svelte';
   import GradeEditor from './GradeEditor.svelte';
@@ -47,7 +48,9 @@
     <h1>Учебные данные</h1>
     <p>Ввод вручную и импорт таблиц.</p>
   </div>
-  <a class="btn secondary" href={data.tab === 'schedule' ? '/schedule' : '/grades'}>К просмотру</a>
+  <a class="btn secondary" href={portalHref(data.tab === 'schedule' ? '/schedule' : '/grades')}
+    >К просмотру</a
+  >
 </div>
 <nav class="tabs" aria-label="Учебные данные">
   {#if data.user.role === 'dean'}<a class:active={data.tab === 'schedule'} href="?tab=schedule"

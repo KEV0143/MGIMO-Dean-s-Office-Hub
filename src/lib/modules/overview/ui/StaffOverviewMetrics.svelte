@@ -1,4 +1,5 @@
 <script lang="ts">
+  import { portalHref } from '#shared/portal-paths.ts';
   import Icon from '#shared/ui/Icon.svelte';
   import type { OverviewData } from '../overview.types';
   import type { User } from '#modules/auth/auth.types.ts';
@@ -14,7 +15,9 @@
 </script>
 
 <div class="metrics">
-  <a href={data.admin ? '/people' : teacher ? '/grades' : '/requests'} class="metric panel"
+  <a
+    href={portalHref(data.admin ? '/people' : teacher ? '/grades' : '/requests')}
+    class="metric panel"
     ><div class="row between">
       <span class="metric-icon"
         ><Icon name={data.admin ? 'users' : teacher ? 'book' : 'files'} size={19} /></span
@@ -30,7 +33,7 @@
       </div>
     </div></a
   >
-  <a href={data.admin ? '/audit' : dean ? '/requests' : '/grades'} class="metric panel"
+  <a href={portalHref(data.admin ? '/audit' : dean ? '/requests' : '/grades')} class="metric panel"
     ><div class="row between">
       <span class="metric-icon green"
         ><Icon name={data.admin ? 'shield' : dean ? 'inbox' : 'chart'} size={19} /></span

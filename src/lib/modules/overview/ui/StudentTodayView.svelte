@@ -1,4 +1,5 @@
 <script lang="ts">
+  import { portalHref } from '#shared/portal-paths.ts';
   import type { ApplicationData } from '#application/application.types.ts';
   import { scheduleDay, scheduleHref } from '#modules/academics/schedule-navigation.ts';
   import { lessonKinds } from '#modules/academics/academic.labels.ts';
@@ -35,7 +36,7 @@
     <h1>Сегодня</h1>
     <p>{date}{data.user.group_name ? ' · ' + data.user.group_name : ''}</p>
   </div>
-  <a class="btn new-request" href="/requests/templates">
+  <a class="btn new-request" href={portalHref('/requests/templates')}>
     <Icon name="plus" size={18} /> Подать заявление
   </a>
 </div>
@@ -59,14 +60,14 @@
             {#if map}
               <a
                 class="btn lesson-primary"
-                href={map}
+                href={portalHref(map)}
                 aria-label={'Маршрут до аудитории ' + next.room}
                 ><Icon name="pin" size={18} /> {next.room}</a
               >
             {:else}
               <span class="lesson-room"><Icon name="pin" size={18} /> {next.room}</span>
             {/if}
-            <a class="btn lesson-secondary" href={scheduleHref(next.id)}>
+            <a class="btn lesson-secondary" href={portalHref(scheduleHref(next.id))}>
               Подробности <Icon name="arrow" size={16} />
             </a>
           </div>
@@ -75,7 +76,7 @@
           <h2 id="next-lesson-title">Ближайших занятий пока нет</h2>
           <p class="lesson-meta">Новые занятия появятся здесь после публикации расписания.</p>
           <div class="lesson-actions">
-            <a class="btn lesson-primary" href="/schedule"
+            <a class="btn lesson-primary" href={portalHref('/schedule')}
               >Открыть расписание <Icon name="arrow" size={16} /></a
             >
           </div>

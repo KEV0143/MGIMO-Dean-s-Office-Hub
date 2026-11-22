@@ -1,4 +1,5 @@
 <script lang="ts">
+  import { portalHref } from '#shared/portal-paths.ts';
   import Icon from '#shared/ui/Icon.svelte';
   import Campus from '#shared/ui/CampusIllustration.svelte';
   import type { OverviewData } from '../overview.types';
@@ -31,7 +32,9 @@
     </p>
     <a
       class="btn hero-btn"
-      href={student ? '/requests/new' : dean ? '/requests' : teacher ? '/schedule' : '/people'}
+      href={portalHref(
+        student ? '/requests/new' : dean ? '/requests' : teacher ? '/schedule' : '/people'
+      )}
       >{student
         ? 'Подать заявление'
         : dean

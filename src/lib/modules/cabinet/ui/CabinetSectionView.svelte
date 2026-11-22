@@ -1,4 +1,5 @@
 <script lang="ts">
+  import { portalHref } from '#shared/portal-paths.ts';
   import Icon from '#shared/ui/Icon.svelte';
   import { shortDate, time } from '#shared/formatting.ts';
   import { lessonKinds, scoreName } from '#modules/academics/academic.labels.ts';
@@ -20,7 +21,7 @@
 
 <div class="section-head">
   <div>
-    <a class="back-link" href="/profile"><Icon name="left" size={14} /> Профиль</a>
+    <a class="back-link" href={portalHref('/profile')}><Icon name="left" size={14} /> Профиль</a>
     <h1>{cabinetSections[section]}</h1>
   </div>
 </div>
@@ -32,7 +33,7 @@
       <ul>
         {#each content.alerts as item (item.id)}
           <li>
-            <form method="POST" action={'/notifications/' + item.id}>
+            <form method="POST" action={portalHref('/notifications/' + item.id)}>
               <button class="row-button" type="submit">
                 <span
                   ><strong>{item.title}</strong><small
@@ -70,7 +71,7 @@
   <section class="card" aria-label="Ближайшие занятия">
     <div class="toolbar">
       <h2>Ближайшие занятия группы</h2>
-      <a class="action" href="/schedule">Календарь расписания</a>
+      <a class="action" href={portalHref('/schedule')}>Календарь расписания</a>
     </div>
     <ul>
       {#each content.lessons as item (item.id)}
@@ -95,7 +96,7 @@
   <section class="card" aria-label="Личные отметки">
     <div class="toolbar">
       <h2>Отметки за 30 дней</h2>
-      <a class="action" href="/schedule/attendance">Сводка посещаемости</a>
+      <a class="action" href={portalHref('/schedule/attendance')}>Сводка посещаемости</a>
     </div>
     <ul>
       {#each content.entries as item (item.id)}
@@ -137,7 +138,7 @@
           ? 'Дисциплины ниже ' + PASSING_SCORE + ' баллов'
           : 'Учебные результаты'}
       </h2>
-      <a class="action" href="/grades/progress">Прогресс</a>
+      <a class="action" href={portalHref('/grades/progress')}>Прогресс</a>
     </div>
     {#if content.view === 'debts'}
       <p class="explanation">
@@ -172,7 +173,7 @@
   <section class="card" aria-label="Учебный журнал">
     <div class="toolbar">
       <h2>Результаты и посещаемость</h2>
-      <a class="action" href="/grades/progress">Карточки дисциплин</a>
+      <a class="action" href={portalHref('/grades/progress')}>Карточки дисциплин</a>
     </div>
     <ul>
       {#each content.courses as item (item.id)}
@@ -194,7 +195,7 @@
   <section class="card" aria-label="Личная траектория">
     <div class="toolbar">
       <h2>Ближайшие шаги подготовки</h2>
-      <a class="action" href="/assistant/study-plan#focus-title">План подготовки</a>
+      <a class="action" href={portalHref('/assistant/study-plan#focus-title')}>План подготовки</a>
     </div>
     <ul>
       {#each content.tasks as item (item.key)}
@@ -203,7 +204,7 @@
           <p>{fallbackAdvice(item)}</p>
           {#if item.assessment}<a
               class="action"
-              href={'/assistant/study-plan#assessment-' + item.assessment.id}
+              href={portalHref('/assistant/study-plan#assessment-' + item.assessment.id)}
               >{lessonKinds[item.assessment.kind]} · {shortDate(item.assessment.starts_at)}</a
             >{/if}
         </li>
@@ -216,12 +217,12 @@
   <section class="card" aria-label="Мои заявления">
     <div class="toolbar">
       <h2>Мои заявления</h2>
-      <a class="action" href="/requests/templates">Подать заявление</a>
+      <a class="action" href={portalHref('/requests/templates')}>Подать заявление</a>
     </div>
     <ul>
       {#each content.requests as item (item.id)}
         <li>
-          <a class="field" href={'/requests/' + item.id}>
+          <a class="field" href={portalHref('/requests/' + item.id)}>
             <span
               ><strong>{requestKinds[item.kind]}</strong><small
                 >№ {item.number} · {shortDate(item.updated_at)}</small
@@ -240,7 +241,9 @@
     <p>{content.description}</p>
     <div>
       {#each content.links as item (item.href)}
-        <a class="action" href={item.href}>{item.label} <Icon name="arrow" size={16} /></a>
+        <a class="action" href={portalHref(item.href)}
+          >{item.label} <Icon name="arrow" size={16} /></a
+        >
       {/each}
     </div>
   </section>

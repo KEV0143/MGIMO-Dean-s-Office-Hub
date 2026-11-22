@@ -1,4 +1,5 @@
 <script lang="ts">
+  import { portalHref } from '#shared/portal-paths.ts';
   let {
     name,
     label,
@@ -15,7 +16,7 @@
     const controller = new AbortController();
     const timer = setTimeout(async () => {
       try {
-        const response = await fetch('/campus/places?q=' + encodeURIComponent(q), {
+        const response = await fetch(portalHref('/campus/places?q=' + encodeURIComponent(q)), {
           signal: controller.signal
         });
         if (response.ok) {

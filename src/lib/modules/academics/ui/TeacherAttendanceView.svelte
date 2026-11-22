@@ -1,4 +1,5 @@
 <script lang="ts">
+  import { portalHref } from '#shared/portal-paths.ts';
   import { enhance } from '$app/forms';
   import { attendanceLabels } from '../attendance.labels.ts';
   import type { AttendanceLesson, AttendanceStudent } from '../attendance.types.ts';
@@ -22,7 +23,7 @@
     <h1>Журнал посещаемости</h1>
     <p>Ваши завершённые занятия за последние 30 дней.</p>
   </div>
-  <a class="btn outline" href="/schedule">Расписание</a>
+  <a class="btn outline" href={portalHref('/schedule')}>Расписание</a>
 </div>
 <section class="panel">
   {#if journal.selected}

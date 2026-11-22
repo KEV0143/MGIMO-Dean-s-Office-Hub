@@ -1,4 +1,5 @@
 <script lang="ts">
+  import { portalHref } from '#shared/portal-paths.ts';
   import StaffOverviewHero from './StaffOverviewHero.svelte';
   import StaffOverviewMetrics from './StaffOverviewMetrics.svelte';
   import UpcomingLessons from './UpcomingLessons.svelte';
@@ -46,12 +47,12 @@
           заявлений определяются назначенной ролью.
         </p>
         <div class="admin-shortcuts">
-          <a href="/people"
+          <a href={portalHref('/people')}
             ><Icon name="users" /><strong>Учётные записи</strong><span>Состав и роли</span><Icon
               name="arrow"
               size={16}
             /></a
-          ><a href="/audit"
+          ><a href={portalHref('/audit')}
             ><Icon name="shield" /><strong>Журнал действий</strong><span>Прозрачная история</span
             ><Icon name="arrow" size={16} /></a
           >
