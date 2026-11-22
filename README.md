@@ -9,14 +9,15 @@
 <p align="center">
   <a href="#что-работает">Возможности</a> ·
   <a href="#запуск">Запуск</a> ·
-  <a href="site">Витрина для GitHub Pages</a> ·
+  <a href="https://kev0143.github.io/MGIMO-Dean-s-Office-Hub/">Демо на GitHub Pages</a> ·
+  <a href="#экраны">Экраны</a> ·
   <a href="docs/contest/demo-guide.md">Маршрут для жюри</a> ·
   <a href="#проверки">Проверки</a>
 </p>
 
 <p align="center">
-  <a href="site/assets/screenshots/today-desktop.webp">
-    <img src="site/assets/screenshots/today-desktop.webp" width="1080" alt="Главная студента: ближайшая пара, перенос и справки">
+  <a href="docs/assets/screenshots/today.webp">
+    <img src="docs/assets/screenshots/today.webp" width="1080" alt="Главная студента: ближайшая пара, перенос и справки">
   </a>
 </p>
 
@@ -25,6 +26,86 @@
 - **Перенос пары.** Уведомление открывает занятие с прежним и новым временем, причиной переноса и ссылкой на план МГИМО. Ссылка на занятие продолжает работать после повторного переноса.
 - **Справка.** Студент подаёт заявление, видит срок и отвечает на уточнение в карточке. Деканат видит просроченные заявки в начале очереди и выдаёт документ с QR для проверки.
 - **Учёба.** Расписание на неделю, экспорт в календарь, оценки, зачёты, посещаемость и напоминания об аттестациях. Преподаватель и деканат ведут учебные записи в пределах своих полномочий.
+
+## Экраны
+
+<table>
+  <tr>
+    <th align="left">Расписание на неделю</th>
+    <th align="left">Успеваемость по дисциплинам</th>
+  </tr>
+  <tr>
+    <td><a href="docs/assets/screenshots/schedule.webp"><img src="docs/assets/screenshots/schedule.webp" width="430" alt="Расписание на неделю"></a></td>
+    <td><a href="docs/assets/screenshots/grades.webp"><img src="docs/assets/screenshots/grades.webp" width="430" alt="Успеваемость по дисциплинам"></a></td>
+  </tr>
+</table>
+
+<details>
+<summary>Вход и выбор роли</summary>
+
+<table>
+  <tr>
+    <th align="left">Вход в кабинет</th>
+    <th align="left">Демонстрационные аккаунты студента и сотрудника</th>
+  </tr>
+  <tr>
+    <td><a href="docs/assets/screenshots/sign-in.webp"><img src="docs/assets/screenshots/sign-in.webp" width="430" alt="Вход в кабинет"></a></td>
+    <td><a href="docs/assets/screenshots/sign-in-roles.webp"><img src="docs/assets/screenshots/sign-in-roles.webp" width="430" alt="Демонстрационные аккаунты студента и сотрудника"></a></td>
+  </tr>
+</table>
+
+</details>
+
+<details>
+<summary>Заявления и помощник</summary>
+
+<table>
+  <tr>
+    <th align="left">Мои заявления</th>
+    <th align="left">Помощник и ближайшие занятия</th>
+  </tr>
+  <tr>
+    <td><a href="docs/assets/screenshots/requests.webp"><img src="docs/assets/screenshots/requests.webp" width="430" alt="Мои заявления"></a></td>
+    <td><a href="docs/assets/screenshots/assistant.webp"><img src="docs/assets/screenshots/assistant.webp" width="430" alt="Помощник и ближайшие занятия"></a></td>
+  </tr>
+</table>
+
+</details>
+
+<details>
+<summary>Объявления и уведомления</summary>
+
+<table>
+  <tr>
+    <th align="left">Объявления факультета</th>
+    <th align="left">Уведомления и напоминания</th>
+  </tr>
+  <tr>
+    <td><a href="docs/assets/screenshots/announcements.webp"><img src="docs/assets/screenshots/announcements.webp" width="430" alt="Объявления факультета"></a></td>
+    <td><a href="docs/assets/screenshots/notifications.webp"><img src="docs/assets/screenshots/notifications.webp" width="430" alt="Уведомления и напоминания"></a></td>
+  </tr>
+</table>
+
+</details>
+
+<details>
+<summary>Профиль и студенческий билет</summary>
+
+<table>
+  <tr>
+    <th align="left">Профиль и учебные сервисы</th>
+    <th align="left">Студенческий билет</th>
+  </tr>
+  <tr>
+    <td><a href="docs/assets/screenshots/profile.webp"><img src="docs/assets/screenshots/profile.webp" width="430" alt="Профиль и учебные сервисы"></a></td>
+    <td><a href="docs/assets/screenshots/student-card.webp"><img src="docs/assets/screenshots/student-card.webp" width="430" alt="Студенческий билет"></a></td>
+  </tr>
+</table>
+
+</details>
+
+<details>
+<summary>Мобильная версия</summary>
 
 <p align="center">
   <a href="site/assets/screenshots/campus-mobile.webp">
@@ -35,6 +116,8 @@
     <img src="site/assets/screenshots/request-status-mobile.webp" width="270" alt="Карточка справки со статусом и сроком ответа">
   </a>
 </p>
+
+</details>
 
 ## Запуск
 
