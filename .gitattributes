@@ -1,0 +1,5 @@
+* text=auto eol=lf
+# Migration files are compared with the checksums stored in PostgreSQL.
+db/migrations/*.sql text eol=lf
+# The PostgreSQL Docker image runs this script on Linux.
+*.sh text eol=lf

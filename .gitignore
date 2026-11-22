@@ -1,0 +1,33 @@
+# Dependencies and application builds
+node_modules/
+.svelte-kit/
+.output/
+.test-build/
+coverage/
+*.tsbuildinfo
+
+# Runtime, local environments and credentials
+/.local/
+.env*
+!.env.example
+*.env
+*.gguf
+*.log
+*.dump
+*.db
+*.pem
+*.key
+cookies*.txt
+
+# Local tooling and release files
+/.agent*
+/.session*
+/.claude/
+/.z-ai-config/
+/tool-results/
+prompt
+/*.zip
+/*.tar.gz
+.DS_Store
+Thumbs.db
+

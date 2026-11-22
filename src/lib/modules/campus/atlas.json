@@ -1,0 +1,6607 @@
+{
+ "plans": [
+  {
+   "id": "a-1",
+   "building": "Корпус А",
+   "floor": "1",
+   "label": "Корпус А, 1-й этаж"
+  },
+  {
+   "id": "a-2",
+   "building": "Корпус А",
+   "floor": "2",
+   "label": "Корпус А, 2-й этаж"
+  },
+  {
+   "id": "b-0",
+   "building": "Корпус Б",
+   "floor": "0",
+   "label": "Корпус Б, Цокольный этаж"
+  },
+  {
+   "id": "b-1",
+   "building": "Корпус Б",
+   "floor": "1",
+   "label": "Корпус Б, 1-й этаж"
+  },
+  {
+   "id": "b-2",
+   "building": "Корпус Б",
+   "floor": "2",
+   "label": "Корпус Б, 2-й этаж"
+  },
+  {
+   "id": "b-3",
+   "building": "Корпус Б",
+   "floor": "3",
+   "label": "Корпус Б, 3-й этаж"
+  },
+  {
+   "id": "b-4",
+   "building": "Корпус Б",
+   "floor": "4",
+   "label": "Корпус Б, 4-й этаж"
+  },
+  {
+   "id": "v-0",
+   "building": "Корпус В",
+   "floor": "0",
+   "label": "Корпус В, Цокольный этаж"
+  },
+  {
+   "id": "v-1",
+   "building": "Корпус В",
+   "floor": "1",
+   "label": "Корпус В, 1-й этаж"
+  },
+  {
+   "id": "v-2",
+   "building": "Корпус В",
+   "floor": "2",
+   "label": "Корпус В, 2-й этаж"
+  },
+  {
+   "id": "v-3",
+   "building": "Корпус В",
+   "floor": "3",
+   "label": "Корпус В, 3-й этаж"
+  },
+  {
+   "id": "v-4",
+   "building": "Корпус В",
+   "floor": "4",
+   "label": "Корпус В, 4-й этаж"
+  },
+  {
+   "id": "g-0",
+   "building": "Корпус Г",
+   "floor": "0",
+   "label": "Корпус Г, Цокольный этаж"
+  },
+  {
+   "id": "g-1",
+   "building": "Корпус Г",
+   "floor": "1",
+   "label": "Корпус Г, 1-й этаж"
+  },
+  {
+   "id": "g-2",
+   "building": "Корпус Г",
+   "floor": "2",
+   "label": "Корпус Г, 2-й этаж"
+  },
+  {
+   "id": "g-3",
+   "building": "Корпус Г",
+   "floor": "3",
+   "label": "Корпус Г, 3-й этаж"
+  },
+  {
+   "id": "g-4",
+   "building": "Корпус Г",
+   "floor": "4",
+   "label": "Корпус Г, 4-й этаж"
+  },
+  {
+   "id": "g-5",
+   "building": "Корпус Г",
+   "floor": "5",
+   "label": "Корпус Г, 5-й этаж"
+  },
+  {
+   "id": "g-6",
+   "building": "Корпус Г",
+   "floor": "6",
+   "label": "Корпус Г, 6-й этаж"
+  },
+  {
+   "id": "n-1",
+   "building": "Новый корпус",
+   "floor": "1",
+   "label": "Новый корпус, 1-й этаж"
+  },
+  {
+   "id": "n-2",
+   "building": "Новый корпус",
+   "floor": "2",
+   "label": "Новый корпус, 2-й этаж"
+  },
+  {
+   "id": "n-3",
+   "building": "Новый корпус",
+   "floor": "3",
+   "label": "Новый корпус, 3-й этаж"
+  },
+  {
+   "id": "n-4",
+   "building": "Новый корпус",
+   "floor": "4",
+   "label": "Новый корпус, 4-й этаж"
+  },
+  {
+   "id": "n-5",
+   "building": "Новый корпус",
+   "floor": "5",
+   "label": "Новый корпус, 5-й этаж"
+  },
+  {
+   "id": "l-0",
+   "building": "Библиотека",
+   "floor": "0",
+   "label": "Библиотека, Цокольный этаж"
+  },
+  {
+   "id": "l-1",
+   "building": "Библиотека",
+   "floor": "1",
+   "label": "Библиотека, 1-й этаж"
+  },
+  {
+   "id": "l-2",
+   "building": "Библиотека",
+   "floor": "2",
+   "label": "Библиотека, 2-й этаж"
+  },
+  {
+   "id": "l-3",
+   "building": "Библиотека",
+   "floor": "3",
+   "label": "Библиотека, Балкон над читальным залом"
+  },
+  {
+   "id": "d-1",
+   "building": "Столовая",
+   "floor": "1",
+   "label": "Столовая, 1-й этаж"
+  },
+  {
+   "id": "d-2",
+   "building": "Столовая",
+   "floor": "2",
+   "label": "Столовая, 2-й этаж"
+  },
+  {
+   "id": "d-3",
+   "building": "Столовая",
+   "floor": "3",
+   "label": "Столовая, 3-й этаж"
+  }
+ ],
+ "places": [
+  {
+   "id": "a-1.a1_dining_hall",
+   "plan": "a-1",
+   "label": "кафе Монте-Кристо",
+   "search": true
+  },
+  {
+   "id": "a-1.gard_a_1",
+   "plan": "a-1",
+   "label": "Гардероб",
+   "search": true
+  },
+  {
+   "id": "a-1.staircase_a_1_1",
+   "plan": "a-1",
+   "label": "Лестница",
+   "search": false
+  },
+  {
+   "id": "a-1.go_a1",
+   "plan": "a-1",
+   "label": "Вход в конференц-зал",
+   "search": true
+  },
+  {
+   "id": "a-1.go_a1_b1",
+   "plan": "a-1",
+   "label": "Переход в корпус Б (на 1-й этаж)",
+   "search": false
+  },
+  {
+   "id": "a-2.a14",
+   "plan": "a-2",
+   "label": "Аудитория 14",
+   "search": true
+  },
+  {
+   "id": "a-2.a14a",
+   "plan": "a-2",
+   "label": "Аудитория 14а",
+   "search": true
+  },
+  {
+   "id": "a-2.a14b",
+   "plan": "a-2",
+   "label": "Аудитория 14б",
+   "search": true
+  },
+  {
+   "id": "a-2.a14v",
+   "plan": "a-2",
+   "label": "Аудитория 14в",
+   "search": true
+  },
+  {
+   "id": "a-2.a14g",
+   "plan": "a-2",
+   "label": "Аудитория 14г",
+   "search": true
+  },
+  {
+   "id": "a-2.a230",
+   "plan": "a-2",
+   "label": "Аудитория 209к",
+   "search": true
+  },
+  {
+   "id": "a-2.a229",
+   "plan": "a-2",
+   "label": "208к (229)",
+   "search": true
+  },
+  {
+   "id": "a-2.a228",
+   "plan": "a-2",
+   "label": "-",
+   "search": true
+  },
+  {
+   "id": "a-2.a227",
+   "plan": "a-2",
+   "label": "Аудитория 207к",
+   "search": true
+  },
+  {
+   "id": "a-2.a226",
+   "plan": "a-2",
+   "label": "Аудитория 206к",
+   "search": true
+  },
+  {
+   "id": "a-2.a222",
+   "plan": "a-2",
+   "label": "Аудитория 202к",
+   "search": true
+  },
+  {
+   "id": "a-2.staircase_a_2_1",
+   "plan": "a-2",
+   "label": "Лестница",
+   "search": false
+  },
+  {
+   "id": "a-2.scene",
+   "plan": "a-2",
+   "label": "Сцена",
+   "search": true
+  },
+  {
+   "id": "a-2.go_a2_b1",
+   "plan": "a-2",
+   "label": "Переход в корпус Б (на 1-й этаж)",
+   "search": false
+  },
+  {
+   "id": "a-2.a_zal",
+   "plan": "a-2",
+   "label": "Конференц-зал",
+   "search": true
+  },
+  {
+   "id": "a-2.a2chess",
+   "plan": "a-2",
+   "label": "Аудитория 201к",
+   "search": true
+  },
+  {
+   "id": "b-0.go_enter_bc_1",
+   "plan": "b-0",
+   "label": "Вход «Дип.академия»",
+   "search": true
+  },
+  {
+   "id": "b-0.kafe_d_c_1",
+   "plan": "b-0",
+   "label": "Кафе Booffet",
+   "search": true
+  },
+  {
+   "id": "b-0.kafe_d_c_2",
+   "plan": "b-0",
+   "label": "Кафе Booffet, малый зал",
+   "search": true
+  },
+  {
+   "id": "b-0.bc18",
+   "plan": "b-0",
+   "label": "Гардероб",
+   "search": true
+  },
+  {
+   "id": "b-0.bc17",
+   "plan": "b-0",
+   "label": "Ц-017",
+   "search": true
+  },
+  {
+   "id": "b-0.bc15",
+   "plan": "b-0",
+   "label": "Ц-015",
+   "search": true
+  },
+  {
+   "id": "b-0.bc_14",
+   "plan": "b-0",
+   "label": "Ц-014",
+   "search": true
+  },
+  {
+   "id": "b-0.bc16",
+   "plan": "b-0",
+   "label": "Ц-016",
+   "search": true
+  },
+  {
+   "id": "b-0.bc13",
+   "plan": "b-0",
+   "label": "Ц-013",
+   "search": true
+  },
+  {
+   "id": "b-0.bc14",
+   "plan": "b-0",
+   "label": "БЦ-14",
+   "search": true
+  },
+  {
+   "id": "b-0.bc12",
+   "plan": "b-0",
+   "label": "БЦ-12",
+   "search": true
+  },
+  {
+   "id": "b-0.bc10",
+   "plan": "b-0",
+   "label": "БЦ-10",
+   "search": true
+  },
+  {
+   "id": "b-0.bc8",
+   "plan": "b-0",
+   "label": "БЦ-08",
+   "search": true
+  },
+  {
+   "id": "b-0.bc6",
+   "plan": "b-0",
+   "label": "БЦ-06",
+   "search": true
+  },
+  {
+   "id": "b-0.bc4b",
+   "plan": "b-0",
+   "label": "БЦ-02",
+   "search": true
+  },
+  {
+   "id": "b-0.bc7",
+   "plan": "b-0",
+   "label": "БЦ-07",
+   "search": true
+  },
+  {
+   "id": "b-0.bc5",
+   "plan": "b-0",
+   "label": "БЦ-05",
+   "search": true
+  },
+  {
+   "id": "b-0.bc3",
+   "plan": "b-0",
+   "label": "БЦ-03",
+   "search": true
+  },
+  {
+   "id": "b-0.bc1",
+   "plan": "b-0",
+   "label": "БЦ-01",
+   "search": true
+  },
+  {
+   "id": "b-0.bc19",
+   "plan": "b-0",
+   "label": "Ц-019",
+   "search": true
+  },
+  {
+   "id": "b-0.bc21",
+   "plan": "b-0",
+   "label": "Ц-021",
+   "search": true
+  },
+  {
+   "id": "b-0.bc22",
+   "plan": "b-0",
+   "label": "Ц-022",
+   "search": true
+  },
+  {
+   "id": "b-0.bc20",
+   "plan": "b-0",
+   "label": "Ц-020",
+   "search": true
+  },
+  {
+   "id": "b-0.bc23",
+   "plan": "b-0",
+   "label": "Ц-023",
+   "search": true
+  },
+  {
+   "id": "b-0.bc25",
+   "plan": "b-0",
+   "label": "Ц-025",
+   "search": true
+  },
+  {
+   "id": "b-0.bc27",
+   "plan": "b-0",
+   "label": "Ц-027",
+   "search": true
+  },
+  {
+   "id": "b-0.bc28",
+   "plan": "b-0",
+   "label": "Ц-028",
+   "search": true
+  },
+  {
+   "id": "b-0.bc30",
+   "plan": "b-0",
+   "label": "Ц-029",
+   "search": true
+  },
+  {
+   "id": "b-0.bc31",
+   "plan": "b-0",
+   "label": "Ц-031",
+   "search": true
+  },
+  {
+   "id": "b-0.bc33",
+   "plan": "b-0",
+   "label": "Ц-033",
+   "search": true
+  },
+  {
+   "id": "b-0.bc24",
+   "plan": "b-0",
+   "label": "Ц-024",
+   "search": true
+  },
+  {
+   "id": "b-0.bc26",
+   "plan": "b-0",
+   "label": "Ц-026",
+   "search": true
+  },
+  {
+   "id": "b-0.bc29",
+   "plan": "b-0",
+   "label": "Ц-030",
+   "search": true
+  },
+  {
+   "id": "b-0.bc32",
+   "plan": "b-0",
+   "label": "Ц-032",
+   "search": true
+  },
+  {
+   "id": "b-0.bc34",
+   "plan": "b-0",
+   "label": "Ц-034",
+   "search": true
+  },
+  {
+   "id": "b-0.staircase_b_c_1",
+   "plan": "b-0",
+   "label": "Лестница",
+   "search": false
+  },
+  {
+   "id": "b-0.lift_b_c_1",
+   "plan": "b-0",
+   "label": "Лифт",
+   "search": false
+  },
+  {
+   "id": "b-0.bc_17",
+   "plan": "b-0",
+   "label": "Ц-017 А,Б",
+   "search": true
+  },
+  {
+   "id": "b-1.1010",
+   "plan": "b-1",
+   "label": "Аудитория 1010",
+   "search": true
+  },
+  {
+   "id": "b-1.1011",
+   "plan": "b-1",
+   "label": "Аудитория 1011",
+   "search": true
+  },
+  {
+   "id": "b-1.1012",
+   "plan": "b-1",
+   "label": "Аудитория 1012",
+   "search": true
+  },
+  {
+   "id": "b-1.1013",
+   "plan": "b-1",
+   "label": "Аудитория 1013",
+   "search": true
+  },
+  {
+   "id": "b-1.1014",
+   "plan": "b-1",
+   "label": "Аудитория 1014",
+   "search": true
+  },
+  {
+   "id": "b-1.1015",
+   "plan": "b-1",
+   "label": "Аудитория 1015",
+   "search": true
+  },
+  {
+   "id": "b-1.1016",
+   "plan": "b-1",
+   "label": "Аудитория 1016",
+   "search": true
+  },
+  {
+   "id": "b-1.1017",
+   "plan": "b-1",
+   "label": "Аудитория 1017",
+   "search": true
+  },
+  {
+   "id": "b-1.1018",
+   "plan": "b-1",
+   "label": "Аудитория 1018",
+   "search": true
+  },
+  {
+   "id": "b-1.1019",
+   "plan": "b-1",
+   "label": "Аудитория 1019",
+   "search": true
+  },
+  {
+   "id": "b-1.1020",
+   "plan": "b-1",
+   "label": "Аудитория 1020",
+   "search": true
+  },
+  {
+   "id": "b-1.1021",
+   "plan": "b-1",
+   "label": "Аудитория 1021",
+   "search": true
+  },
+  {
+   "id": "b-1.1022",
+   "plan": "b-1",
+   "label": "Аудитория 1022",
+   "search": true
+  },
+  {
+   "id": "b-1.1023",
+   "plan": "b-1",
+   "label": "Аудитория 1023",
+   "search": true
+  },
+  {
+   "id": "b-1.1024",
+   "plan": "b-1",
+   "label": "Аудитория 1024",
+   "search": true
+  },
+  {
+   "id": "b-1.1025",
+   "plan": "b-1",
+   "label": "Аудитория 1025",
+   "search": true
+  },
+  {
+   "id": "b-1.1026",
+   "plan": "b-1",
+   "label": "Аудитория 1026",
+   "search": true
+  },
+  {
+   "id": "b-1.1027",
+   "plan": "b-1",
+   "label": "Аудитория 1027",
+   "search": true
+  },
+  {
+   "id": "b-1.1028",
+   "plan": "b-1",
+   "label": "Аудитория 1028",
+   "search": true
+  },
+  {
+   "id": "b-1.1029",
+   "plan": "b-1",
+   "label": "Аудитория 1029",
+   "search": true
+  },
+  {
+   "id": "b-1.1030",
+   "plan": "b-1",
+   "label": "Аудитория 1030",
+   "search": true
+  },
+  {
+   "id": "b-1.1031",
+   "plan": "b-1",
+   "label": "Аудитория 1031",
+   "search": true
+  },
+  {
+   "id": "b-1.1032",
+   "plan": "b-1",
+   "label": "Аудитория 1032",
+   "search": true
+  },
+  {
+   "id": "b-1.1034",
+   "plan": "b-1",
+   "label": "Аудитория 1034",
+   "search": true
+  },
+  {
+   "id": "b-1.1035",
+   "plan": "b-1",
+   "label": "Аудитория 1035",
+   "search": true
+  },
+  {
+   "id": "b-1.1036",
+   "plan": "b-1",
+   "label": "Аудитория 1036",
+   "search": true
+  },
+  {
+   "id": "b-1.1037",
+   "plan": "b-1",
+   "label": "Аудитория 1037",
+   "search": true
+  },
+  {
+   "id": "b-1.1038",
+   "plan": "b-1",
+   "label": "Аудитория 1038",
+   "search": true
+  },
+  {
+   "id": "b-1.1039",
+   "plan": "b-1",
+   "label": "Аудитория 1039",
+   "search": true
+  },
+  {
+   "id": "b-1.1041",
+   "plan": "b-1",
+   "label": "Аудитория 1041",
+   "search": true
+  },
+  {
+   "id": "b-1.1042",
+   "plan": "b-1",
+   "label": "Аудитория 1042",
+   "search": true
+  },
+  {
+   "id": "b-1.1043",
+   "plan": "b-1",
+   "label": "Аудитория 1043",
+   "search": true
+  },
+  {
+   "id": "b-1.1045",
+   "plan": "b-1",
+   "label": "Аудитория 1045",
+   "search": true
+  },
+  {
+   "id": "b-1.1046",
+   "plan": "b-1",
+   "label": "Аудитория 1046",
+   "search": true
+  },
+  {
+   "id": "b-1.1047",
+   "plan": "b-1",
+   "label": "Аудитория 1047",
+   "search": true
+  },
+  {
+   "id": "b-1.1048",
+   "plan": "b-1",
+   "label": "Аудитория 1048",
+   "search": true
+  },
+  {
+   "id": "b-1.1049",
+   "plan": "b-1",
+   "label": "Аудитория 1049",
+   "search": true
+  },
+  {
+   "id": "b-1.1050",
+   "plan": "b-1",
+   "label": "Аудитория 1050",
+   "search": true
+  },
+  {
+   "id": "b-1.1051",
+   "plan": "b-1",
+   "label": "Аудитория 1051",
+   "search": true
+  },
+  {
+   "id": "b-1.1052",
+   "plan": "b-1",
+   "label": "Аудитория 1052",
+   "search": true
+  },
+  {
+   "id": "b-1.1053",
+   "plan": "b-1",
+   "label": "Аудитория 1053",
+   "search": true
+  },
+  {
+   "id": "b-1.1054",
+   "plan": "b-1",
+   "label": "Аудитория 1054",
+   "search": true
+  },
+  {
+   "id": "b-1.1055",
+   "plan": "b-1",
+   "label": "Аудитория 1055",
+   "search": true
+  },
+  {
+   "id": "b-1.1056",
+   "plan": "b-1",
+   "label": "Аудитория 1056",
+   "search": true
+  },
+  {
+   "id": "b-1.1057",
+   "plan": "b-1",
+   "label": "Аудитория 1057",
+   "search": true
+  },
+  {
+   "id": "b-1.1058",
+   "plan": "b-1",
+   "label": "Аудитория 1058",
+   "search": true
+  },
+  {
+   "id": "b-1.1059",
+   "plan": "b-1",
+   "label": "Аудитория 1059",
+   "search": true
+  },
+  {
+   "id": "b-1.1060",
+   "plan": "b-1",
+   "label": "Аудитория 1060",
+   "search": true
+  },
+  {
+   "id": "b-1.1061",
+   "plan": "b-1",
+   "label": "Аудитория 1061",
+   "search": true
+  },
+  {
+   "id": "b-1.1062",
+   "plan": "b-1",
+   "label": "Аудитория 1062",
+   "search": true
+  },
+  {
+   "id": "b-1.1063",
+   "plan": "b-1",
+   "label": "Аудитория 1063",
+   "search": true
+  },
+  {
+   "id": "b-1.1064",
+   "plan": "b-1",
+   "label": "Аудитория 1064",
+   "search": true
+  },
+  {
+   "id": "b-1.1067",
+   "plan": "b-1",
+   "label": "Аудитория 1067",
+   "search": true
+  },
+  {
+   "id": "b-1.1068",
+   "plan": "b-1",
+   "label": "Аудитория 1068",
+   "search": true
+  },
+  {
+   "id": "b-1.1070",
+   "plan": "b-1",
+   "label": "Аудитория 1070",
+   "search": true
+  },
+  {
+   "id": "b-1.1071",
+   "plan": "b-1",
+   "label": "Аудитория 1071",
+   "search": true
+  },
+  {
+   "id": "b-1.1072",
+   "plan": "b-1",
+   "label": "Аудитория 1072",
+   "search": true
+  },
+  {
+   "id": "b-1.1073",
+   "plan": "b-1",
+   "label": "Аудитория 1073",
+   "search": true
+  },
+  {
+   "id": "b-1.1074",
+   "plan": "b-1",
+   "label": "Аудитория 1074",
+   "search": true
+  },
+  {
+   "id": "b-1.1075",
+   "plan": "b-1",
+   "label": "Аудитория 1075",
+   "search": true
+  },
+  {
+   "id": "b-1.1076",
+   "plan": "b-1",
+   "label": "Аудитория 1076",
+   "search": true
+  },
+  {
+   "id": "b-1.1077",
+   "plan": "b-1",
+   "label": "Аудитория 1077",
+   "search": true
+  },
+  {
+   "id": "b-1.1078",
+   "plan": "b-1",
+   "label": "Аудитория 1078",
+   "search": true
+  },
+  {
+   "id": "b-1.1079",
+   "plan": "b-1",
+   "label": "Аудитория 1079",
+   "search": true
+  },
+  {
+   "id": "b-1.1039b",
+   "plan": "b-1",
+   "label": "Аудитория 1040",
+   "search": true
+  },
+  {
+   "id": "b-1.1046b",
+   "plan": "b-1",
+   "label": "Аудитория 1044",
+   "search": true
+  },
+  {
+   "id": "b-1.1064b",
+   "plan": "b-1",
+   "label": "Аудитория 1066",
+   "search": true
+  },
+  {
+   "id": "b-1.1068b",
+   "plan": "b-1",
+   "label": "Аудитория 1069",
+   "search": true
+  },
+  {
+   "id": "b-1.staircase_b_1_1",
+   "plan": "b-1",
+   "label": "Лестница",
+   "search": false
+  },
+  {
+   "id": "b-1.lift_b_1_1",
+   "plan": "b-1",
+   "label": "Лифт",
+   "search": false
+  },
+  {
+   "id": "b-1.go_b1_a1",
+   "plan": "b-1",
+   "label": "Переход в корпус А (конференц- зал)",
+   "search": false
+  },
+  {
+   "id": "b-2.2009",
+   "plan": "b-2",
+   "label": "Аудитория 2009",
+   "search": true
+  },
+  {
+   "id": "b-2.2010",
+   "plan": "b-2",
+   "label": "Аудитория 2010",
+   "search": true
+  },
+  {
+   "id": "b-2.2011",
+   "plan": "b-2",
+   "label": "Аудитория 2011",
+   "search": true
+  },
+  {
+   "id": "b-2.2012",
+   "plan": "b-2",
+   "label": "Аудитория 2012",
+   "search": true
+  },
+  {
+   "id": "b-2.2013",
+   "plan": "b-2",
+   "label": "Аудитория 2013",
+   "search": true
+  },
+  {
+   "id": "b-2.2014",
+   "plan": "b-2",
+   "label": "Аудитория 2014",
+   "search": true
+  },
+  {
+   "id": "b-2.2015",
+   "plan": "b-2",
+   "label": "Аудитория 2015",
+   "search": true
+  },
+  {
+   "id": "b-2.2016",
+   "plan": "b-2",
+   "label": "Аудитория 2016",
+   "search": true
+  },
+  {
+   "id": "b-2.2017",
+   "plan": "b-2",
+   "label": "Аудитория 2017",
+   "search": true
+  },
+  {
+   "id": "b-2.2018",
+   "plan": "b-2",
+   "label": "Аудитория 2018",
+   "search": true
+  },
+  {
+   "id": "b-2.2019",
+   "plan": "b-2",
+   "label": "Аудитория 2019",
+   "search": true
+  },
+  {
+   "id": "b-2.2020",
+   "plan": "b-2",
+   "label": "Аудитория 2021",
+   "search": true
+  },
+  {
+   "id": "b-2.2022",
+   "plan": "b-2",
+   "label": "Аудитория 2022",
+   "search": true
+  },
+  {
+   "id": "b-2.2023",
+   "plan": "b-2",
+   "label": "Аудитория 2023",
+   "search": true
+  },
+  {
+   "id": "b-2.2024",
+   "plan": "b-2",
+   "label": "Аудитория 2024",
+   "search": true
+  },
+  {
+   "id": "b-2.2025",
+   "plan": "b-2",
+   "label": "Аудитория 2025",
+   "search": true
+  },
+  {
+   "id": "b-2.2026",
+   "plan": "b-2",
+   "label": "Аудитория 2026",
+   "search": true
+  },
+  {
+   "id": "b-2.2027",
+   "plan": "b-2",
+   "label": "Аудитория 2027",
+   "search": true
+  },
+  {
+   "id": "b-2.2028",
+   "plan": "b-2",
+   "label": "Аудитория 2028",
+   "search": true
+  },
+  {
+   "id": "b-2.2029",
+   "plan": "b-2",
+   "label": "Аудитория 2029",
+   "search": true
+  },
+  {
+   "id": "b-2.2030",
+   "plan": "b-2",
+   "label": "Аудитория 2030",
+   "search": true
+  },
+  {
+   "id": "b-2.2031",
+   "plan": "b-2",
+   "label": "Аудитория 2031",
+   "search": true
+  },
+  {
+   "id": "b-2.2032",
+   "plan": "b-2",
+   "label": "Аудитория 2032",
+   "search": true
+  },
+  {
+   "id": "b-2.2033",
+   "plan": "b-2",
+   "label": "Аудитория 2033",
+   "search": true
+  },
+  {
+   "id": "b-2.2034",
+   "plan": "b-2",
+   "label": "Аудитория 2034",
+   "search": true
+  },
+  {
+   "id": "b-2.2035",
+   "plan": "b-2",
+   "label": "Аудитория 2035",
+   "search": true
+  },
+  {
+   "id": "b-2.2036",
+   "plan": "b-2",
+   "label": "Аудитория 2036",
+   "search": true
+  },
+  {
+   "id": "b-2.2037",
+   "plan": "b-2",
+   "label": "Аудитория 2037",
+   "search": true
+  },
+  {
+   "id": "b-2.2039",
+   "plan": "b-2",
+   "label": "Аудитория 2039",
+   "search": true
+  },
+  {
+   "id": "b-2.2040",
+   "plan": "b-2",
+   "label": "Аудитория 2040",
+   "search": true
+  },
+  {
+   "id": "b-2.2041",
+   "plan": "b-2",
+   "label": "Аудитория 2041",
+   "search": true
+  },
+  {
+   "id": "b-2.2042",
+   "plan": "b-2",
+   "label": "Аудитория 2042",
+   "search": true
+  },
+  {
+   "id": "b-2.2043",
+   "plan": "b-2",
+   "label": "Аудитория 2043",
+   "search": true
+  },
+  {
+   "id": "b-2.2044",
+   "plan": "b-2",
+   "label": "Аудитория 2044",
+   "search": true
+  },
+  {
+   "id": "b-2.2045",
+   "plan": "b-2",
+   "label": "Аудитория 2045",
+   "search": true
+  },
+  {
+   "id": "b-2.2046",
+   "plan": "b-2",
+   "label": "Аудитория 2046",
+   "search": true
+  },
+  {
+   "id": "b-2.2047",
+   "plan": "b-2",
+   "label": "Аудитория 2047",
+   "search": true
+  },
+  {
+   "id": "b-2.2048",
+   "plan": "b-2",
+   "label": "Аудитория 2048",
+   "search": true
+  },
+  {
+   "id": "b-2.2049",
+   "plan": "b-2",
+   "label": "Аудитория 2049",
+   "search": true
+  },
+  {
+   "id": "b-2.2050",
+   "plan": "b-2",
+   "label": "Аудитория 2050",
+   "search": true
+  },
+  {
+   "id": "b-2.2051",
+   "plan": "b-2",
+   "label": "Аудитория 2051",
+   "search": true
+  },
+  {
+   "id": "b-2.2052",
+   "plan": "b-2",
+   "label": "Аудитория 2052",
+   "search": true
+  },
+  {
+   "id": "b-2.2053",
+   "plan": "b-2",
+   "label": "Аудитория 2053",
+   "search": true
+  },
+  {
+   "id": "b-2.2054",
+   "plan": "b-2",
+   "label": "Аудитория 2054",
+   "search": true
+  },
+  {
+   "id": "b-2.2055",
+   "plan": "b-2",
+   "label": "Аудитория 2055",
+   "search": true
+  },
+  {
+   "id": "b-2.2056",
+   "plan": "b-2",
+   "label": "Аудитория 2056",
+   "search": true
+  },
+  {
+   "id": "b-2.2057",
+   "plan": "b-2",
+   "label": "Аудитория 2057",
+   "search": true
+  },
+  {
+   "id": "b-2.2058",
+   "plan": "b-2",
+   "label": "Аудитория 2058",
+   "search": true
+  },
+  {
+   "id": "b-2.2059",
+   "plan": "b-2",
+   "label": "Аудитория 2059",
+   "search": true
+  },
+  {
+   "id": "b-2.2060",
+   "plan": "b-2",
+   "label": "Аудитория 2060",
+   "search": true
+  },
+  {
+   "id": "b-2.2061",
+   "plan": "b-2",
+   "label": "Аудитория 2061",
+   "search": true
+  },
+  {
+   "id": "b-2.2062",
+   "plan": "b-2",
+   "label": "Аудитория 2062",
+   "search": true
+  },
+  {
+   "id": "b-2.2063",
+   "plan": "b-2",
+   "label": "Аудитория 2063",
+   "search": true
+  },
+  {
+   "id": "b-2.2064",
+   "plan": "b-2",
+   "label": "Аудитория 2064",
+   "search": true
+  },
+  {
+   "id": "b-2.2065",
+   "plan": "b-2",
+   "label": "Аудитория 2065",
+   "search": true
+  },
+  {
+   "id": "b-2.2066",
+   "plan": "b-2",
+   "label": "Аудитория 2066",
+   "search": true
+  },
+  {
+   "id": "b-2.2067",
+   "plan": "b-2",
+   "label": "Аудитория 2067",
+   "search": true
+  },
+  {
+   "id": "b-2.2018a",
+   "plan": "b-2",
+   "label": "Аудитория 2018а",
+   "search": true
+  },
+  {
+   "id": "b-2.2022b",
+   "plan": "b-2",
+   "label": "Аудитория 2020",
+   "search": true
+  },
+  {
+   "id": "b-2.2033b",
+   "plan": "b-2",
+   "label": "Аудитория 2033а",
+   "search": true
+  },
+  {
+   "id": "b-2.2036a",
+   "plan": "b-2",
+   "label": "Аудитория 2036а",
+   "search": true
+  },
+  {
+   "id": "b-2.2040b",
+   "plan": "b-2",
+   "label": "Аудитория 2038",
+   "search": true
+  },
+  {
+   "id": "b-2.staircase_b_2_1",
+   "plan": "b-2",
+   "label": "Лестница",
+   "search": false
+  },
+  {
+   "id": "b-2.lift_b_2_1",
+   "plan": "b-2",
+   "label": "Лифт",
+   "search": false
+  },
+  {
+   "id": "b-2.go_b2_v2",
+   "plan": "b-2",
+   "label": "Корпус В (центральный)",
+   "search": false
+  },
+  {
+   "id": "b-2.go_b2_v2_2",
+   "plan": "b-2",
+   "label": "Переход в корпус В (центральный)",
+   "search": false
+  },
+  {
+   "id": "b-3.3014",
+   "plan": "b-3",
+   "label": "Аудитория 3014",
+   "search": true
+  },
+  {
+   "id": "b-3.3015",
+   "plan": "b-3",
+   "label": "Аудитория 3015",
+   "search": true
+  },
+  {
+   "id": "b-3.3016",
+   "plan": "b-3",
+   "label": "Аудитория 3016",
+   "search": true
+  },
+  {
+   "id": "b-3.3017",
+   "plan": "b-3",
+   "label": "Аудитория 3017",
+   "search": true
+  },
+  {
+   "id": "b-3.3018",
+   "plan": "b-3",
+   "label": "Аудитория 3018",
+   "search": true
+  },
+  {
+   "id": "b-3.3019",
+   "plan": "b-3",
+   "label": "Аудитория 3019",
+   "search": true
+  },
+  {
+   "id": "b-3.3020",
+   "plan": "b-3",
+   "label": "Аудитория 3020",
+   "search": true
+  },
+  {
+   "id": "b-3.3021",
+   "plan": "b-3",
+   "label": "Аудитория 3021",
+   "search": true
+  },
+  {
+   "id": "b-3.3022",
+   "plan": "b-3",
+   "label": "Аудитория 3022",
+   "search": true
+  },
+  {
+   "id": "b-3.3023",
+   "plan": "b-3",
+   "label": "Аудитория 3023",
+   "search": true
+  },
+  {
+   "id": "b-3.3024",
+   "plan": "b-3",
+   "label": "Аудитория 3024",
+   "search": true
+  },
+  {
+   "id": "b-3.3025",
+   "plan": "b-3",
+   "label": "Аудитория 3025",
+   "search": true
+  },
+  {
+   "id": "b-3.3026",
+   "plan": "b-3",
+   "label": "Аудитория 3026",
+   "search": true
+  },
+  {
+   "id": "b-3.3027",
+   "plan": "b-3",
+   "label": "Аудитория 3027",
+   "search": true
+  },
+  {
+   "id": "b-3.3028",
+   "plan": "b-3",
+   "label": "Аудитория 3028",
+   "search": true
+  },
+  {
+   "id": "b-3.3029",
+   "plan": "b-3",
+   "label": "Аудитория 3029",
+   "search": true
+  },
+  {
+   "id": "b-3.3030",
+   "plan": "b-3",
+   "label": "Аудитория 3030",
+   "search": true
+  },
+  {
+   "id": "b-3.3031",
+   "plan": "b-3",
+   "label": "Аудитория 3031",
+   "search": true
+  },
+  {
+   "id": "b-3.3032",
+   "plan": "b-3",
+   "label": "Аудитория 3032",
+   "search": true
+  },
+  {
+   "id": "b-3.3033",
+   "plan": "b-3",
+   "label": "Аудитория 3033",
+   "search": true
+  },
+  {
+   "id": "b-3.3034",
+   "plan": "b-3",
+   "label": "Аудитория 3034",
+   "search": true
+  },
+  {
+   "id": "b-3.3035",
+   "plan": "b-3",
+   "label": "Аудитория 3035",
+   "search": true
+  },
+  {
+   "id": "b-3.3036",
+   "plan": "b-3",
+   "label": "Аудитория 3036",
+   "search": true
+  },
+  {
+   "id": "b-3.3037",
+   "plan": "b-3",
+   "label": "Аудитория 3037",
+   "search": true
+  },
+  {
+   "id": "b-3.3038",
+   "plan": "b-3",
+   "label": "Аудитория 3038",
+   "search": true
+  },
+  {
+   "id": "b-3.3039",
+   "plan": "b-3",
+   "label": "Аудитория 3039",
+   "search": true
+  },
+  {
+   "id": "b-3.3041",
+   "plan": "b-3",
+   "label": "Аудитория 3041",
+   "search": true
+  },
+  {
+   "id": "b-3.3042",
+   "plan": "b-3",
+   "label": "Аудитория 3042",
+   "search": true
+  },
+  {
+   "id": "b-3.3043",
+   "plan": "b-3",
+   "label": "Аудитория 3043",
+   "search": true
+  },
+  {
+   "id": "b-3.3044",
+   "plan": "b-3",
+   "label": "Аудитория 3044",
+   "search": true
+  },
+  {
+   "id": "b-3.3045",
+   "plan": "b-3",
+   "label": "Аудитория 3045",
+   "search": true
+  },
+  {
+   "id": "b-3.3046",
+   "plan": "b-3",
+   "label": "Аудитория 3046",
+   "search": true
+  },
+  {
+   "id": "b-3.3047",
+   "plan": "b-3",
+   "label": "Аудитория 3047",
+   "search": true
+  },
+  {
+   "id": "b-3.3048",
+   "plan": "b-3",
+   "label": "Аудитория 3048",
+   "search": true
+  },
+  {
+   "id": "b-3.3049",
+   "plan": "b-3",
+   "label": "Аудитория 3049",
+   "search": true
+  },
+  {
+   "id": "b-3.3050",
+   "plan": "b-3",
+   "label": "Аудитория 3050",
+   "search": true
+  },
+  {
+   "id": "b-3.3051",
+   "plan": "b-3",
+   "label": "Аудитория 3051",
+   "search": true
+  },
+  {
+   "id": "b-3.3052",
+   "plan": "b-3",
+   "label": "Аудитория 3052",
+   "search": true
+  },
+  {
+   "id": "b-3.3053",
+   "plan": "b-3",
+   "label": "Аудитория 3053",
+   "search": true
+  },
+  {
+   "id": "b-3.3054",
+   "plan": "b-3",
+   "label": "Аудитория 3054",
+   "search": true
+  },
+  {
+   "id": "b-3.3055",
+   "plan": "b-3",
+   "label": "Аудитория 3055",
+   "search": true
+  },
+  {
+   "id": "b-3.3056",
+   "plan": "b-3",
+   "label": "Аудитория 3056",
+   "search": true
+  },
+  {
+   "id": "b-3.3057",
+   "plan": "b-3",
+   "label": "Аудитория 3057",
+   "search": true
+  },
+  {
+   "id": "b-3.3058",
+   "plan": "b-3",
+   "label": "Аудитория 3058",
+   "search": true
+  },
+  {
+   "id": "b-3.3059",
+   "plan": "b-3",
+   "label": "Аудитория 3059",
+   "search": true
+  },
+  {
+   "id": "b-3.3060",
+   "plan": "b-3",
+   "label": "Аудитория 3060",
+   "search": true
+  },
+  {
+   "id": "b-3.3061",
+   "plan": "b-3",
+   "label": "Аудитория 3061",
+   "search": true
+  },
+  {
+   "id": "b-3.3062",
+   "plan": "b-3",
+   "label": "Аудитория 3062",
+   "search": true
+  },
+  {
+   "id": "b-3.3063",
+   "plan": "b-3",
+   "label": "Аудитория 3063",
+   "search": true
+  },
+  {
+   "id": "b-3.3064",
+   "plan": "b-3",
+   "label": "Аудитория 3064",
+   "search": true
+  },
+  {
+   "id": "b-3.3065",
+   "plan": "b-3",
+   "label": "Аудитория 3065",
+   "search": true
+  },
+  {
+   "id": "b-3.3066",
+   "plan": "b-3",
+   "label": "Аудитория 3066",
+   "search": true
+  },
+  {
+   "id": "b-3.3067",
+   "plan": "b-3",
+   "label": "Аудитория 3067",
+   "search": true
+  },
+  {
+   "id": "b-3.3068",
+   "plan": "b-3",
+   "label": "Аудитория 3068",
+   "search": true
+  },
+  {
+   "id": "b-3.3070",
+   "plan": "b-3",
+   "label": "Аудитория 3070",
+   "search": true
+  },
+  {
+   "id": "b-3.3014a",
+   "plan": "b-3",
+   "label": "3014a",
+   "search": true
+  },
+  {
+   "id": "b-3.3022a",
+   "plan": "b-3",
+   "label": "3022a",
+   "search": true
+  },
+  {
+   "id": "b-3.3038a",
+   "plan": "b-3",
+   "label": "Аудитория 3038а",
+   "search": true
+  },
+  {
+   "id": "b-3.zal7",
+   "plan": "b-3",
+   "label": "Зал 7",
+   "search": true
+  },
+  {
+   "id": "b-3.3044b",
+   "plan": "b-3",
+   "label": "Аудитория 3040",
+   "search": true
+  },
+  {
+   "id": "b-3.3069b_b",
+   "plan": "b-3",
+   "label": "3069a",
+   "search": true
+  },
+  {
+   "id": "b-3.staircase_b_3_1",
+   "plan": "b-3",
+   "label": "Лестница",
+   "search": false
+  },
+  {
+   "id": "b-3.lift_b_3_1",
+   "plan": "b-3",
+   "label": "Лифт",
+   "search": false
+  },
+  {
+   "id": "b-3.go_b3_v3",
+   "plan": "b-3",
+   "label": "Корпус В (центральный)",
+   "search": false
+  },
+  {
+   "id": "b-3.go_b3_v3_2",
+   "plan": "b-3",
+   "label": "Переход в корпус В (центральный)",
+   "search": false
+  },
+  {
+   "id": "b-4.4012",
+   "plan": "b-4",
+   "label": "Аудитория 4012",
+   "search": true
+  },
+  {
+   "id": "b-4.4014",
+   "plan": "b-4",
+   "label": "Аудитория 4014",
+   "search": true
+  },
+  {
+   "id": "b-4.4015",
+   "plan": "b-4",
+   "label": "Аудитория 4015",
+   "search": true
+  },
+  {
+   "id": "b-4.4016",
+   "plan": "b-4",
+   "label": "Аудитория 4016",
+   "search": true
+  },
+  {
+   "id": "b-4.4017",
+   "plan": "b-4",
+   "label": "Аудитория 4017",
+   "search": true
+  },
+  {
+   "id": "b-4.4018",
+   "plan": "b-4",
+   "label": "Аудитория 4018",
+   "search": true
+  },
+  {
+   "id": "b-4.4019",
+   "plan": "b-4",
+   "label": "Аудитория 4019",
+   "search": true
+  },
+  {
+   "id": "b-4.4022",
+   "plan": "b-4",
+   "label": "Аудитория 4022",
+   "search": true
+  },
+  {
+   "id": "b-4.4023",
+   "plan": "b-4",
+   "label": "Аудитория 4023",
+   "search": true
+  },
+  {
+   "id": "b-4.4024",
+   "plan": "b-4",
+   "label": "Аудитория 4024",
+   "search": true
+  },
+  {
+   "id": "b-4.4025",
+   "plan": "b-4",
+   "label": "Аудитория 4025",
+   "search": true
+  },
+  {
+   "id": "b-4.4026",
+   "plan": "b-4",
+   "label": "Аудитория 4026",
+   "search": true
+  },
+  {
+   "id": "b-4.4027",
+   "plan": "b-4",
+   "label": "Аудитория 4027",
+   "search": true
+  },
+  {
+   "id": "b-4.4028",
+   "plan": "b-4",
+   "label": "Аудитория 4028",
+   "search": true
+  },
+  {
+   "id": "b-4.4029",
+   "plan": "b-4",
+   "label": "Аудитория 4029",
+   "search": true
+  },
+  {
+   "id": "b-4.4030",
+   "plan": "b-4",
+   "label": "Аудитория 4030",
+   "search": true
+  },
+  {
+   "id": "b-4.4031",
+   "plan": "b-4",
+   "label": "Аудитория 4031",
+   "search": true
+  },
+  {
+   "id": "b-4.4032",
+   "plan": "b-4",
+   "label": "Аудитория 4032",
+   "search": true
+  },
+  {
+   "id": "b-4.4033",
+   "plan": "b-4",
+   "label": "Аудитория 4033",
+   "search": true
+  },
+  {
+   "id": "b-4.4034",
+   "plan": "b-4",
+   "label": "Аудитория 4034",
+   "search": true
+  },
+  {
+   "id": "b-4.4035",
+   "plan": "b-4",
+   "label": "Аудитория 4035",
+   "search": true
+  },
+  {
+   "id": "b-4.4036",
+   "plan": "b-4",
+   "label": "Аудитория 4036",
+   "search": true
+  },
+  {
+   "id": "b-4.4037",
+   "plan": "b-4",
+   "label": "Аудитория 4037",
+   "search": true
+  },
+  {
+   "id": "b-4.4038",
+   "plan": "b-4",
+   "label": "Аудитория 4038",
+   "search": true
+  },
+  {
+   "id": "b-4.4043",
+   "plan": "b-4",
+   "label": "Аудитория 4043",
+   "search": true
+  },
+  {
+   "id": "b-4.4045",
+   "plan": "b-4",
+   "label": "Аудитория 4045",
+   "search": true
+  },
+  {
+   "id": "b-4.4046",
+   "plan": "b-4",
+   "label": "Аудитория 4046",
+   "search": true
+  },
+  {
+   "id": "b-4.4047",
+   "plan": "b-4",
+   "label": "Аудитория 4047",
+   "search": true
+  },
+  {
+   "id": "b-4.4048",
+   "plan": "b-4",
+   "label": "Аудитория 4048",
+   "search": true
+  },
+  {
+   "id": "b-4.4049",
+   "plan": "b-4",
+   "label": "Аудитория 4049",
+   "search": true
+  },
+  {
+   "id": "b-4.4050",
+   "plan": "b-4",
+   "label": "Аудитория 4050",
+   "search": true
+  },
+  {
+   "id": "b-4.4051",
+   "plan": "b-4",
+   "label": "Аудитория 4051",
+   "search": true
+  },
+  {
+   "id": "b-4.4053",
+   "plan": "b-4",
+   "label": "Аудитория 4053",
+   "search": true
+  },
+  {
+   "id": "b-4.4054",
+   "plan": "b-4",
+   "label": "Аудитория 4054",
+   "search": true
+  },
+  {
+   "id": "b-4.4056",
+   "plan": "b-4",
+   "label": "Аудитория 4056",
+   "search": true
+  },
+  {
+   "id": "b-4.4057",
+   "plan": "b-4",
+   "label": "Аудитория 4057",
+   "search": true
+  },
+  {
+   "id": "b-4.4058",
+   "plan": "b-4",
+   "label": "Аудитория 4058",
+   "search": true
+  },
+  {
+   "id": "b-4.4059",
+   "plan": "b-4",
+   "label": "Аудитория 4059",
+   "search": true
+  },
+  {
+   "id": "b-4.4060",
+   "plan": "b-4",
+   "label": "Аудитория 4060",
+   "search": true
+  },
+  {
+   "id": "b-4.4061",
+   "plan": "b-4",
+   "label": "Аудитория 4061",
+   "search": true
+  },
+  {
+   "id": "b-4.4062",
+   "plan": "b-4",
+   "label": "Аудитория 4062",
+   "search": true
+  },
+  {
+   "id": "b-4.4063",
+   "plan": "b-4",
+   "label": "Аудитория 4063",
+   "search": true
+  },
+  {
+   "id": "b-4.4064",
+   "plan": "b-4",
+   "label": "Аудитория 4064",
+   "search": true
+  },
+  {
+   "id": "b-4.4065",
+   "plan": "b-4",
+   "label": "Аудитория 4065",
+   "search": true
+  },
+  {
+   "id": "b-4.4066",
+   "plan": "b-4",
+   "label": "Аудитория 4066",
+   "search": true
+  },
+  {
+   "id": "b-4.4067",
+   "plan": "b-4",
+   "label": "Аудитория 4067",
+   "search": true
+  },
+  {
+   "id": "b-4.4068",
+   "plan": "b-4",
+   "label": "Аудитория 4068",
+   "search": true
+  },
+  {
+   "id": "b-4.4069",
+   "plan": "b-4",
+   "label": "Аудитория 4069",
+   "search": true
+  },
+  {
+   "id": "b-4.4011b",
+   "plan": "b-4",
+   "label": "Аудитория 4011",
+   "search": true
+  },
+  {
+   "id": "b-4.4026b",
+   "plan": "b-4",
+   "label": "Аудитория 4026а",
+   "search": true
+  },
+  {
+   "id": "b-4.4039b",
+   "plan": "b-4",
+   "label": "Аудитория 4039",
+   "search": true
+  },
+  {
+   "id": "b-4.zal7_1",
+   "plan": "b-4",
+   "label": "Лекционный зал 7 (второй ярус)",
+   "search": true
+  },
+  {
+   "id": "b-4.zal7_2b",
+   "plan": "b-4",
+   "label": "Аудитория 4040",
+   "search": true
+  },
+  {
+   "id": "b-4.4039a",
+   "plan": "b-4",
+   "label": "Аудитория 4039а",
+   "search": true
+  },
+  {
+   "id": "b-4.4041b",
+   "plan": "b-4",
+   "label": "Аудитория 4041",
+   "search": true
+  },
+  {
+   "id": "b-4.4042b",
+   "plan": "b-4",
+   "label": "Аудитория 4042",
+   "search": true
+  },
+  {
+   "id": "b-4.4044b",
+   "plan": "b-4",
+   "label": "Аудитория 4044",
+   "search": true
+  },
+  {
+   "id": "b-4.4059a",
+   "plan": "b-4",
+   "label": "4059a",
+   "search": true
+  },
+  {
+   "id": "b-4.4070b",
+   "plan": "b-4",
+   "label": "Аудитория 4070",
+   "search": true
+  },
+  {
+   "id": "b-4.4071b",
+   "plan": "b-4",
+   "label": "Аудитория 4071",
+   "search": true
+  },
+  {
+   "id": "b-4.4072b",
+   "plan": "b-4",
+   "label": "Аудитория 4072",
+   "search": true
+  },
+  {
+   "id": "b-4.staircase_b_4_1",
+   "plan": "b-4",
+   "label": "Лестница",
+   "search": false
+  },
+  {
+   "id": "b-4.lift_b_4_1",
+   "plan": "b-4",
+   "label": "Лифт",
+   "search": false
+  },
+  {
+   "id": "b-4.go_b4_zal",
+   "plan": "b-4",
+   "label": "Вход в Зал №4 со стороны корп. Б",
+   "search": false
+  },
+  {
+   "id": "b-4.go_b4_v4_2",
+   "plan": "b-4",
+   "label": "Переход в корпус В (центральный)",
+   "search": false
+  },
+  {
+   "id": "v-0.lift_v_c_2",
+   "plan": "v-0",
+   "label": "Лифт",
+   "search": false
+  },
+  {
+   "id": "v-0.staircase_v_c_3",
+   "plan": "v-0",
+   "label": "Лестница",
+   "search": false
+  },
+  {
+   "id": "v-0.vc_00",
+   "plan": "v-0",
+   "label": "ВЦ-00",
+   "search": true
+  },
+  {
+   "id": "v-0.vc_opmt",
+   "plan": "v-0",
+   "label": "Типография",
+   "search": true
+  },
+  {
+   "id": "v-1.1001",
+   "plan": "v-1",
+   "label": "Аудитория 1001",
+   "search": true
+  },
+  {
+   "id": "v-1.1002",
+   "plan": "v-1",
+   "label": "Офис ВТБ",
+   "search": true
+  },
+  {
+   "id": "v-1.1004",
+   "plan": "v-1",
+   "label": "Аудитория 1004",
+   "search": true
+  },
+  {
+   "id": "v-1.1005",
+   "plan": "v-1",
+   "label": "Аудитория 1005",
+   "search": true
+  },
+  {
+   "id": "v-1.1101",
+   "plan": "v-1",
+   "label": "Аудитория 1101",
+   "search": true
+  },
+  {
+   "id": "v-1.1104",
+   "plan": "v-1",
+   "label": "Аудитория 1104",
+   "search": true
+  },
+  {
+   "id": "v-1.1106",
+   "plan": "v-1",
+   "label": "Аудитория 1106",
+   "search": true
+  },
+  {
+   "id": "v-1.1107",
+   "plan": "v-1",
+   "label": "Аудитория 1107",
+   "search": true
+  },
+  {
+   "id": "v-1.1108",
+   "plan": "v-1",
+   "label": "Аудитория 1108",
+   "search": true
+  },
+  {
+   "id": "v-1.kafe_v_1_1",
+   "plan": "v-1",
+   "label": "Кафе «Город» (Broadway)",
+   "search": true
+  },
+  {
+   "id": "v-1.kafe_v_1_3",
+   "plan": "v-1",
+   "label": "Кафе «Фуршет.ру»",
+   "search": true
+  },
+  {
+   "id": "v-1.kafe_v_1_2",
+   "plan": "v-1",
+   "label": "Кафе «Ступенька»",
+   "search": true
+  },
+  {
+   "id": "v-1.zal_gl_1_1",
+   "plan": "v-1",
+   "label": "Зал 1",
+   "search": true
+  },
+  {
+   "id": "v-1.zal_gl_1_2",
+   "plan": "v-1",
+   "label": "Зал 2",
+   "search": true
+  },
+  {
+   "id": "v-1.v1_kiosk_l",
+   "plan": "v-1",
+   "label": "Аксессуары",
+   "search": true
+  },
+  {
+   "id": "v-1.v1_kiosk_r",
+   "plan": "v-1",
+   "label": "Оптика",
+   "search": true
+  },
+  {
+   "id": "v-1.1001b",
+   "plan": "v-1",
+   "label": "1001b",
+   "search": true
+  },
+  {
+   "id": "v-1.1005a",
+   "plan": "v-1",
+   "label": "1005a",
+   "search": true
+  },
+  {
+   "id": "v-1.1102b",
+   "plan": "v-1",
+   "label": "Аудитория 1102",
+   "search": true
+  },
+  {
+   "id": "v-1.1102bb",
+   "plan": "v-1",
+   "label": "1102bb",
+   "search": true
+  },
+  {
+   "id": "v-1.1103b",
+   "plan": "v-1",
+   "label": "Аудитория 1103",
+   "search": true
+  },
+  {
+   "id": "v-1.v168",
+   "plan": "v-1",
+   "label": "В-168",
+   "search": true
+  },
+  {
+   "id": "v-1.1101v",
+   "plan": "v-1",
+   "label": "Аудитория 1101в",
+   "search": true
+  },
+  {
+   "id": "v-1.v1ohr",
+   "plan": "v-1",
+   "label": "Комната охраны",
+   "search": true
+  },
+  {
+   "id": "v-1.staircase_v_1_3",
+   "plan": "v-1",
+   "label": "Лестница",
+   "search": false
+  },
+  {
+   "id": "v-1.lift_v_1_2",
+   "plan": "v-1",
+   "label": "Лифт",
+   "search": false
+  },
+  {
+   "id": "v-2.2001",
+   "plan": "v-2",
+   "label": "Аудитория 2001",
+   "search": true
+  },
+  {
+   "id": "v-2.2002",
+   "plan": "v-2",
+   "label": "Аудитория 2002",
+   "search": true
+  },
+  {
+   "id": "v-2.2003",
+   "plan": "v-2",
+   "label": "Аудитория 2003а",
+   "search": true
+  },
+  {
+   "id": "v-2.2004",
+   "plan": "v-2",
+   "label": "Аудитория 2004",
+   "search": true
+  },
+  {
+   "id": "v-2.2005",
+   "plan": "v-2",
+   "label": "Аудитория 2005",
+   "search": true
+  },
+  {
+   "id": "v-2.2006",
+   "plan": "v-2",
+   "label": "Аудитория 2006",
+   "search": true
+  },
+  {
+   "id": "v-2.2007",
+   "plan": "v-2",
+   "label": "Аудитория 2007",
+   "search": true
+  },
+  {
+   "id": "v-2.2008",
+   "plan": "v-2",
+   "label": "Аудитория 2008",
+   "search": true
+  },
+  {
+   "id": "v-2.2068",
+   "plan": "v-2",
+   "label": "Аудитория 2068",
+   "search": true
+  },
+  {
+   "id": "v-2.2069",
+   "plan": "v-2",
+   "label": "Аудитория 2069",
+   "search": true
+  },
+  {
+   "id": "v-2.2070",
+   "plan": "v-2",
+   "label": "Аудитория 2070",
+   "search": true
+  },
+  {
+   "id": "v-2.2071",
+   "plan": "v-2",
+   "label": "Аудитория 2071",
+   "search": true
+  },
+  {
+   "id": "v-2.2072",
+   "plan": "v-2",
+   "label": "Аудитория 2072",
+   "search": true
+  },
+  {
+   "id": "v-2.2073",
+   "plan": "v-2",
+   "label": "Аудитория 2073",
+   "search": true
+  },
+  {
+   "id": "v-2.2074",
+   "plan": "v-2",
+   "label": "Аудитория 2074",
+   "search": true
+  },
+  {
+   "id": "v-2.2075",
+   "plan": "v-2",
+   "label": "Аудитория 2075",
+   "search": true
+  },
+  {
+   "id": "v-2.2102",
+   "plan": "v-2",
+   "label": "Аудитория 2102",
+   "search": true
+  },
+  {
+   "id": "v-2.2103",
+   "plan": "v-2",
+   "label": "Аудитория 2103",
+   "search": true
+  },
+  {
+   "id": "v-2.2104",
+   "plan": "v-2",
+   "label": "Аудитория 2104",
+   "search": true
+  },
+  {
+   "id": "v-2.2105",
+   "plan": "v-2",
+   "label": "Аудитория 2105",
+   "search": true
+  },
+  {
+   "id": "v-2.2107",
+   "plan": "v-2",
+   "label": "Аудитория 2107",
+   "search": true
+  },
+  {
+   "id": "v-2.2108",
+   "plan": "v-2",
+   "label": "Аудитория 2108",
+   "search": true
+  },
+  {
+   "id": "v-2.2109",
+   "plan": "v-2",
+   "label": "Аудитория 2109",
+   "search": true
+  },
+  {
+   "id": "v-2.2113",
+   "plan": "v-2",
+   "label": "Аудитория 2113",
+   "search": true
+  },
+  {
+   "id": "v-2.2114",
+   "plan": "v-2",
+   "label": "Аудитория 2114",
+   "search": true
+  },
+  {
+   "id": "v-2.2172",
+   "plan": "v-2",
+   "label": "Аудитория 2172",
+   "search": true
+  },
+  {
+   "id": "v-2.2173",
+   "plan": "v-2",
+   "label": "Аудитория 2173",
+   "search": true
+  },
+  {
+   "id": "v-2.2174",
+   "plan": "v-2",
+   "label": "Аудитория 2174",
+   "search": true
+  },
+  {
+   "id": "v-2.2175",
+   "plan": "v-2",
+   "label": "Аудитория 2175",
+   "search": true
+  },
+  {
+   "id": "v-2.2176",
+   "plan": "v-2",
+   "label": "Аудитория 2176",
+   "search": true
+  },
+  {
+   "id": "v-2.2177",
+   "plan": "v-2",
+   "label": "Аудитория 2177",
+   "search": true
+  },
+  {
+   "id": "v-2.2178",
+   "plan": "v-2",
+   "label": "Аудитория 2178",
+   "search": true
+  },
+  {
+   "id": "v-2.2179",
+   "plan": "v-2",
+   "label": "Аудитория 2179",
+   "search": true
+  },
+  {
+   "id": "v-2.go_enter_v2",
+   "plan": "v-2",
+   "label": "Главный вход",
+   "search": true
+  },
+  {
+   "id": "v-2.go_enter_v2_2",
+   "plan": "v-2",
+   "label": "Вход с кампуса",
+   "search": true
+  },
+  {
+   "id": "v-2.go_v2_b2_2",
+   "plan": "v-2",
+   "label": "Корпус Б",
+   "search": false
+  },
+  {
+   "id": "v-2.go_v2_g2_2",
+   "plan": "v-2",
+   "label": "Корпус Г",
+   "search": false
+  },
+  {
+   "id": "v-2.go_v2_b2",
+   "plan": "v-2",
+   "label": "Переход в корпус Б",
+   "search": false
+  },
+  {
+   "id": "v-2.go_v2_g2",
+   "plan": "v-2",
+   "label": "Переход в корпус Г",
+   "search": false
+  },
+  {
+   "id": "v-2.2003a",
+   "plan": "v-2",
+   "label": "Аудитория 2003б",
+   "search": true
+  },
+  {
+   "id": "v-2.2003aa",
+   "plan": "v-2",
+   "label": "Аудитория 2003в",
+   "search": true
+  },
+  {
+   "id": "v-2.2005a",
+   "plan": "v-2",
+   "label": "2005a",
+   "search": true
+  },
+  {
+   "id": "v-2.2005aa",
+   "plan": "v-2",
+   "label": "Аудитория 2005б",
+   "search": true
+  },
+  {
+   "id": "v-2.2006a",
+   "plan": "v-2",
+   "label": "2006a",
+   "search": true
+  },
+  {
+   "id": "v-2.2006aa",
+   "plan": "v-2",
+   "label": "Аудитория 2006б",
+   "search": true
+  },
+  {
+   "id": "v-2.2007a",
+   "plan": "v-2",
+   "label": "2007a",
+   "search": true
+  },
+  {
+   "id": "v-2.2007aa",
+   "plan": "v-2",
+   "label": "Аудитория 2007б",
+   "search": true
+  },
+  {
+   "id": "v-2.2073a",
+   "plan": "v-2",
+   "label": "Аудитория 2073а",
+   "search": true
+  },
+  {
+   "id": "v-2.2074a",
+   "plan": "v-2",
+   "label": "Аудитория 2074а",
+   "search": true
+  },
+  {
+   "id": "v-2.2103b",
+   "plan": "v-2",
+   "label": "Аудитория 2101",
+   "search": true
+  },
+  {
+   "id": "v-2.2106b",
+   "plan": "v-2",
+   "label": "Аудитория 2106",
+   "search": true
+  },
+  {
+   "id": "v-2.2110b",
+   "plan": "v-2",
+   "label": "Аудитория 2110",
+   "search": true
+  },
+  {
+   "id": "v-2.2111b",
+   "plan": "v-2",
+   "label": "Аудитория 2111",
+   "search": true
+  },
+  {
+   "id": "v-2.2112b",
+   "plan": "v-2",
+   "label": "Аудитория 2112",
+   "search": true
+  },
+  {
+   "id": "v-2.2175a",
+   "plan": "v-2",
+   "label": "Аудитория 2175а",
+   "search": true
+  },
+  {
+   "id": "v-2.2175aa",
+   "plan": "v-2",
+   "label": "Аудитория 2175б",
+   "search": true
+  },
+  {
+   "id": "v-2.staircase_v_2_3",
+   "plan": "v-2",
+   "label": "Лестница",
+   "search": false
+  },
+  {
+   "id": "v-2.lift_v_2_2",
+   "plan": "v-2",
+   "label": "Лифт",
+   "search": false
+  },
+  {
+   "id": "v-3.3001",
+   "plan": "v-3",
+   "label": "Аудитория 3001",
+   "search": true
+  },
+  {
+   "id": "v-3.3002",
+   "plan": "v-3",
+   "label": "Аудитория 3002",
+   "search": true
+  },
+  {
+   "id": "v-3.3003",
+   "plan": "v-3",
+   "label": "Аудитория 3003",
+   "search": true
+  },
+  {
+   "id": "v-3.3004",
+   "plan": "v-3",
+   "label": "Аудитория 3004",
+   "search": true
+  },
+  {
+   "id": "v-3.3005",
+   "plan": "v-3",
+   "label": "Аудитория 3005",
+   "search": true
+  },
+  {
+   "id": "v-3.3006",
+   "plan": "v-3",
+   "label": "Аудитория 3006",
+   "search": true
+  },
+  {
+   "id": "v-3.3007",
+   "plan": "v-3",
+   "label": "Аудитория 3007",
+   "search": true
+  },
+  {
+   "id": "v-3.3008",
+   "plan": "v-3",
+   "label": "Аудитория 3008",
+   "search": true
+  },
+  {
+   "id": "v-3.3009",
+   "plan": "v-3",
+   "label": "Аудитория 3009",
+   "search": true
+  },
+  {
+   "id": "v-3.3010",
+   "plan": "v-3",
+   "label": "Аудитория 3010",
+   "search": true
+  },
+  {
+   "id": "v-3.3011",
+   "plan": "v-3",
+   "label": "Аудитория 3011",
+   "search": true
+  },
+  {
+   "id": "v-3.3012",
+   "plan": "v-3",
+   "label": "Аудитория 3012",
+   "search": true
+  },
+  {
+   "id": "v-3.3013",
+   "plan": "v-3",
+   "label": "Аудитория 3013",
+   "search": true
+  },
+  {
+   "id": "v-3.3069",
+   "plan": "v-3",
+   "label": "Аудитория 3069",
+   "search": true
+  },
+  {
+   "id": "v-3.3071",
+   "plan": "v-3",
+   "label": "Аудитория 3071",
+   "search": true
+  },
+  {
+   "id": "v-3.3072",
+   "plan": "v-3",
+   "label": "Аудитория 3072",
+   "search": true
+  },
+  {
+   "id": "v-3.3073",
+   "plan": "v-3",
+   "label": "Аудитория 3073",
+   "search": true
+  },
+  {
+   "id": "v-3.3074",
+   "plan": "v-3",
+   "label": "Аудитория 3074",
+   "search": true
+  },
+  {
+   "id": "v-3.3075",
+   "plan": "v-3",
+   "label": "Аудитория 3075",
+   "search": true
+  },
+  {
+   "id": "v-3.3076",
+   "plan": "v-3",
+   "label": "Аудитория 3076",
+   "search": true
+  },
+  {
+   "id": "v-3.3077",
+   "plan": "v-3",
+   "label": "Аудитория 3077",
+   "search": true
+  },
+  {
+   "id": "v-3.3101",
+   "plan": "v-3",
+   "label": "Аудитория 3101",
+   "search": true
+  },
+  {
+   "id": "v-3.3102",
+   "plan": "v-3",
+   "label": "Аудитория 3102",
+   "search": true
+  },
+  {
+   "id": "v-3.3103",
+   "plan": "v-3",
+   "label": "Аудитория 3103",
+   "search": true
+  },
+  {
+   "id": "v-3.3104",
+   "plan": "v-3",
+   "label": "Аудитория 3104",
+   "search": true
+  },
+  {
+   "id": "v-3.3105",
+   "plan": "v-3",
+   "label": "Аудитория 3105",
+   "search": true
+  },
+  {
+   "id": "v-3.3106",
+   "plan": "v-3",
+   "label": "Аудитория 3106",
+   "search": true
+  },
+  {
+   "id": "v-3.3107",
+   "plan": "v-3",
+   "label": "Аудитория 3107",
+   "search": true
+  },
+  {
+   "id": "v-3.3108",
+   "plan": "v-3",
+   "label": "Аудитория 3108",
+   "search": true
+  },
+  {
+   "id": "v-3.3109",
+   "plan": "v-3",
+   "label": "Аудитория 3109",
+   "search": true
+  },
+  {
+   "id": "v-3.3110",
+   "plan": "v-3",
+   "label": "Аудитория 3110",
+   "search": true
+  },
+  {
+   "id": "v-3.3111",
+   "plan": "v-3",
+   "label": "Аудитория 3111",
+   "search": true
+  },
+  {
+   "id": "v-3.3112",
+   "plan": "v-3",
+   "label": "Аудитория 3112",
+   "search": true
+  },
+  {
+   "id": "v-3.3113",
+   "plan": "v-3",
+   "label": "Аудитория 3113",
+   "search": true
+  },
+  {
+   "id": "v-3.3170",
+   "plan": "v-3",
+   "label": "Аудитория 3170",
+   "search": true
+  },
+  {
+   "id": "v-3.3171",
+   "plan": "v-3",
+   "label": "Аудитория 3171",
+   "search": true
+  },
+  {
+   "id": "v-3.3172",
+   "plan": "v-3",
+   "label": "Аудитория 3172",
+   "search": true
+  },
+  {
+   "id": "v-3.3173",
+   "plan": "v-3",
+   "label": "Аудитория 3173",
+   "search": true
+  },
+  {
+   "id": "v-3.go_v3_b3_2",
+   "plan": "v-3",
+   "label": "Корпус Б",
+   "search": false
+  },
+  {
+   "id": "v-3.go_v3_b3",
+   "plan": "v-3",
+   "label": "Переход в корпус Б",
+   "search": false
+  },
+  {
+   "id": "v-3.go_v3_g3",
+   "plan": "v-3",
+   "label": "Переход в корпус Г",
+   "search": false
+  },
+  {
+   "id": "v-3.3069b",
+   "plan": "v-3",
+   "label": "Аудитория 3070",
+   "search": true
+  },
+  {
+   "id": "v-3.3001b",
+   "plan": "v-3",
+   "label": "3001b",
+   "search": true
+  },
+  {
+   "id": "v-3.3001bb",
+   "plan": "v-3",
+   "label": "Кабинет ректора",
+   "search": true
+  },
+  {
+   "id": "v-3.3173a",
+   "plan": "v-3",
+   "label": "3173a",
+   "search": true
+  },
+  {
+   "id": "v-3.staircase_v_3_3",
+   "plan": "v-3",
+   "label": "Лестница",
+   "search": false
+  },
+  {
+   "id": "v-3.lift_v_3_2",
+   "plan": "v-3",
+   "label": "Лифт",
+   "search": false
+  },
+  {
+   "id": "v-4.4001",
+   "plan": "v-4",
+   "label": "Аудитория 4001",
+   "search": true
+  },
+  {
+   "id": "v-4.4002",
+   "plan": "v-4",
+   "label": "Аудитория 4002",
+   "search": true
+  },
+  {
+   "id": "v-4.4004",
+   "plan": "v-4",
+   "label": "Аудитория 4004",
+   "search": true
+  },
+  {
+   "id": "v-4.4005",
+   "plan": "v-4",
+   "label": "Аудитория 4005",
+   "search": true
+  },
+  {
+   "id": "v-4.4006",
+   "plan": "v-4",
+   "label": "Аудитория 4006",
+   "search": true
+  },
+  {
+   "id": "v-4.4008",
+   "plan": "v-4",
+   "label": "Аудитория 4008",
+   "search": true
+  },
+  {
+   "id": "v-4.4009",
+   "plan": "v-4",
+   "label": "Аудитория 4009",
+   "search": true
+  },
+  {
+   "id": "v-4.4010",
+   "plan": "v-4",
+   "label": "Аудитория 4010",
+   "search": true
+  },
+  {
+   "id": "v-4.4101",
+   "plan": "v-4",
+   "label": "Аудитория 4101",
+   "search": true
+  },
+  {
+   "id": "v-4.4102",
+   "plan": "v-4",
+   "label": "Аудитория 4102",
+   "search": true
+  },
+  {
+   "id": "v-4.4103",
+   "plan": "v-4",
+   "label": "Аудитория 4103",
+   "search": true
+  },
+  {
+   "id": "v-4.4104",
+   "plan": "v-4",
+   "label": "Аудитория 4104",
+   "search": true
+  },
+  {
+   "id": "v-4.4105",
+   "plan": "v-4",
+   "label": "Аудитория 4105",
+   "search": true
+  },
+  {
+   "id": "v-4.4106",
+   "plan": "v-4",
+   "label": "Аудитория 4106",
+   "search": true
+  },
+  {
+   "id": "v-4.4107",
+   "plan": "v-4",
+   "label": "Аудитория 4107",
+   "search": true
+  },
+  {
+   "id": "v-4.4108",
+   "plan": "v-4",
+   "label": "Аудитория 4108",
+   "search": true
+  },
+  {
+   "id": "v-4.4109",
+   "plan": "v-4",
+   "label": "Аудитория 4109",
+   "search": true
+  },
+  {
+   "id": "v-4.4110",
+   "plan": "v-4",
+   "label": "Аудитория 4110",
+   "search": true
+  },
+  {
+   "id": "v-4.4111",
+   "plan": "v-4",
+   "label": "Аудитория 4111",
+   "search": true
+  },
+  {
+   "id": "v-4.4112",
+   "plan": "v-4",
+   "label": "Аудитория 4112",
+   "search": true
+  },
+  {
+   "id": "v-4.4113",
+   "plan": "v-4",
+   "label": "Аудитория 4113",
+   "search": true
+  },
+  {
+   "id": "v-4.4114",
+   "plan": "v-4",
+   "label": "Аудитория 4114",
+   "search": true
+  },
+  {
+   "id": "v-4.go_zal4_b4",
+   "plan": "v-4",
+   "label": "Выход в корп. Б",
+   "search": false
+  },
+  {
+   "id": "v-4.go_zal6_g4",
+   "plan": "v-4",
+   "label": "Выход в корп. Г",
+   "search": false
+  },
+  {
+   "id": "v-4.go_v4_b4",
+   "plan": "v-4",
+   "label": "Переход в корпус Б",
+   "search": false
+  },
+  {
+   "id": "v-4.zal_v_4_3",
+   "plan": "v-4",
+   "label": "Зал 3",
+   "search": true
+  },
+  {
+   "id": "v-4.zal_v_4_4",
+   "plan": "v-4",
+   "label": "Зал 4",
+   "search": true
+  },
+  {
+   "id": "v-4.zal_v_4_5",
+   "plan": "v-4",
+   "label": "Зал 5",
+   "search": true
+  },
+  {
+   "id": "v-4.zal_v_4_6",
+   "plan": "v-4",
+   "label": "Зал 6",
+   "search": true
+  },
+  {
+   "id": "v-4.4001b",
+   "plan": "v-4",
+   "label": "тех. помещение",
+   "search": true
+  },
+  {
+   "id": "v-4.4002a",
+   "plan": "v-4",
+   "label": "4002-a,б",
+   "search": true
+  },
+  {
+   "id": "v-4.4003b",
+   "plan": "v-4",
+   "label": "Аудитория 4003",
+   "search": true
+  },
+  {
+   "id": "v-4.4007b",
+   "plan": "v-4",
+   "label": "Аудитория 4007",
+   "search": true
+  },
+  {
+   "id": "v-4.4102a",
+   "plan": "v-4",
+   "label": "Аудитория 4102а",
+   "search": true
+  },
+  {
+   "id": "v-4.4114a",
+   "plan": "v-4",
+   "label": "Аудитория 4114а",
+   "search": true
+  },
+  {
+   "id": "v-4.staircase_v_4_3",
+   "plan": "v-4",
+   "label": "Лестница",
+   "search": false
+  },
+  {
+   "id": "v-4.lift_v_4_2",
+   "plan": "v-4",
+   "label": "Лифт",
+   "search": false
+  },
+  {
+   "id": "g-0.gc01",
+   "plan": "g-0",
+   "label": "ГЦ-01",
+   "search": true
+  },
+  {
+   "id": "g-0.gc03",
+   "plan": "g-0",
+   "label": "ГЦ-03",
+   "search": true
+  },
+  {
+   "id": "g-0.gc05",
+   "plan": "g-0",
+   "label": "ГЦ-05",
+   "search": true
+  },
+  {
+   "id": "g-0.gc05a",
+   "plan": "g-0",
+   "label": "ГЦ-05А",
+   "search": true
+  },
+  {
+   "id": "g-0.gc01a",
+   "plan": "g-0",
+   "label": "ГЦ-01а",
+   "search": true
+  },
+  {
+   "id": "g-0.gc02",
+   "plan": "g-0",
+   "label": "ГЦ-02",
+   "search": true
+  },
+  {
+   "id": "g-0.gc04",
+   "plan": "g-0",
+   "label": "ГЦ-04",
+   "search": true
+  },
+  {
+   "id": "g-0.gc06",
+   "plan": "g-0",
+   "label": "ГЦ-06",
+   "search": true
+  },
+  {
+   "id": "g-0.gc08",
+   "plan": "g-0",
+   "label": "ГЦ-08",
+   "search": true
+  },
+  {
+   "id": "g-0.gc08b",
+   "plan": "g-0",
+   "label": "ГЦ-08б",
+   "search": true
+  },
+  {
+   "id": "g-0.gc14",
+   "plan": "g-0",
+   "label": "ГЦ-14",
+   "search": true
+  },
+  {
+   "id": "g-0.gc11",
+   "plan": "g-0",
+   "label": "ГЦ-11",
+   "search": true
+  },
+  {
+   "id": "g-0.gc20",
+   "plan": "g-0",
+   "label": "ГЦ-20",
+   "search": true
+  },
+  {
+   "id": "g-0.gc20a",
+   "plan": "g-0",
+   "label": "ГЦ-20а",
+   "search": true
+  },
+  {
+   "id": "g-0.gc21",
+   "plan": "g-0",
+   "label": "ГЦ-21а",
+   "search": true
+  },
+  {
+   "id": "g-0.gc22",
+   "plan": "g-0",
+   "label": "ГЦ-22",
+   "search": true
+  },
+  {
+   "id": "g-0.gc07",
+   "plan": "g-0",
+   "label": "ГЦ-07",
+   "search": true
+  },
+  {
+   "id": "g-0.gc09",
+   "plan": "g-0",
+   "label": "ГЦ-09",
+   "search": true
+  },
+  {
+   "id": "g-0.gc18",
+   "plan": "g-0",
+   "label": "ГЦ-18",
+   "search": true
+  },
+  {
+   "id": "g-0.gc18a",
+   "plan": "g-0",
+   "label": "ГЦ-18а",
+   "search": true
+  },
+  {
+   "id": "g-0.gc15",
+   "plan": "g-0",
+   "label": "ГЦ-15",
+   "search": true
+  },
+  {
+   "id": "g-0.gc19",
+   "plan": "g-0",
+   "label": "ГЦ-19",
+   "search": true
+  },
+  {
+   "id": "g-0.gc27",
+   "plan": "g-0",
+   "label": "ГЦ-27",
+   "search": true
+  },
+  {
+   "id": "g-0.gc35",
+   "plan": "g-0",
+   "label": "ГЦ-35",
+   "search": true
+  },
+  {
+   "id": "g-0.gc30",
+   "plan": "g-0",
+   "label": "ГЦ-30",
+   "search": true
+  },
+  {
+   "id": "g-0.gc28",
+   "plan": "g-0",
+   "label": "ГЦ-28",
+   "search": true
+  },
+  {
+   "id": "g-0.gc32",
+   "plan": "g-0",
+   "label": "ГЦ-34",
+   "search": true
+  },
+  {
+   "id": "g-0.gc32b",
+   "plan": "g-0",
+   "label": "ГЦ-32",
+   "search": true
+  },
+  {
+   "id": "g-0.gc32c",
+   "plan": "g-0",
+   "label": "ГЦ-33",
+   "search": true
+  },
+  {
+   "id": "g-0.gcx9",
+   "plan": "g-0",
+   "label": "Прием ная комис сия",
+   "search": true
+  },
+  {
+   "id": "g-0.go_enter_g1_2",
+   "plan": "g-0",
+   "label": "Вход для абитуриентов",
+   "search": true
+  },
+  {
+   "id": "g-0.gcx1",
+   "plan": "g-0",
+   "label": "ГЦ-39",
+   "search": true
+  },
+  {
+   "id": "g-0.gcx2",
+   "plan": "g-0",
+   "label": "ГЦ-34А",
+   "search": true
+  },
+  {
+   "id": "g-0.gcx3",
+   "plan": "g-0",
+   "label": "ЦПИ",
+   "search": true
+  },
+  {
+   "id": "g-0.gcx4",
+   "plan": "g-0",
+   "label": "ЦСАБ",
+   "search": true
+  },
+  {
+   "id": "g-0.staircase_g_c_3",
+   "plan": "g-0",
+   "label": "Лестница",
+   "search": false
+  },
+  {
+   "id": "g-0.lift_g_c_2",
+   "plan": "g-0",
+   "label": "Лифт",
+   "search": false
+  },
+  {
+   "id": "g-1.g_1_13a",
+   "plan": "g-1",
+   "label": "Аудитория 130А",
+   "search": true
+  },
+  {
+   "id": "g-1.g1_1",
+   "plan": "g-1",
+   "label": "Аудитория 1",
+   "search": true
+  },
+  {
+   "id": "g-1.g1_2",
+   "plan": "g-1",
+   "label": "Аудитория 2",
+   "search": true
+  },
+  {
+   "id": "g-1.g1_3",
+   "plan": "g-1",
+   "label": "Аудитория 3",
+   "search": true
+  },
+  {
+   "id": "g-1.g1_4",
+   "plan": "g-1",
+   "label": "Аудитория 4",
+   "search": true
+  },
+  {
+   "id": "g-1.g1_5",
+   "plan": "g-1",
+   "label": "Аудитория 5",
+   "search": true
+  },
+  {
+   "id": "g-1.g1_6",
+   "plan": "g-1",
+   "label": "Аудитория 6",
+   "search": true
+  },
+  {
+   "id": "g-1.g1_7",
+   "plan": "g-1",
+   "label": "Аудитория 7",
+   "search": true
+  },
+  {
+   "id": "g-1.g1_8",
+   "plan": "g-1",
+   "label": "Аудитория 8",
+   "search": true
+  },
+  {
+   "id": "g-1.g1_9",
+   "plan": "g-1",
+   "label": "Аудитория 9",
+   "search": true
+  },
+  {
+   "id": "g-1.g1_10",
+   "plan": "g-1",
+   "label": "Аудитория 10",
+   "search": true
+  },
+  {
+   "id": "g-1.g1_11",
+   "plan": "g-1",
+   "label": "Аудитория 11",
+   "search": true
+  },
+  {
+   "id": "g-1.g1_12",
+   "plan": "g-1",
+   "label": "Аудитория 12",
+   "search": true
+  },
+  {
+   "id": "g-1.g1_13",
+   "plan": "g-1",
+   "label": "Аудитория 13",
+   "search": true
+  },
+  {
+   "id": "g-1.g1_14",
+   "plan": "g-1",
+   "label": "Аудитория 14",
+   "search": true
+  },
+  {
+   "id": "g-1.g1_15",
+   "plan": "g-1",
+   "label": "Аудитория 15",
+   "search": true
+  },
+  {
+   "id": "g-1.g1_16c",
+   "plan": "g-1",
+   "label": "Аудитория 130",
+   "search": true
+  },
+  {
+   "id": "g-1.g1_137a",
+   "plan": "g-1",
+   "label": "Аудитория 137А",
+   "search": true
+  },
+  {
+   "id": "g-1.g1zs",
+   "plan": "g-1",
+   "label": "Зимний сад",
+   "search": true
+  },
+  {
+   "id": "g-1.g109",
+   "plan": "g-1",
+   "label": "Аудитория 109",
+   "search": true
+  },
+  {
+   "id": "g-1.g113",
+   "plan": "g-1",
+   "label": "Аудитория 113",
+   "search": true
+  },
+  {
+   "id": "g-1.g117",
+   "plan": "g-1",
+   "label": "Аудитория 117",
+   "search": true
+  },
+  {
+   "id": "g-1.g118",
+   "plan": "g-1",
+   "label": "Аудитория 118",
+   "search": true
+  },
+  {
+   "id": "g-1.g119",
+   "plan": "g-1",
+   "label": "Аудитория 119",
+   "search": true
+  },
+  {
+   "id": "g-1.g121",
+   "plan": "g-1",
+   "label": "Аудитория 121",
+   "search": true
+  },
+  {
+   "id": "g-1.g125",
+   "plan": "g-1",
+   "label": "Аудитория 125",
+   "search": true
+  },
+  {
+   "id": "g-1.g127",
+   "plan": "g-1",
+   "label": "Аудитория 127",
+   "search": true
+  },
+  {
+   "id": "g-1.g129",
+   "plan": "g-1",
+   "label": "Аудитория 129",
+   "search": true
+  },
+  {
+   "id": "g-1.g131",
+   "plan": "g-1",
+   "label": "Аудитория 131",
+   "search": true
+  },
+  {
+   "id": "g-1.g131b",
+   "plan": "g-1",
+   "label": "Г-114",
+   "search": true
+  },
+  {
+   "id": "g-1.g112",
+   "plan": "g-1",
+   "label": "Аудитория 112",
+   "search": true
+  },
+  {
+   "id": "g-1.g110",
+   "plan": "g-1",
+   "label": "Аудитория 110",
+   "search": true
+  },
+  {
+   "id": "g-1.g110a",
+   "plan": "g-1",
+   "label": "Аудитория 110а",
+   "search": true
+  },
+  {
+   "id": "g-1.g114",
+   "plan": "g-1",
+   "label": "Аудитория 114",
+   "search": true
+  },
+  {
+   "id": "g-1.g116",
+   "plan": "g-1",
+   "label": "Аудитория 116",
+   "search": true
+  },
+  {
+   "id": "g-1.g114b",
+   "plan": "g-1",
+   "label": "Аудитория 114б",
+   "search": true
+  },
+  {
+   "id": "g-1.g1180",
+   "plan": "g-1",
+   "label": "Аудитория 1180",
+   "search": true
+  },
+  {
+   "id": "g-1.g1182",
+   "plan": "g-1",
+   "label": "Аудитория 1182",
+   "search": true
+  },
+  {
+   "id": "g-1.g1183",
+   "plan": "g-1",
+   "label": "Аудитория 1183",
+   "search": true
+  },
+  {
+   "id": "g-1.g1184",
+   "plan": "g-1",
+   "label": "Аудитория 1184а",
+   "search": true
+  },
+  {
+   "id": "g-1.g1184b",
+   "plan": "g-1",
+   "label": "Аудитория 1184б",
+   "search": true
+  },
+  {
+   "id": "g-1.g124",
+   "plan": "g-1",
+   "label": "Г-124",
+   "search": true
+  },
+  {
+   "id": "g-1.g126",
+   "plan": "g-1",
+   "label": "Г-126",
+   "search": true
+  },
+  {
+   "id": "g-1.g128",
+   "plan": "g-1",
+   "label": "Г-128",
+   "search": true
+  },
+  {
+   "id": "g-1.g130",
+   "plan": "g-1",
+   "label": "Г-130",
+   "search": true
+  },
+  {
+   "id": "g-1.g132",
+   "plan": "g-1",
+   "label": "Г-132",
+   "search": true
+  },
+  {
+   "id": "g-1.g134",
+   "plan": "g-1",
+   "label": "Г-134",
+   "search": true
+  },
+  {
+   "id": "g-1.g139",
+   "plan": "g-1",
+   "label": "Военная кафедра",
+   "search": true
+  },
+  {
+   "id": "g-1.g141",
+   "plan": "g-1",
+   "label": "Г-141",
+   "search": true
+  },
+  {
+   "id": "g-1.g143",
+   "plan": "g-1",
+   "label": "Г-143",
+   "search": true
+  },
+  {
+   "id": "g-1.g145",
+   "plan": "g-1",
+   "label": "Г-145",
+   "search": true
+  },
+  {
+   "id": "g-1.g147",
+   "plan": "g-1",
+   "label": "Г-147",
+   "search": true
+  },
+  {
+   "id": "g-1.g149",
+   "plan": "g-1",
+   "label": "Г-149",
+   "search": true
+  },
+  {
+   "id": "g-1.g134c",
+   "plan": "g-1",
+   "label": "Штаб ГО",
+   "search": true
+  },
+  {
+   "id": "g-1.staircase_g_1_3",
+   "plan": "g-1",
+   "label": "Лестница",
+   "search": false
+  },
+  {
+   "id": "g-1.lift_g_1_2",
+   "plan": "g-1",
+   "label": "Лифт",
+   "search": false
+  },
+  {
+   "id": "g-1.go_enter_g1",
+   "plan": "g-1",
+   "label": "Вход в МИЭП и поликлинику",
+   "search": true
+  },
+  {
+   "id": "g-1.go_G1_food",
+   "plan": "g-1",
+   "label": "Переход в столовую (и далее в спорцентр и бассейн)",
+   "search": false
+  },
+  {
+   "id": "g-2.2115",
+   "plan": "g-2",
+   "label": "Аудитория 2115",
+   "search": true
+  },
+  {
+   "id": "g-2.2116",
+   "plan": "g-2",
+   "label": "Аудитория 2116",
+   "search": true
+  },
+  {
+   "id": "g-2.2117",
+   "plan": "g-2",
+   "label": "Аудитория 2117",
+   "search": true
+  },
+  {
+   "id": "g-2.2118",
+   "plan": "g-2",
+   "label": "Аудитория 2118",
+   "search": true
+  },
+  {
+   "id": "g-2.2119",
+   "plan": "g-2",
+   "label": "Аудитория 2119",
+   "search": true
+  },
+  {
+   "id": "g-2.2120",
+   "plan": "g-2",
+   "label": "Аудитория 2120",
+   "search": true
+  },
+  {
+   "id": "g-2.2121",
+   "plan": "g-2",
+   "label": "Аудитория 2121",
+   "search": true
+  },
+  {
+   "id": "g-2.2122",
+   "plan": "g-2",
+   "label": "Аудитория 2122",
+   "search": true
+  },
+  {
+   "id": "g-2.2123",
+   "plan": "g-2",
+   "label": "Аудитория 2123",
+   "search": true
+  },
+  {
+   "id": "g-2.2124",
+   "plan": "g-2",
+   "label": "Аудитория 2124",
+   "search": true
+  },
+  {
+   "id": "g-2.2125",
+   "plan": "g-2",
+   "label": "Аудитория 2125",
+   "search": true
+  },
+  {
+   "id": "g-2.2126",
+   "plan": "g-2",
+   "label": "Аудитория 2126",
+   "search": true
+  },
+  {
+   "id": "g-2.2127",
+   "plan": "g-2",
+   "label": "Аудитория 2127",
+   "search": true
+  },
+  {
+   "id": "g-2.2128",
+   "plan": "g-2",
+   "label": "Аудитория 2128",
+   "search": true
+  },
+  {
+   "id": "g-2.2129",
+   "plan": "g-2",
+   "label": "Аудитория 2129",
+   "search": true
+  },
+  {
+   "id": "g-2.2130",
+   "plan": "g-2",
+   "label": "Аудитория 2130",
+   "search": true
+  },
+  {
+   "id": "g-2.2131",
+   "plan": "g-2",
+   "label": "Аудитория 2131",
+   "search": true
+  },
+  {
+   "id": "g-2.2132",
+   "plan": "g-2",
+   "label": "Аудитория 2132",
+   "search": true
+  },
+  {
+   "id": "g-2.2133",
+   "plan": "g-2",
+   "label": "Аудитория 2133",
+   "search": true
+  },
+  {
+   "id": "g-2.2134",
+   "plan": "g-2",
+   "label": "Аудитория 2134",
+   "search": true
+  },
+  {
+   "id": "g-2.2135",
+   "plan": "g-2",
+   "label": "Аудитория 2135",
+   "search": true
+  },
+  {
+   "id": "g-2.2136",
+   "plan": "g-2",
+   "label": "Аудитория 2136",
+   "search": true
+  },
+  {
+   "id": "g-2.2137",
+   "plan": "g-2",
+   "label": "Аудитория 2137",
+   "search": true
+  },
+  {
+   "id": "g-2.2138",
+   "plan": "g-2",
+   "label": "Аудитория 2138",
+   "search": true
+  },
+  {
+   "id": "g-2.2139",
+   "plan": "g-2",
+   "label": "Аудитория 2139",
+   "search": true
+  },
+  {
+   "id": "g-2.2140",
+   "plan": "g-2",
+   "label": "Аудитория 2140",
+   "search": true
+  },
+  {
+   "id": "g-2.2141",
+   "plan": "g-2",
+   "label": "Аудитория 2141",
+   "search": true
+  },
+  {
+   "id": "g-2.2142",
+   "plan": "g-2",
+   "label": "Аудитория 2142",
+   "search": true
+  },
+  {
+   "id": "g-2.2143",
+   "plan": "g-2",
+   "label": "Аудитория 2143",
+   "search": true
+  },
+  {
+   "id": "g-2.2144",
+   "plan": "g-2",
+   "label": "Аудитория 2144",
+   "search": true
+  },
+  {
+   "id": "g-2.2145",
+   "plan": "g-2",
+   "label": "Аудитория 2145",
+   "search": true
+  },
+  {
+   "id": "g-2.2146",
+   "plan": "g-2",
+   "label": "Аудитория 2146",
+   "search": true
+  },
+  {
+   "id": "g-2.2147",
+   "plan": "g-2",
+   "label": "Аудитория 2147",
+   "search": true
+  },
+  {
+   "id": "g-2.2148",
+   "plan": "g-2",
+   "label": "Аудитория 2148",
+   "search": true
+  },
+  {
+   "id": "g-2.2149",
+   "plan": "g-2",
+   "label": "Аудитория 2149",
+   "search": true
+  },
+  {
+   "id": "g-2.2150",
+   "plan": "g-2",
+   "label": "Аудитория 2150",
+   "search": true
+  },
+  {
+   "id": "g-2.2151",
+   "plan": "g-2",
+   "label": "Аудитория 2151",
+   "search": true
+  },
+  {
+   "id": "g-2.2152",
+   "plan": "g-2",
+   "label": "Аудитория 2152",
+   "search": true
+  },
+  {
+   "id": "g-2.2153",
+   "plan": "g-2",
+   "label": "Аудитория 2153",
+   "search": true
+  },
+  {
+   "id": "g-2.2154",
+   "plan": "g-2",
+   "label": "Аудитория 2154",
+   "search": true
+  },
+  {
+   "id": "g-2.2155",
+   "plan": "g-2",
+   "label": "Аудитория 2155",
+   "search": true
+  },
+  {
+   "id": "g-2.2156",
+   "plan": "g-2",
+   "label": "Аудитория 2156",
+   "search": true
+  },
+  {
+   "id": "g-2.2157",
+   "plan": "g-2",
+   "label": "Аудитория 2157",
+   "search": true
+  },
+  {
+   "id": "g-2.2158",
+   "plan": "g-2",
+   "label": "Аудитория 2158",
+   "search": true
+  },
+  {
+   "id": "g-2.2159",
+   "plan": "g-2",
+   "label": "Аудитория 2159",
+   "search": true
+  },
+  {
+   "id": "g-2.2160",
+   "plan": "g-2",
+   "label": "Аудитория 2160",
+   "search": true
+  },
+  {
+   "id": "g-2.2161",
+   "plan": "g-2",
+   "label": "Аудитория 2161",
+   "search": true
+  },
+  {
+   "id": "g-2.2162",
+   "plan": "g-2",
+   "label": "Аудитория 2162",
+   "search": true
+  },
+  {
+   "id": "g-2.2163",
+   "plan": "g-2",
+   "label": "Аудитория 2163",
+   "search": true
+  },
+  {
+   "id": "g-2.2164",
+   "plan": "g-2",
+   "label": "Аудитория 2164",
+   "search": true
+  },
+  {
+   "id": "g-2.2165",
+   "plan": "g-2",
+   "label": "Аудитория 2165",
+   "search": true
+  },
+  {
+   "id": "g-2.2166",
+   "plan": "g-2",
+   "label": "Аудитория 2166",
+   "search": true
+  },
+  {
+   "id": "g-2.2167",
+   "plan": "g-2",
+   "label": "Аудитория 2167",
+   "search": true
+  },
+  {
+   "id": "g-2.2168",
+   "plan": "g-2",
+   "label": "Аудитория 2168",
+   "search": true
+  },
+  {
+   "id": "g-2.2169",
+   "plan": "g-2",
+   "label": "Аудитория 2169",
+   "search": true
+  },
+  {
+   "id": "g-2.2170",
+   "plan": "g-2",
+   "label": "Аудитория 2170",
+   "search": true
+  },
+  {
+   "id": "g-2.2171",
+   "plan": "g-2",
+   "label": "Аудитория 2171",
+   "search": true
+  },
+  {
+   "id": "g-2.2180",
+   "plan": "g-2",
+   "label": "2180 D",
+   "search": true
+  },
+  {
+   "id": "g-2.2181",
+   "plan": "g-2",
+   "label": "2180 F",
+   "search": true
+  },
+  {
+   "id": "g-2.2182",
+   "plan": "g-2",
+   "label": "2180 H",
+   "search": true
+  },
+  {
+   "id": "g-2.2184",
+   "plan": "g-2",
+   "label": "Аудитория 2184",
+   "search": true
+  },
+  {
+   "id": "g-2.2185",
+   "plan": "g-2",
+   "label": "2185 A,B,C",
+   "search": true
+  },
+  {
+   "id": "g-2.zal8",
+   "plan": "g-2",
+   "label": "Зал 8",
+   "search": true
+  },
+  {
+   "id": "g-2.2126b",
+   "plan": "g-2",
+   "label": "Г-216",
+   "search": true
+  },
+  {
+   "id": "g-2.2129b",
+   "plan": "g-2",
+   "label": "Г-218",
+   "search": true
+  },
+  {
+   "id": "g-2.staircase_g_2_3",
+   "plan": "g-2",
+   "label": "Лестница",
+   "search": false
+  },
+  {
+   "id": "g-2.lift_g_2_2",
+   "plan": "g-2",
+   "label": "Лифт",
+   "search": false
+  },
+  {
+   "id": "g-2.go_G2_V2_1",
+   "plan": "g-2",
+   "label": "Корпус В",
+   "search": false
+  },
+  {
+   "id": "g-2.go_G2_V2_2",
+   "plan": "g-2",
+   "label": "Переход в корпус В",
+   "search": false
+  },
+  {
+   "id": "g-2.go_G2_N3",
+   "plan": "g-2",
+   "label": "Переход в новый корпус (на 3-й этаж)",
+   "search": false
+  },
+  {
+   "id": "g-3.3114",
+   "plan": "g-3",
+   "label": "Аудитория 3114",
+   "search": true
+  },
+  {
+   "id": "g-3.3115",
+   "plan": "g-3",
+   "label": "Аудитория 3115",
+   "search": true
+  },
+  {
+   "id": "g-3.3116",
+   "plan": "g-3",
+   "label": "Аудитория 3116",
+   "search": true
+  },
+  {
+   "id": "g-3.3117",
+   "plan": "g-3",
+   "label": "Аудитория 3117",
+   "search": true
+  },
+  {
+   "id": "g-3.3118",
+   "plan": "g-3",
+   "label": "Аудитория 3118",
+   "search": true
+  },
+  {
+   "id": "g-3.3119",
+   "plan": "g-3",
+   "label": "Аудитория 3119",
+   "search": true
+  },
+  {
+   "id": "g-3.3120",
+   "plan": "g-3",
+   "label": "Аудитория 3120",
+   "search": true
+  },
+  {
+   "id": "g-3.3121",
+   "plan": "g-3",
+   "label": "Аудитория 3121",
+   "search": true
+  },
+  {
+   "id": "g-3.3122",
+   "plan": "g-3",
+   "label": "Аудитория 3122",
+   "search": true
+  },
+  {
+   "id": "g-3.3123",
+   "plan": "g-3",
+   "label": "Аудитория 3123",
+   "search": true
+  },
+  {
+   "id": "g-3.3124",
+   "plan": "g-3",
+   "label": "Аудитория 3124",
+   "search": true
+  },
+  {
+   "id": "g-3.3125",
+   "plan": "g-3",
+   "label": "Аудитория 3125",
+   "search": true
+  },
+  {
+   "id": "g-3.3126",
+   "plan": "g-3",
+   "label": "Аудитория 3126",
+   "search": true
+  },
+  {
+   "id": "g-3.3127",
+   "plan": "g-3",
+   "label": "Аудитория 3127",
+   "search": true
+  },
+  {
+   "id": "g-3.3128",
+   "plan": "g-3",
+   "label": "Аудитория 3128",
+   "search": true
+  },
+  {
+   "id": "g-3.3129",
+   "plan": "g-3",
+   "label": "Аудитория 3129",
+   "search": true
+  },
+  {
+   "id": "g-3.3130",
+   "plan": "g-3",
+   "label": "Аудитория 3130",
+   "search": true
+  },
+  {
+   "id": "g-3.3131",
+   "plan": "g-3",
+   "label": "Аудитория 3131",
+   "search": true
+  },
+  {
+   "id": "g-3.3132",
+   "plan": "g-3",
+   "label": "Аудитория 3132",
+   "search": true
+  },
+  {
+   "id": "g-3.3133",
+   "plan": "g-3",
+   "label": "Аудитория 3133",
+   "search": true
+  },
+  {
+   "id": "g-3.3134",
+   "plan": "g-3",
+   "label": "Аудитория 3134",
+   "search": true
+  },
+  {
+   "id": "g-3.3135",
+   "plan": "g-3",
+   "label": "Аудитория 3135",
+   "search": true
+  },
+  {
+   "id": "g-3.3136",
+   "plan": "g-3",
+   "label": "Аудитория 3136",
+   "search": true
+  },
+  {
+   "id": "g-3.3137",
+   "plan": "g-3",
+   "label": "Аудитория 3137",
+   "search": true
+  },
+  {
+   "id": "g-3.3138",
+   "plan": "g-3",
+   "label": "Аудитория 3138",
+   "search": true
+  },
+  {
+   "id": "g-3.3139",
+   "plan": "g-3",
+   "label": "Аудитория 3139",
+   "search": true
+  },
+  {
+   "id": "g-3.3140",
+   "plan": "g-3",
+   "label": "Аудитория 3140",
+   "search": true
+  },
+  {
+   "id": "g-3.3141",
+   "plan": "g-3",
+   "label": "Аудитория 3141",
+   "search": true
+  },
+  {
+   "id": "g-3.3142",
+   "plan": "g-3",
+   "label": "Аудитория 3142",
+   "search": true
+  },
+  {
+   "id": "g-3.3143",
+   "plan": "g-3",
+   "label": "Аудитория 3143",
+   "search": true
+  },
+  {
+   "id": "g-3.3144",
+   "plan": "g-3",
+   "label": "Аудитория 3144",
+   "search": true
+  },
+  {
+   "id": "g-3.3145",
+   "plan": "g-3",
+   "label": "Аудитория 3145",
+   "search": true
+  },
+  {
+   "id": "g-3.3146",
+   "plan": "g-3",
+   "label": "Аудитория 3146",
+   "search": true
+  },
+  {
+   "id": "g-3.3147",
+   "plan": "g-3",
+   "label": "Аудитория 3147",
+   "search": true
+  },
+  {
+   "id": "g-3.3148",
+   "plan": "g-3",
+   "label": "Аудитория 3148",
+   "search": true
+  },
+  {
+   "id": "g-3.3149",
+   "plan": "g-3",
+   "label": "Аудитория 3149",
+   "search": true
+  },
+  {
+   "id": "g-3.3150",
+   "plan": "g-3",
+   "label": "Аудитория 3150",
+   "search": true
+  },
+  {
+   "id": "g-3.3151",
+   "plan": "g-3",
+   "label": "Аудитория 3151",
+   "search": true
+  },
+  {
+   "id": "g-3.3152",
+   "plan": "g-3",
+   "label": "Аудитория 3152",
+   "search": true
+  },
+  {
+   "id": "g-3.3153",
+   "plan": "g-3",
+   "label": "Аудитория 3153",
+   "search": true
+  },
+  {
+   "id": "g-3.3154",
+   "plan": "g-3",
+   "label": "Аудитория 3154",
+   "search": true
+  },
+  {
+   "id": "g-3.3155",
+   "plan": "g-3",
+   "label": "Аудитория 3155",
+   "search": true
+  },
+  {
+   "id": "g-3.3156",
+   "plan": "g-3",
+   "label": "Аудитория 3156",
+   "search": true
+  },
+  {
+   "id": "g-3.3157",
+   "plan": "g-3",
+   "label": "Аудитория 3157",
+   "search": true
+  },
+  {
+   "id": "g-3.3158",
+   "plan": "g-3",
+   "label": "Аудитория 3158",
+   "search": true
+  },
+  {
+   "id": "g-3.3159",
+   "plan": "g-3",
+   "label": "Аудитория 3159",
+   "search": true
+  },
+  {
+   "id": "g-3.3160",
+   "plan": "g-3",
+   "label": "Аудитория 3160",
+   "search": true
+  },
+  {
+   "id": "g-3.3161",
+   "plan": "g-3",
+   "label": "Аудитория 3161",
+   "search": true
+  },
+  {
+   "id": "g-3.3162",
+   "plan": "g-3",
+   "label": "Аудитория 3162",
+   "search": true
+  },
+  {
+   "id": "g-3.3163",
+   "plan": "g-3",
+   "label": "Аудитория 3163",
+   "search": true
+  },
+  {
+   "id": "g-3.3164",
+   "plan": "g-3",
+   "label": "Аудитория 3164",
+   "search": true
+  },
+  {
+   "id": "g-3.3165",
+   "plan": "g-3",
+   "label": "Аудитория 3165",
+   "search": true
+  },
+  {
+   "id": "g-3.3166",
+   "plan": "g-3",
+   "label": "Аудитория 3166",
+   "search": true
+  },
+  {
+   "id": "g-3.3167",
+   "plan": "g-3",
+   "label": "Аудитория 3167",
+   "search": true
+  },
+  {
+   "id": "g-3.3168",
+   "plan": "g-3",
+   "label": "Аудитория 3168",
+   "search": true
+  },
+  {
+   "id": "g-3.3169",
+   "plan": "g-3",
+   "label": "Аудитория 3169",
+   "search": true
+  },
+  {
+   "id": "g-3.3133b",
+   "plan": "g-3",
+   "label": "Аудитория 3133а",
+   "search": true
+  },
+  {
+   "id": "g-3.g3x1",
+   "plan": "g-3",
+   "label": "Аудитория 3180",
+   "search": true
+  },
+  {
+   "id": "g-3.3159a",
+   "plan": "g-3",
+   "label": "Аудитория 3159а",
+   "search": true
+  },
+  {
+   "id": "g-3.staircase_g_3_3",
+   "plan": "g-3",
+   "label": "Лестница",
+   "search": false
+  },
+  {
+   "id": "g-3.lift_g_3_2",
+   "plan": "g-3",
+   "label": "Лифт",
+   "search": false
+  },
+  {
+   "id": "g-3.go_G3_V3",
+   "plan": "g-3",
+   "label": "Переход в корпус В",
+   "search": false
+  },
+  {
+   "id": "g-3.go_G3_N4",
+   "plan": "g-3",
+   "label": "Переход в новый корпус (на 4-й этаж)",
+   "search": false
+  },
+  {
+   "id": "g-4.4115",
+   "plan": "g-4",
+   "label": "Аудитория 4115",
+   "search": true
+  },
+  {
+   "id": "g-4.4116",
+   "plan": "g-4",
+   "label": "Аудитория 4116",
+   "search": true
+  },
+  {
+   "id": "g-4.4117",
+   "plan": "g-4",
+   "label": "Аудитория 4117",
+   "search": true
+  },
+  {
+   "id": "g-4.4118",
+   "plan": "g-4",
+   "label": "Аудитория 4118",
+   "search": true
+  },
+  {
+   "id": "g-4.4119",
+   "plan": "g-4",
+   "label": "Аудитория 4119",
+   "search": true
+  },
+  {
+   "id": "g-4.4120",
+   "plan": "g-4",
+   "label": "Аудитория 4120",
+   "search": true
+  },
+  {
+   "id": "g-4.4121",
+   "plan": "g-4",
+   "label": "Аудитория 4121",
+   "search": true
+  },
+  {
+   "id": "g-4.4122",
+   "plan": "g-4",
+   "label": "Аудитория 4122",
+   "search": true
+  },
+  {
+   "id": "g-4.4123",
+   "plan": "g-4",
+   "label": "Аудитория 4123",
+   "search": true
+  },
+  {
+   "id": "g-4.4124",
+   "plan": "g-4",
+   "label": "Аудитория 4124",
+   "search": true
+  },
+  {
+   "id": "g-4.4125",
+   "plan": "g-4",
+   "label": "Аудитория 4125",
+   "search": true
+  },
+  {
+   "id": "g-4.4126",
+   "plan": "g-4",
+   "label": "Аудитория 4126",
+   "search": true
+  },
+  {
+   "id": "g-4.4127",
+   "plan": "g-4",
+   "label": "Аудитория 4127",
+   "search": true
+  },
+  {
+   "id": "g-4.4128",
+   "plan": "g-4",
+   "label": "Аудитория 4128",
+   "search": true
+  },
+  {
+   "id": "g-4.4129",
+   "plan": "g-4",
+   "label": "Аудитория 4129",
+   "search": true
+  },
+  {
+   "id": "g-4.4130",
+   "plan": "g-4",
+   "label": "Аудитория 4130",
+   "search": true
+  },
+  {
+   "id": "g-4.4131",
+   "plan": "g-4",
+   "label": "Аудитория 4131",
+   "search": true
+  },
+  {
+   "id": "g-4.4132",
+   "plan": "g-4",
+   "label": "Аудитория 4132",
+   "search": true
+  },
+  {
+   "id": "g-4.4133",
+   "plan": "g-4",
+   "label": "Аудитория 4133",
+   "search": true
+  },
+  {
+   "id": "g-4.4134",
+   "plan": "g-4",
+   "label": "Аудитория 4134",
+   "search": true
+  },
+  {
+   "id": "g-4.4135",
+   "plan": "g-4",
+   "label": "Аудитория 4135",
+   "search": true
+  },
+  {
+   "id": "g-4.4136",
+   "plan": "g-4",
+   "label": "Аудитория 4136",
+   "search": true
+  },
+  {
+   "id": "g-4.4137",
+   "plan": "g-4",
+   "label": "Аудитория 4137",
+   "search": true
+  },
+  {
+   "id": "g-4.4138",
+   "plan": "g-4",
+   "label": "Аудитория 4138",
+   "search": true
+  },
+  {
+   "id": "g-4.4139",
+   "plan": "g-4",
+   "label": "Аудитория 4139",
+   "search": true
+  },
+  {
+   "id": "g-4.4140",
+   "plan": "g-4",
+   "label": "Аудитория 4140",
+   "search": true
+  },
+  {
+   "id": "g-4.4141",
+   "plan": "g-4",
+   "label": "Аудитория 4141",
+   "search": true
+  },
+  {
+   "id": "g-4.4142",
+   "plan": "g-4",
+   "label": "Аудитория 4142",
+   "search": true
+  },
+  {
+   "id": "g-4.4143",
+   "plan": "g-4",
+   "label": "Аудитория 4143",
+   "search": true
+  },
+  {
+   "id": "g-4.4144",
+   "plan": "g-4",
+   "label": "Аудитория 4144",
+   "search": true
+  },
+  {
+   "id": "g-4.4145",
+   "plan": "g-4",
+   "label": "Аудитория 4145",
+   "search": true
+  },
+  {
+   "id": "g-4.4146",
+   "plan": "g-4",
+   "label": "Аудитория 4146",
+   "search": true
+  },
+  {
+   "id": "g-4.4147",
+   "plan": "g-4",
+   "label": "Аудитория 4147 Зал 12",
+   "search": true
+  },
+  {
+   "id": "g-4.4148",
+   "plan": "g-4",
+   "label": "Аудитория 4148",
+   "search": true
+  },
+  {
+   "id": "g-4.4149",
+   "plan": "g-4",
+   "label": "Аудитория 4149",
+   "search": true
+  },
+  {
+   "id": "g-4.4150",
+   "plan": "g-4",
+   "label": "Аудитория 4150",
+   "search": true
+  },
+  {
+   "id": "g-4.4151",
+   "plan": "g-4",
+   "label": "Аудитория 4151",
+   "search": true
+  },
+  {
+   "id": "g-4.4152",
+   "plan": "g-4",
+   "label": "Аудитория 4152",
+   "search": true
+  },
+  {
+   "id": "g-4.4153",
+   "plan": "g-4",
+   "label": "Аудитория 4153",
+   "search": true
+  },
+  {
+   "id": "g-4.4154",
+   "plan": "g-4",
+   "label": "4154a",
+   "search": true
+  },
+  {
+   "id": "g-4.4155",
+   "plan": "g-4",
+   "label": "Аудитория 4155",
+   "search": true
+  },
+  {
+   "id": "g-4.4156",
+   "plan": "g-4",
+   "label": "Аудитория 4156",
+   "search": true
+  },
+  {
+   "id": "g-4.4157",
+   "plan": "g-4",
+   "label": "Аудитория 4157",
+   "search": true
+  },
+  {
+   "id": "g-4.4158",
+   "plan": "g-4",
+   "label": "Аудитория 4158",
+   "search": true
+  },
+  {
+   "id": "g-4.4159",
+   "plan": "g-4",
+   "label": "Аудитория 4159",
+   "search": true
+  },
+  {
+   "id": "g-4.4160",
+   "plan": "g-4",
+   "label": "Аудитория 4160",
+   "search": true
+  },
+  {
+   "id": "g-4.4161",
+   "plan": "g-4",
+   "label": "Аудитория 4161",
+   "search": true
+  },
+  {
+   "id": "g-4.4162",
+   "plan": "g-4",
+   "label": "Аудитория 4162",
+   "search": true
+  },
+  {
+   "id": "g-4.4163",
+   "plan": "g-4",
+   "label": "Аудитория 4163",
+   "search": true
+  },
+  {
+   "id": "g-4.4164",
+   "plan": "g-4",
+   "label": "Аудитория 4164",
+   "search": true
+  },
+  {
+   "id": "g-4.4165",
+   "plan": "g-4",
+   "label": "Аудитория 4165",
+   "search": true
+  },
+  {
+   "id": "g-4.4166",
+   "plan": "g-4",
+   "label": "Аудитория 4166",
+   "search": true
+  },
+  {
+   "id": "g-4.4180",
+   "plan": "g-4",
+   "label": "Аудитория 4180",
+   "search": true
+  },
+  {
+   "id": "g-4.4181",
+   "plan": "g-4",
+   "label": "Аудитория 4181",
+   "search": true
+  },
+  {
+   "id": "g-4.4182",
+   "plan": "g-4",
+   "label": "Аудитория 4182",
+   "search": true
+  },
+  {
+   "id": "g-4.4183",
+   "plan": "g-4",
+   "label": "Аудитория 4183",
+   "search": true
+  },
+  {
+   "id": "g-4.4184",
+   "plan": "g-4",
+   "label": "Аудитория 4184",
+   "search": true
+  },
+  {
+   "id": "g-4.zal9",
+   "plan": "g-4",
+   "label": "Зал 9",
+   "search": true
+  },
+  {
+   "id": "g-4.4130b",
+   "plan": "g-4",
+   "label": "4130b",
+   "search": true
+  },
+  {
+   "id": "g-4.4131b",
+   "plan": "g-4",
+   "label": "4131b",
+   "search": true
+  },
+  {
+   "id": "g-4.4154b",
+   "plan": "g-4",
+   "label": "Аудитория 4154",
+   "search": true
+  },
+  {
+   "id": "g-4.staircase_g_4_3",
+   "plan": "g-4",
+   "label": "Лестница",
+   "search": false
+  },
+  {
+   "id": "g-4.lift_g_4_2",
+   "plan": "g-4",
+   "label": "Лифт",
+   "search": false
+  },
+  {
+   "id": "g-4.go_G4_V4_1",
+   "plan": "g-4",
+   "label": "Вход в зал №6 со стороны корп. Г",
+   "search": false
+  },
+  {
+   "id": "g-4.go_G4_N5",
+   "plan": "g-4",
+   "label": "Переход в новый корпус (на 5-й этаж)",
+   "search": false
+  },
+  {
+   "id": "g-5.5180",
+   "plan": "g-5",
+   "label": "Аудитория 5180",
+   "search": true
+  },
+  {
+   "id": "g-5.5181",
+   "plan": "g-5",
+   "label": "Аудитория 5181",
+   "search": true
+  },
+  {
+   "id": "g-5.5182",
+   "plan": "g-5",
+   "label": "Аудитория 5182",
+   "search": true
+  },
+  {
+   "id": "g-5.5183",
+   "plan": "g-5",
+   "label": "Аудитория 5183",
+   "search": true
+  },
+  {
+   "id": "g-5.5184",
+   "plan": "g-5",
+   "label": "Аудитория 5184",
+   "search": true
+  },
+  {
+   "id": "g-5.staircase_g_5_2",
+   "plan": "g-5",
+   "label": "Лестница",
+   "search": false
+  },
+  {
+   "id": "g-5.lift_g_5_1",
+   "plan": "g-5",
+   "label": "Лифт",
+   "search": false
+  },
+  {
+   "id": "g-6.6180",
+   "plan": "g-6",
+   "label": "Аудитория 6180",
+   "search": true
+  },
+  {
+   "id": "g-6.lift_g_6_1",
+   "plan": "g-6",
+   "label": "Лифт",
+   "search": false
+  },
+  {
+   "id": "g-6.staircase_g_6_2",
+   "plan": "g-6",
+   "label": "Лестница",
+   "search": false
+  },
+  {
+   "id": "n-1.go_enter_n1",
+   "plan": "n-1",
+   "label": "Вход в приемную комиссию магистратуры",
+   "search": true
+  },
+  {
+   "id": "n-1.go_enter_n1-2",
+   "plan": "n-1",
+   "label": "Бюро пропусков",
+   "search": true
+  },
+  {
+   "id": "n-1.n124",
+   "plan": "n-1",
+   "label": "Кафе",
+   "search": true
+  },
+  {
+   "id": "n-1.n133b",
+   "plan": "n-1",
+   "label": "Гардероб",
+   "search": true
+  },
+  {
+   "id": "n-1.n139",
+   "plan": "n-1",
+   "label": "Гардероб",
+   "search": true
+  },
+  {
+   "id": "n-1.n101",
+   "plan": "n-1",
+   "label": "Гарде роб",
+   "search": true
+  },
+  {
+   "id": "n-1.n102",
+   "plan": "n-1",
+   "label": "Аудитория 102",
+   "search": true
+  },
+  {
+   "id": "n-1.n103",
+   "plan": "n-1",
+   "label": "Аудитория 103",
+   "search": true
+  },
+  {
+   "id": "n-1.n104",
+   "plan": "n-1",
+   "label": "Аудитория 104",
+   "search": true
+  },
+  {
+   "id": "n-1.n105",
+   "plan": "n-1",
+   "label": "Аудитория 105",
+   "search": true
+  },
+  {
+   "id": "n-1.n106",
+   "plan": "n-1",
+   "label": "Аудитория 106",
+   "search": true
+  },
+  {
+   "id": "n-1.n107",
+   "plan": "n-1",
+   "label": "Аудитория 107",
+   "search": true
+  },
+  {
+   "id": "n-1.n108",
+   "plan": "n-1",
+   "label": "Аудитория 108",
+   "search": true
+  },
+  {
+   "id": "n-1.n109",
+   "plan": "n-1",
+   "label": "Аудитория 109",
+   "search": true
+  },
+  {
+   "id": "n-1.n110",
+   "plan": "n-1",
+   "label": "Аудитория 110",
+   "search": true
+  },
+  {
+   "id": "n-1.n111",
+   "plan": "n-1",
+   "label": "Аудитория 111",
+   "search": true
+  },
+  {
+   "id": "n-1.n112",
+   "plan": "n-1",
+   "label": "Аудитория 112",
+   "search": true
+  },
+  {
+   "id": "n-1.n114",
+   "plan": "n-1",
+   "label": "Аудитория 114",
+   "search": true
+  },
+  {
+   "id": "n-1.n140",
+   "plan": "n-1",
+   "label": "Аудитория 140",
+   "search": true
+  },
+  {
+   "id": "n-1.n114b",
+   "plan": "n-1",
+   "label": "Аудитория 140б",
+   "search": true
+  },
+  {
+   "id": "n-1.n115",
+   "plan": "n-1",
+   "label": "Аудитория 115",
+   "search": true
+  },
+  {
+   "id": "n-1.n168",
+   "plan": "n-1",
+   "label": "Аудитория 168",
+   "search": true
+  },
+  {
+   "id": "n-1.n117",
+   "plan": "n-1",
+   "label": "Аудитория 117",
+   "search": true
+  },
+  {
+   "id": "n-1.n118",
+   "plan": "n-1",
+   "label": "Аудитория 118",
+   "search": true
+  },
+  {
+   "id": "n-1.n119",
+   "plan": "n-1",
+   "label": "Аудитория 119",
+   "search": true
+  },
+  {
+   "id": "n-1.n120",
+   "plan": "n-1",
+   "label": "Аудитория 120",
+   "search": true
+  },
+  {
+   "id": "n-1.n121",
+   "plan": "n-1",
+   "label": "Аудитория 121",
+   "search": true
+  },
+  {
+   "id": "n-1.n123",
+   "plan": "n-1",
+   "label": "Аудитория 123",
+   "search": true
+  },
+  {
+   "id": "n-1.n167",
+   "plan": "n-1",
+   "label": "Аудитория 167",
+   "search": true
+  },
+  {
+   "id": "n-1.n127",
+   "plan": "n-1",
+   "label": "Аудитория 127",
+   "search": true
+  },
+  {
+   "id": "n-1.n128",
+   "plan": "n-1",
+   "label": "Аудитория 128-129",
+   "search": true
+  },
+  {
+   "id": "n-1.n130",
+   "plan": "n-1",
+   "label": "Аудитория 130",
+   "search": true
+  },
+  {
+   "id": "n-1.n131",
+   "plan": "n-1",
+   "label": "Аудитория 131",
+   "search": true
+  },
+  {
+   "id": "n-1.n132",
+   "plan": "n-1",
+   "label": "Аудитория 132",
+   "search": true
+  },
+  {
+   "id": "n-1.n133",
+   "plan": "n-1",
+   "label": "Аудитория 133",
+   "search": true
+  },
+  {
+   "id": "n-1.n142",
+   "plan": "n-1",
+   "label": "Аудитория 142",
+   "search": true
+  },
+  {
+   "id": "n-1.n142a",
+   "plan": "n-1",
+   "label": "Аудитория 142а",
+   "search": true
+  },
+  {
+   "id": "n-1.staircase_n_1_1",
+   "plan": "n-1",
+   "label": "Лестница",
+   "search": false
+  },
+  {
+   "id": "n-1.lift_n_1_1",
+   "plan": "n-1",
+   "label": "Лифт",
+   "search": false
+  },
+  {
+   "id": "n-2.go_enter_n2",
+   "plan": "n-2",
+   "label": "Вход в корпус ЕУИ (новый корпус)",
+   "search": true
+  },
+  {
+   "id": "n-2.n201",
+   "plan": "n-2",
+   "label": "Аудитория 201",
+   "search": true
+  },
+  {
+   "id": "n-2.n202",
+   "plan": "n-2",
+   "label": "Аудитория 202",
+   "search": true
+  },
+  {
+   "id": "n-2.n203",
+   "plan": "n-2",
+   "label": "Аудитория 203",
+   "search": true
+  },
+  {
+   "id": "n-2.n204",
+   "plan": "n-2",
+   "label": "Аудитория 204",
+   "search": true
+  },
+  {
+   "id": "n-2.n205",
+   "plan": "n-2",
+   "label": "Аудитория 205",
+   "search": true
+  },
+  {
+   "id": "n-2.n206",
+   "plan": "n-2",
+   "label": "Аудитория 206",
+   "search": true
+  },
+  {
+   "id": "n-2.n207",
+   "plan": "n-2",
+   "label": "Аудитория 207",
+   "search": true
+  },
+  {
+   "id": "n-2.n208",
+   "plan": "n-2",
+   "label": "Аудитория 208",
+   "search": true
+  },
+  {
+   "id": "n-2.n209",
+   "plan": "n-2",
+   "label": "Аудитория 209",
+   "search": true
+  },
+  {
+   "id": "n-2.n210",
+   "plan": "n-2",
+   "label": "Аудитория 210",
+   "search": true
+  },
+  {
+   "id": "n-2.n211",
+   "plan": "n-2",
+   "label": "Аудитория 211",
+   "search": true
+  },
+  {
+   "id": "n-2.n212",
+   "plan": "n-2",
+   "label": "Аудитория 212",
+   "search": true
+  },
+  {
+   "id": "n-2.n213",
+   "plan": "n-2",
+   "label": "Аудитория 213",
+   "search": true
+  },
+  {
+   "id": "n-2.n214",
+   "plan": "n-2",
+   "label": "Аудитория 214",
+   "search": true
+  },
+  {
+   "id": "n-2.n215",
+   "plan": "n-2",
+   "label": "Аудитория 215",
+   "search": true
+  },
+  {
+   "id": "n-2.n216",
+   "plan": "n-2",
+   "label": "Аудитория 216",
+   "search": true
+  },
+  {
+   "id": "n-2.n216a",
+   "plan": "n-2",
+   "label": "216a",
+   "search": true
+  },
+  {
+   "id": "n-2.n217",
+   "plan": "n-2",
+   "label": "Аудитория 217",
+   "search": true
+  },
+  {
+   "id": "n-2.n218",
+   "plan": "n-2",
+   "label": "Аудитория 218",
+   "search": true
+  },
+  {
+   "id": "n-2.n219",
+   "plan": "n-2",
+   "label": "Аудитория 219",
+   "search": true
+  },
+  {
+   "id": "n-2.n220",
+   "plan": "n-2",
+   "label": "Аудитория 220",
+   "search": true
+  },
+  {
+   "id": "n-2.n221",
+   "plan": "n-2",
+   "label": "Аудитория 221",
+   "search": true
+  },
+  {
+   "id": "n-2.n222",
+   "plan": "n-2",
+   "label": "Аудитория 222",
+   "search": true
+  },
+  {
+   "id": "n-2.n223",
+   "plan": "n-2",
+   "label": "Аудитория 223",
+   "search": true
+  },
+  {
+   "id": "n-2.n224",
+   "plan": "n-2",
+   "label": "Аудитория 224",
+   "search": true
+  },
+  {
+   "id": "n-2.n225",
+   "plan": "n-2",
+   "label": "Аудитория 225",
+   "search": true
+  },
+  {
+   "id": "n-2.n226",
+   "plan": "n-2",
+   "label": "Аудитория 226",
+   "search": true
+  },
+  {
+   "id": "n-2.n227",
+   "plan": "n-2",
+   "label": "Аудитория 227",
+   "search": true
+  },
+  {
+   "id": "n-2.n228",
+   "plan": "n-2",
+   "label": "Аудитория 228",
+   "search": true
+  },
+  {
+   "id": "n-2.n229",
+   "plan": "n-2",
+   "label": "Аудитория 229",
+   "search": true
+  },
+  {
+   "id": "n-2.n230",
+   "plan": "n-2",
+   "label": "Аудитория 230",
+   "search": true
+  },
+  {
+   "id": "n-2.n231",
+   "plan": "n-2",
+   "label": "Аудитория 231",
+   "search": true
+  },
+  {
+   "id": "n-2.n232",
+   "plan": "n-2",
+   "label": "Аудитория 232",
+   "search": true
+  },
+  {
+   "id": "n-2.n233",
+   "plan": "n-2",
+   "label": "Аудитория 233",
+   "search": true
+  },
+  {
+   "id": "n-2.n235",
+   "plan": "n-2",
+   "label": "Аудитория 235",
+   "search": true
+  },
+  {
+   "id": "n-2.n236",
+   "plan": "n-2",
+   "label": "Аудитория 236",
+   "search": true
+  },
+  {
+   "id": "n-2.n240",
+   "plan": "n-2",
+   "label": "Аудитория 240",
+   "search": true
+  },
+  {
+   "id": "n-2.n241",
+   "plan": "n-2",
+   "label": "Аудитория 241",
+   "search": true
+  },
+  {
+   "id": "n-2.staircase_n_2_1",
+   "plan": "n-2",
+   "label": "Лестница",
+   "search": false
+  },
+  {
+   "id": "n-2.lift_n_2_1",
+   "plan": "n-2",
+   "label": "Лифт",
+   "search": false
+  },
+  {
+   "id": "n-3.n302",
+   "plan": "n-3",
+   "label": "Аудитория 302",
+   "search": true
+  },
+  {
+   "id": "n-3.n302a",
+   "plan": "n-3",
+   "label": "Аудитория 302а",
+   "search": true
+  },
+  {
+   "id": "n-3.n303",
+   "plan": "n-3",
+   "label": "Аудитория 303",
+   "search": true
+  },
+  {
+   "id": "n-3.n304",
+   "plan": "n-3",
+   "label": "Аудитория 304",
+   "search": true
+  },
+  {
+   "id": "n-3.n304a",
+   "plan": "n-3",
+   "label": "Аудитория 304а",
+   "search": true
+  },
+  {
+   "id": "n-3.n305",
+   "plan": "n-3",
+   "label": "Аудитория 305",
+   "search": true
+  },
+  {
+   "id": "n-3.n306",
+   "plan": "n-3",
+   "label": "Аудитория 306",
+   "search": true
+  },
+  {
+   "id": "n-3.n307",
+   "plan": "n-3",
+   "label": "Аудитория 307",
+   "search": true
+  },
+  {
+   "id": "n-3.n308",
+   "plan": "n-3",
+   "label": "308 · Кафедра международного частного и гражданского права",
+   "search": true
+  },
+  {
+   "id": "n-3.n309",
+   "plan": "n-3",
+   "label": "Аудитория 309",
+   "search": true
+  },
+  {
+   "id": "n-3.n310a",
+   "plan": "n-3",
+   "label": "Аудитория 310, 311, 312",
+   "search": true
+  },
+  {
+   "id": "n-3.n310",
+   "plan": "n-3",
+   "label": "Аудитория 310а",
+   "search": true
+  },
+  {
+   "id": "n-3.n313",
+   "plan": "n-3",
+   "label": "Аудитория 313",
+   "search": true
+  },
+  {
+   "id": "n-3.n314",
+   "plan": "n-3",
+   "label": "Зал 314",
+   "search": true
+  },
+  {
+   "id": "n-3.n315",
+   "plan": "n-3",
+   "label": "Зал 315",
+   "search": true
+  },
+  {
+   "id": "n-3.n316",
+   "plan": "n-3",
+   "label": "Аудитория 316",
+   "search": true
+  },
+  {
+   "id": "n-3.n317",
+   "plan": "n-3",
+   "label": "Аудитория 317",
+   "search": true
+  },
+  {
+   "id": "n-3.n318",
+   "plan": "n-3",
+   "label": "Аудитория 318- 318а",
+   "search": true
+  },
+  {
+   "id": "n-3.n319",
+   "plan": "n-3",
+   "label": "Аудитория 319-319а",
+   "search": true
+  },
+  {
+   "id": "n-3.n320a",
+   "plan": "n-3",
+   "label": "Аудитория 320а",
+   "search": true
+  },
+  {
+   "id": "n-3.n320",
+   "plan": "n-3",
+   "label": "Аудитория 320",
+   "search": true
+  },
+  {
+   "id": "n-3.n321",
+   "plan": "n-3",
+   "label": "Аудитория 321",
+   "search": true
+  },
+  {
+   "id": "n-3.n322",
+   "plan": "n-3",
+   "label": "Аудитория 322",
+   "search": true
+  },
+  {
+   "id": "n-3.n323",
+   "plan": "n-3",
+   "label": "Аудитория 323",
+   "search": true
+  },
+  {
+   "id": "n-3.n324",
+   "plan": "n-3",
+   "label": "Аудитория 324",
+   "search": true
+  },
+  {
+   "id": "n-3.n325",
+   "plan": "n-3",
+   "label": "Аудитория 325",
+   "search": true
+  },
+  {
+   "id": "n-3.n326",
+   "plan": "n-3",
+   "label": "Аудитория 326",
+   "search": true
+  },
+  {
+   "id": "n-3.n327",
+   "plan": "n-3",
+   "label": "Аудитория 327",
+   "search": true
+  },
+  {
+   "id": "n-3.n328",
+   "plan": "n-3",
+   "label": "Аудитория 328",
+   "search": true
+  },
+  {
+   "id": "n-3.n329",
+   "plan": "n-3",
+   "label": "Аудитория 329",
+   "search": true
+  },
+  {
+   "id": "n-3.n330",
+   "plan": "n-3",
+   "label": "Аудитория 330",
+   "search": true
+  },
+  {
+   "id": "n-3.n331",
+   "plan": "n-3",
+   "label": "Аудитория 331",
+   "search": true
+  },
+  {
+   "id": "n-3.staircase_n_3_1",
+   "plan": "n-3",
+   "label": "Лестница",
+   "search": false
+  },
+  {
+   "id": "n-3.lift_n_3_1",
+   "plan": "n-3",
+   "label": "Лифт",
+   "search": false
+  },
+  {
+   "id": "n-3.go_n3_g2",
+   "plan": "n-3",
+   "label": "Переход в корпус Г",
+   "search": false
+  },
+  {
+   "id": "n-4.n401",
+   "plan": "n-4",
+   "label": "Аудитория 401",
+   "search": true
+  },
+  {
+   "id": "n-4.n402",
+   "plan": "n-4",
+   "label": "402 · Кафедра английского языка № 8",
+   "search": true
+  },
+  {
+   "id": "n-4.n403",
+   "plan": "n-4",
+   "label": "Аудитория 403",
+   "search": true
+  },
+  {
+   "id": "n-4.n403a",
+   "plan": "n-4",
+   "label": "Аудитория 403а",
+   "search": true
+  },
+  {
+   "id": "n-4.n404",
+   "plan": "n-4",
+   "label": "Аудитория 404",
+   "search": true
+  },
+  {
+   "id": "n-4.n405",
+   "plan": "n-4",
+   "label": "Аудитория 405",
+   "search": true
+  },
+  {
+   "id": "n-4.n406",
+   "plan": "n-4",
+   "label": "Аудитория 406",
+   "search": true
+  },
+  {
+   "id": "n-4.n407",
+   "plan": "n-4",
+   "label": "Аудитория 407",
+   "search": true
+  },
+  {
+   "id": "n-4.n408",
+   "plan": "n-4",
+   "label": "Аудитория 408",
+   "search": true
+  },
+  {
+   "id": "n-4.n409",
+   "plan": "n-4",
+   "label": "Аудитория 409",
+   "search": true
+  },
+  {
+   "id": "n-4.n410",
+   "plan": "n-4",
+   "label": "Аудитория 410",
+   "search": true
+  },
+  {
+   "id": "n-4.n411",
+   "plan": "n-4",
+   "label": "Аудитория 411",
+   "search": true
+  },
+  {
+   "id": "n-4.n412",
+   "plan": "n-4",
+   "label": "Аудитория 412",
+   "search": true
+  },
+  {
+   "id": "n-4.n413",
+   "plan": "n-4",
+   "label": "Аудитория 413",
+   "search": true
+  },
+  {
+   "id": "n-4.n422",
+   "plan": "n-4",
+   "label": "Аудитория 422",
+   "search": true
+  },
+  {
+   "id": "n-4.n423",
+   "plan": "n-4",
+   "label": "Аудитория 423, Зал заседаний Ученого совета",
+   "search": true
+  },
+  {
+   "id": "n-4.n424",
+   "plan": "n-4",
+   "label": "Аудитория 424",
+   "search": true
+  },
+  {
+   "id": "n-4.n425",
+   "plan": "n-4",
+   "label": "Аудитория 425",
+   "search": true
+  },
+  {
+   "id": "n-4.n426",
+   "plan": "n-4",
+   "label": "Аудитория 426",
+   "search": true
+  },
+  {
+   "id": "n-4.n427",
+   "plan": "n-4",
+   "label": "Аудитория 427",
+   "search": true
+  },
+  {
+   "id": "n-4.n428",
+   "plan": "n-4",
+   "label": "Аудитория 428",
+   "search": true
+  },
+  {
+   "id": "n-4.n429",
+   "plan": "n-4",
+   "label": "Аудитория 429",
+   "search": true
+  },
+  {
+   "id": "n-4.n430",
+   "plan": "n-4",
+   "label": "Аудитория 430",
+   "search": true
+  },
+  {
+   "id": "n-4.n431",
+   "plan": "n-4",
+   "label": "Аудитория 431",
+   "search": true
+  },
+  {
+   "id": "n-4.n432",
+   "plan": "n-4",
+   "label": "Аудитория 432",
+   "search": true
+  },
+  {
+   "id": "n-4.n433",
+   "plan": "n-4",
+   "label": "Аудитория 433",
+   "search": true
+  },
+  {
+   "id": "n-4.n434",
+   "plan": "n-4",
+   "label": "Аудитория 434",
+   "search": true
+  },
+  {
+   "id": "n-4.n435",
+   "plan": "n-4",
+   "label": "Аудитория 435",
+   "search": true
+  },
+  {
+   "id": "n-4.n436",
+   "plan": "n-4",
+   "label": "Аудитория 436",
+   "search": true
+  },
+  {
+   "id": "n-4.n437",
+   "plan": "n-4",
+   "label": "Аудитория 437",
+   "search": true
+  },
+  {
+   "id": "n-4.n438",
+   "plan": "n-4",
+   "label": "Аудитория 438",
+   "search": true
+  },
+  {
+   "id": "n-4.n439",
+   "plan": "n-4",
+   "label": "Аудитория 439",
+   "search": true
+  },
+  {
+   "id": "n-4.n440",
+   "plan": "n-4",
+   "label": "Аудитория 440",
+   "search": true
+  },
+  {
+   "id": "n-4.n441",
+   "plan": "n-4",
+   "label": "Аудитория 441",
+   "search": true
+  },
+  {
+   "id": "n-4.n442",
+   "plan": "n-4",
+   "label": "Аудитория 442",
+   "search": true
+  },
+  {
+   "id": "n-4.n443",
+   "plan": "n-4",
+   "label": "Аудитория 443",
+   "search": true
+  },
+  {
+   "id": "n-4.n459",
+   "plan": "n-4",
+   "label": "Аудитория 459",
+   "search": true
+  },
+  {
+   "id": "n-4.n450",
+   "plan": "n-4",
+   "label": "Аудитория 450",
+   "search": true
+  },
+  {
+   "id": "n-4.n451",
+   "plan": "n-4",
+   "label": "Аудитория 451",
+   "search": true
+  },
+  {
+   "id": "n-4.n455",
+   "plan": "n-4",
+   "label": "Аудитория 455",
+   "search": true
+  },
+  {
+   "id": "n-4.n456",
+   "plan": "n-4",
+   "label": "Аудитория 456",
+   "search": true
+  },
+  {
+   "id": "n-4.staircase_n_4_1",
+   "plan": "n-4",
+   "label": "Лестница",
+   "search": false
+  },
+  {
+   "id": "n-4.lift_n_4_1",
+   "plan": "n-4",
+   "label": "Лифт",
+   "search": false
+  },
+  {
+   "id": "n-4.go_n4_g3",
+   "plan": "n-4",
+   "label": "Переход в корпус Г",
+   "search": false
+  },
+  {
+   "id": "n-5.n5balkon",
+   "plan": "n-5",
+   "label": "Балкон",
+   "search": true
+  },
+  {
+   "id": "n-5.n5_kafe",
+   "plan": "n-5",
+   "label": "Кафе",
+   "search": true
+  },
+  {
+   "id": "n-5.n501",
+   "plan": "n-5",
+   "label": "Аудитория 501",
+   "search": true
+  },
+  {
+   "id": "n-5.n502",
+   "plan": "n-5",
+   "label": "Аудитория 502",
+   "search": true
+  },
+  {
+   "id": "n-5.n503",
+   "plan": "n-5",
+   "label": "Аудитория 503",
+   "search": true
+  },
+  {
+   "id": "n-5.n503a",
+   "plan": "n-5",
+   "label": "Аудитория 503а",
+   "search": true
+  },
+  {
+   "id": "n-5.n504",
+   "plan": "n-5",
+   "label": "Аудитория 504",
+   "search": true
+  },
+  {
+   "id": "n-5.n505",
+   "plan": "n-5",
+   "label": "Аудитория 505",
+   "search": true
+  },
+  {
+   "id": "n-5.n506",
+   "plan": "n-5",
+   "label": "Аудитория 506",
+   "search": true
+  },
+  {
+   "id": "n-5.n507",
+   "plan": "n-5",
+   "label": "Аудитория 507",
+   "search": true
+  },
+  {
+   "id": "n-5.n508",
+   "plan": "n-5",
+   "label": "Аудитория 508",
+   "search": true
+  },
+  {
+   "id": "n-5.n509",
+   "plan": "n-5",
+   "label": "Аудитория 509",
+   "search": true
+  },
+  {
+   "id": "n-5.n510",
+   "plan": "n-5",
+   "label": "Аудитория 510",
+   "search": true
+  },
+  {
+   "id": "n-5.n511",
+   "plan": "n-5",
+   "label": "Аудитория 511",
+   "search": true
+  },
+  {
+   "id": "n-5.n512",
+   "plan": "n-5",
+   "label": "Аудитория 512",
+   "search": true
+  },
+  {
+   "id": "n-5.n513",
+   "plan": "n-5",
+   "label": "Аудитория 513",
+   "search": true
+  },
+  {
+   "id": "n-5.n516",
+   "plan": "n-5",
+   "label": "Аудитория 516",
+   "search": true
+  },
+  {
+   "id": "n-5.n517",
+   "plan": "n-5",
+   "label": "Аудитория 517",
+   "search": true
+  },
+  {
+   "id": "n-5.n518",
+   "plan": "n-5",
+   "label": "Аудитория 518",
+   "search": true
+  },
+  {
+   "id": "n-5.n519",
+   "plan": "n-5",
+   "label": "Аудитория 519",
+   "search": true
+  },
+  {
+   "id": "n-5.n547",
+   "plan": "n-5",
+   "label": "Аудитория 547",
+   "search": true
+  },
+  {
+   "id": "n-5.n520",
+   "plan": "n-5",
+   "label": "Аудитория 520",
+   "search": true
+  },
+  {
+   "id": "n-5.n521",
+   "plan": "n-5",
+   "label": "Аудитория 521",
+   "search": true
+  },
+  {
+   "id": "n-5.n522",
+   "plan": "n-5",
+   "label": "Аудитория 522",
+   "search": true
+  },
+  {
+   "id": "n-5.n523",
+   "plan": "n-5",
+   "label": "Аудитория 523",
+   "search": true
+  },
+  {
+   "id": "n-5.n524",
+   "plan": "n-5",
+   "label": "Аудитория 524",
+   "search": true
+  },
+  {
+   "id": "n-5.n525",
+   "plan": "n-5",
+   "label": "Аудитория 525",
+   "search": true
+  },
+  {
+   "id": "n-5.n526",
+   "plan": "n-5",
+   "label": "Аудитория 526",
+   "search": true
+  },
+  {
+   "id": "n-5.n527",
+   "plan": "n-5",
+   "label": "Аудитория 527",
+   "search": true
+  },
+  {
+   "id": "n-5.n528",
+   "plan": "n-5",
+   "label": "Аудитория 528",
+   "search": true
+  },
+  {
+   "id": "n-5.n529",
+   "plan": "n-5",
+   "label": "Аудитория 529",
+   "search": true
+  },
+  {
+   "id": "n-5.n530",
+   "plan": "n-5",
+   "label": "Аудитория 530",
+   "search": true
+  },
+  {
+   "id": "n-5.n531",
+   "plan": "n-5",
+   "label": "Аудитория 531",
+   "search": true
+  },
+  {
+   "id": "n-5.staircase_n_5_1",
+   "plan": "n-5",
+   "label": "Лестница",
+   "search": false
+  },
+  {
+   "id": "n-5.lift_n_5_1",
+   "plan": "n-5",
+   "label": "Лифт",
+   "search": false
+  },
+  {
+   "id": "n-5.go_n5_g4",
+   "plan": "n-5",
+   "label": "Переход в корпус Г",
+   "search": false
+  },
+  {
+   "id": "l-0.bibl_0_abonement",
+   "plan": "l-0",
+   "label": "Отдел абонементов",
+   "search": true
+  },
+  {
+   "id": "l-1.bibl_1_k1",
+   "plan": "l-1",
+   "label": "1",
+   "search": true
+  },
+  {
+   "id": "l-1.bibl_1_k2",
+   "plan": "l-1",
+   "label": "2",
+   "search": true
+  },
+  {
+   "id": "l-1.bibl_1_k3",
+   "plan": "l-1",
+   "label": "3",
+   "search": true
+  },
+  {
+   "id": "l-1.bibl_1_k4",
+   "plan": "l-1",
+   "label": "4",
+   "search": true
+  },
+  {
+   "id": "l-1.bibl_1_uslugi",
+   "plan": "l-1",
+   "label": "Отдел платных услуг",
+   "search": true
+  },
+  {
+   "id": "l-1.bibl_1_katalog",
+   "plan": "l-1",
+   "label": "Каталог",
+   "search": true
+  },
+  {
+   "id": "l-1.bibl_1_sxron",
+   "plan": "l-1",
+   "label": "Камера хранения",
+   "search": true
+  },
+  {
+   "id": "l-1.go_bibl_1",
+   "plan": "l-1",
+   "label": "Вход в библиотеку",
+   "search": true
+  },
+  {
+   "id": "l-2.bibl_2_comp1",
+   "plan": "l-2",
+   "label": "Информационный центр МП-факультета и ИЕП",
+   "search": true
+  },
+  {
+   "id": "l-2.bibl_2_faq",
+   "plan": "l-2",
+   "label": "Читальный зал справочно- библиографического отдела",
+   "search": true
+  },
+  {
+   "id": "l-2.bibl_2_zal",
+   "plan": "l-2",
+   "label": "Читальный зал",
+   "search": true
+  },
+  {
+   "id": "l-2.bibl_2_go",
+   "plan": "l-2",
+   "label": "Выдача книг",
+   "search": true
+  },
+  {
+   "id": "l-2.bibl_2_books",
+   "plan": "l-2",
+   "label": "Музей редкой книги",
+   "search": true
+  },
+  {
+   "id": "l-3.bibl_3_xz1",
+   "plan": "l-3",
+   "label": "Читальный зал периодики",
+   "search": true
+  },
+  {
+   "id": "d-1.d1_bufet",
+   "plan": "d-1",
+   "label": "Ресторанный дворик (фудкорт)",
+   "search": true
+  },
+  {
+   "id": "d-1.eda_1_1",
+   "plan": "d-1",
+   "label": "Столовая",
+   "search": true
+  },
+  {
+   "id": "d-1.eda_1_45a",
+   "plan": "d-1",
+   "label": "45-А",
+   "search": true
+  },
+  {
+   "id": "d-1.staircase_eda_1_2v",
+   "plan": "d-1",
+   "label": "Лестница",
+   "search": false
+  },
+  {
+   "id": "d-2.d2_dining_hall",
+   "plan": "d-2",
+   "label": "Студенческая столовая",
+   "search": true
+  },
+  {
+   "id": "d-2.eda_2_1",
+   "plan": "d-2",
+   "label": "Столовая",
+   "search": true
+  },
+  {
+   "id": "d-2.go_eda_a1",
+   "plan": "d-2",
+   "label": "Переход в корпус Г",
+   "search": false
+  },
+  {
+   "id": "d-2.staircase_eda_2_2v",
+   "plan": "d-2",
+   "label": "Лестница",
+   "search": false
+  },
+  {
+   "id": "d-3.d3_dining_hall",
+   "plan": "d-3",
+   "label": "Столовая для преподавателей и сотрудников",
+   "search": true
+  },
+  {
+   "id": "d-3.eda_3_1",
+   "plan": "d-3",
+   "label": "Столовая",
+   "search": true
+  },
+  {
+   "id": "d-3.eda_3_muz",
+   "plan": "d-3",
+   "label": "Музыкальная комната",
+   "search": true
+  },
+  {
+   "id": "d-3.staircase_eda_3_2v",
+   "plan": "d-3",
+   "label": "Лестница",
+   "search": false
+  }
+ ],
+ "edges": [
+  {
+   "a": "a-1.staircase_a_1_1",
+   "b": "a-2.staircase_a_2_1",
+   "kind": "stairs"
+  },
+  {
+   "a": "b-0.staircase_b_c_1",
+   "b": "b-1.staircase_b_1_1",
+   "kind": "stairs"
+  },
+  {
+   "a": "b-1.staircase_b_1_1",
+   "b": "b-2.staircase_b_2_1",
+   "kind": "stairs"
+  },
+  {
+   "a": "b-2.staircase_b_2_1",
+   "b": "b-3.staircase_b_3_1",
+   "kind": "stairs"
+  },
+  {
+   "a": "b-3.staircase_b_3_1",
+   "b": "b-4.staircase_b_4_1",
+   "kind": "stairs"
+  },
+  {
+   "a": "b-0.lift_b_c_1",
+   "b": "b-1.lift_b_1_1",
+   "kind": "lift"
+  },
+  {
+   "a": "b-1.lift_b_1_1",
+   "b": "b-2.lift_b_2_1",
+   "kind": "lift"
+  },
+  {
+   "a": "b-2.lift_b_2_1",
+   "b": "b-3.lift_b_3_1",
+   "kind": "lift"
+  },
+  {
+   "a": "b-3.lift_b_3_1",
+   "b": "b-4.lift_b_4_1",
+   "kind": "lift"
+  },
+  {
+   "a": "v-0.staircase_v_c_3",
+   "b": "v-1.staircase_v_1_3",
+   "kind": "stairs"
+  },
+  {
+   "a": "v-1.staircase_v_1_3",
+   "b": "v-2.staircase_v_2_3",
+   "kind": "stairs"
+  },
+  {
+   "a": "v-2.staircase_v_2_3",
+   "b": "v-3.staircase_v_3_3",
+   "kind": "stairs"
+  },
+  {
+   "a": "v-3.staircase_v_3_3",
+   "b": "v-4.staircase_v_4_3",
+   "kind": "stairs"
+  },
+  {
+   "a": "v-0.lift_v_c_2",
+   "b": "v-1.lift_v_1_2",
+   "kind": "lift"
+  },
+  {
+   "a": "v-1.lift_v_1_2",
+   "b": "v-2.lift_v_2_2",
+   "kind": "lift"
+  },
+  {
+   "a": "v-2.lift_v_2_2",
+   "b": "v-3.lift_v_3_2",
+   "kind": "lift"
+  },
+  {
+   "a": "v-3.lift_v_3_2",
+   "b": "v-4.lift_v_4_2",
+   "kind": "lift"
+  },
+  {
+   "a": "g-0.staircase_g_c_3",
+   "b": "g-1.staircase_g_1_3",
+   "kind": "stairs"
+  },
+  {
+   "a": "g-1.staircase_g_1_3",
+   "b": "g-2.staircase_g_2_3",
+   "kind": "stairs"
+  },
+  {
+   "a": "g-2.staircase_g_2_3",
+   "b": "g-3.staircase_g_3_3",
+   "kind": "stairs"
+  },
+  {
+   "a": "g-3.staircase_g_3_3",
+   "b": "g-4.staircase_g_4_3",
+   "kind": "stairs"
+  },
+  {
+   "a": "g-4.staircase_g_4_3",
+   "b": "g-5.staircase_g_5_2",
+   "kind": "stairs"
+  },
+  {
+   "a": "g-5.staircase_g_5_2",
+   "b": "g-6.staircase_g_6_2",
+   "kind": "stairs"
+  },
+  {
+   "a": "g-0.lift_g_c_2",
+   "b": "g-1.lift_g_1_2",
+   "kind": "lift"
+  },
+  {
+   "a": "g-1.lift_g_1_2",
+   "b": "g-2.lift_g_2_2",
+   "kind": "lift"
+  },
+  {
+   "a": "g-2.lift_g_2_2",
+   "b": "g-3.lift_g_3_2",
+   "kind": "lift"
+  },
+  {
+   "a": "g-3.lift_g_3_2",
+   "b": "g-4.lift_g_4_2",
+   "kind": "lift"
+  },
+  {
+   "a": "g-4.lift_g_4_2",
+   "b": "g-5.lift_g_5_1",
+   "kind": "lift"
+  },
+  {
+   "a": "g-5.lift_g_5_1",
+   "b": "g-6.lift_g_6_1",
+   "kind": "lift"
+  },
+  {
+   "a": "n-1.staircase_n_1_1",
+   "b": "n-2.staircase_n_2_1",
+   "kind": "stairs"
+  },
+  {
+   "a": "n-2.staircase_n_2_1",
+   "b": "n-3.staircase_n_3_1",
+   "kind": "stairs"
+  },
+  {
+   "a": "n-3.staircase_n_3_1",
+   "b": "n-4.staircase_n_4_1",
+   "kind": "stairs"
+  },
+  {
+   "a": "n-4.staircase_n_4_1",
+   "b": "n-5.staircase_n_5_1",
+   "kind": "stairs"
+  },
+  {
+   "a": "n-1.lift_n_1_1",
+   "b": "n-2.lift_n_2_1",
+   "kind": "lift"
+  },
+  {
+   "a": "n-2.lift_n_2_1",
+   "b": "n-3.lift_n_3_1",
+   "kind": "lift"
+  },
+  {
+   "a": "n-3.lift_n_3_1",
+   "b": "n-4.lift_n_4_1",
+   "kind": "lift"
+  },
+  {
+   "a": "n-4.lift_n_4_1",
+   "b": "n-5.lift_n_5_1",
+   "kind": "lift"
+  },
+  {
+   "a": "d-1.staircase_eda_1_2v",
+   "b": "d-2.staircase_eda_2_2v",
+   "kind": "stairs"
+  },
+  {
+   "a": "d-2.staircase_eda_2_2v",
+   "b": "d-3.staircase_eda_3_2v",
+   "kind": "stairs"
+  },
+  {
+   "a": "b-2.go_b2_v2",
+   "b": "v-2.go_v2_b2_2",
+   "kind": "passage"
+  },
+  {
+   "a": "b-2.go_b2_v2_2",
+   "b": "v-2.go_v2_b2",
+   "kind": "passage"
+  },
+  {
+   "a": "b-3.go_b3_v3",
+   "b": "v-3.go_v3_b3_2",
+   "kind": "passage"
+  },
+  {
+   "a": "b-3.go_b3_v3_2",
+   "b": "v-3.go_v3_b3",
+   "kind": "passage"
+  },
+  {
+   "a": "b-4.go_b4_v4_2",
+   "b": "v-4.go_v4_b4",
+   "kind": "passage"
+  },
+  {
+   "a": "v-2.go_v2_g2_2",
+   "b": "g-2.go_G2_V2_1",
+   "kind": "passage"
+  },
+  {
+   "a": "v-2.go_v2_g2",
+   "b": "g-2.go_G2_V2_2",
+   "kind": "passage"
+  },
+  {
+   "a": "v-3.go_v3_g3",
+   "b": "g-3.go_G3_V3",
+   "kind": "passage"
+  },
+  {
+   "a": "v-4.go_zal4_b4",
+   "b": "b-4.go_b4_zal",
+   "kind": "passage"
+  },
+  {
+   "a": "v-4.go_zal6_g4",
+   "b": "g-4.go_G4_V4_1",
+   "kind": "passage"
+  },
+  {
+   "a": "g-2.go_G2_N3",
+   "b": "n-3.go_n3_g2",
+   "kind": "passage"
+  },
+  {
+   "a": "g-3.go_G3_N4",
+   "b": "n-4.go_n4_g3",
+   "kind": "passage"
+  },
+  {
+   "a": "g-4.go_G4_N5",
+   "b": "n-5.go_n5_g4",
+   "kind": "passage"
+  },
+  {
+   "a": "a-2.go_a2_b1",
+   "b": "b-1.go_b1_a1",
+   "kind": "passage"
+  },
+  {
+   "a": "a-1.go_a1_b1",
+   "b": "b-1.go_b1_a1",
+   "kind": "passage"
+  },
+  {
+   "a": "g-1.go_G1_food",
+   "b": "d-2.go_eda_a1",
+   "kind": "passage"
+  }
+ ]
+}

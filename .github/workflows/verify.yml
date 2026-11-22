@@ -1,0 +1,49 @@
+name: Verify
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  portal:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    strategy:
+      fail-fast: false
+      matrix:
+        node: ['24.22.3', '26.13.1']
+    env:
+      DATABASE_URL: postgresql://deka_test:test-only@127.0.0.1:5432/deka_test
+      DEMO_MODE: 'true'
+      TZ: Europe/Moscow
+    services:
+      postgres:
+        image: postgres:18.7-bookworm
+        env:
+          POSTGRES_DB: deka_test
+          POSTGRES_USER: deka_test
+          POSTGRES_PASSWORD: test-only
+        ports:
+          - 5432:5432
+        options: >-
+          --health-cmd "pg_isready -U deka_test -d deka_test"
+          --health-interval 5s
+          --health-timeout 5s
+          --health-retries 12
+    steps:
+      - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@249970729cb0ef3589644e2896645e5dc5ba9c38 # v6
+        with:
+          node-version: ${{ matrix.node }}
+          cache: npm
+          cache-dependency-path: package-lock.json
+      - run: npm ci --engine-strict
+      - run: npm run check
+      - run: npm test
+

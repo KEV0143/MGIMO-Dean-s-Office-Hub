@@ -1,0 +1,771 @@
+{
+  "reference": {
+    "timestamp": "2026-11-22T14:34:10.243Z",
+    "node": "v26.13.1",
+    "platform": "win32",
+    "cpu": "AMD Ryzen 9 9950X3D 16-Core Processor          ",
+    "protocol": "Loopback, authenticated SSR HTML, keep-alive, warm-up 5 requests per route",
+    "suites": [
+      {
+        "concurrency": 1,
+        "n": 720,
+        "errors": 0,
+        "p50Ms": 2.01,
+        "p95Ms": 3.5,
+        "medianDecodedBytes": 27051,
+        "okResponsesPerSecond": 446.49,
+        "endpoints": {
+          "/overview": {
+            "n": 120,
+            "errors": 0,
+            "p50Ms": 3.31,
+            "p95Ms": 3.98,
+            "medianDecodedBytes": 56488
+          },
+          "/schedule": {
+            "n": 120,
+            "errors": 0,
+            "p50Ms": 2.07,
+            "p95Ms": 2.64,
+            "medianDecodedBytes": 27051
+          },
+          "/grades": {
+            "n": 120,
+            "errors": 0,
+            "p50Ms": 1.88,
+            "p95Ms": 2.39,
+            "medianDecodedBytes": 28273
+          },
+          "/requests": {
+            "n": 120,
+            "errors": 0,
+            "p50Ms": 1.73,
+            "p95Ms": 2.04,
+            "medianDecodedBytes": 24628
+          },
+          "/notifications": {
+            "n": 120,
+            "errors": 0,
+            "p50Ms": 1.92,
+            "p95Ms": 2.48,
+            "medianDecodedBytes": 23484
+          },
+          "/profile": {
+            "n": 120,
+            "errors": 0,
+            "p50Ms": 2.04,
+            "p95Ms": 2.59,
+            "medianDecodedBytes": 32014
+          }
+        }
+      },
+      {
+        "concurrency": 8,
+        "n": 720,
+        "errors": 0,
+        "p50Ms": 8.34,
+        "p95Ms": 12.59,
+        "medianDecodedBytes": 27051,
+        "okResponsesPerSecond": 883.92,
+        "endpoints": {
+          "/overview": {
+            "n": 120,
+            "errors": 0,
+            "p50Ms": 9.17,
+            "p95Ms": 12.97,
+            "medianDecodedBytes": 56488
+          },
+          "/schedule": {
+            "n": 120,
+            "errors": 0,
+            "p50Ms": 9,
+            "p95Ms": 11.89,
+            "medianDecodedBytes": 27051
+          },
+          "/grades": {
+            "n": 120,
+            "errors": 0,
+            "p50Ms": 8.35,
+            "p95Ms": 11.41,
+            "medianDecodedBytes": 28273
+          },
+          "/requests": {
+            "n": 120,
+            "errors": 0,
+            "p50Ms": 7.76,
+            "p95Ms": 12.59,
+            "medianDecodedBytes": 24628
+          },
+          "/notifications": {
+            "n": 120,
+            "errors": 0,
+            "p50Ms": 8.05,
+            "p95Ms": 13,
+            "medianDecodedBytes": 23484
+          },
+          "/profile": {
+            "n": 120,
+            "errors": 0,
+            "p50Ms": 7.82,
+            "p95Ms": 12.45,
+            "medianDecodedBytes": 32014
+          }
+        }
+      },
+      {
+        "concurrency": 32,
+        "n": 720,
+        "errors": 0,
+        "p50Ms": 33.16,
+        "p95Ms": 53.55,
+        "medianDecodedBytes": 27051,
+        "okResponsesPerSecond": 911.27,
+        "endpoints": {
+          "/overview": {
+            "n": 120,
+            "errors": 0,
+            "p50Ms": 34.09,
+            "p95Ms": 54.21,
+            "medianDecodedBytes": 56488
+          },
+          "/schedule": {
+            "n": 120,
+            "errors": 0,
+            "p50Ms": 33.21,
+            "p95Ms": 53.75,
+            "medianDecodedBytes": 27051
+          },
+          "/grades": {
+            "n": 120,
+            "errors": 0,
+            "p50Ms": 33.26,
+            "p95Ms": 54.03,
+            "medianDecodedBytes": 28273
+          },
+          "/requests": {
+            "n": 120,
+            "errors": 0,
+            "p50Ms": 32.44,
+            "p95Ms": 52.6,
+            "medianDecodedBytes": 24628
+          },
+          "/notifications": {
+            "n": 120,
+            "errors": 0,
+            "p50Ms": 32.88,
+            "p95Ms": 53.03,
+            "medianDecodedBytes": 23484
+          },
+          "/profile": {
+            "n": 120,
+            "errors": 0,
+            "p50Ms": 32.86,
+            "p95Ms": 53.36,
+            "medianDecodedBytes": 32014
+          }
+        }
+      }
+    ]
+  },
+  "release": [
+    {
+      "timestamp": "2026-11-22T15:00:35.623Z",
+      "node": "v26.13.1",
+      "platform": "win32",
+      "cpu": "AMD Ryzen 9 9950X3D 16-Core Processor          ",
+      "protocol": "Loopback, authenticated SSR HTML, keep-alive, warm-up 5 requests per route",
+      "suites": [
+        {
+          "concurrency": 1,
+          "n": 720,
+          "errors": 0,
+          "p50Ms": 1.98,
+          "p95Ms": 3.79,
+          "medianDecodedBytes": 27185,
+          "okResponsesPerSecond": 440.31,
+          "endpoints": {
+            "/overview": {
+              "n": 120,
+              "errors": 0,
+              "p50Ms": 3.5,
+              "p95Ms": 4.18,
+              "medianDecodedBytes": 53788
+            },
+            "/schedule": {
+              "n": 120,
+              "errors": 0,
+              "p50Ms": 1.97,
+              "p95Ms": 2.7,
+              "medianDecodedBytes": 27185
+            },
+            "/grades": {
+              "n": 120,
+              "errors": 0,
+              "p50Ms": 1.87,
+              "p95Ms": 2.44,
+              "medianDecodedBytes": 28281
+            },
+            "/requests": {
+              "n": 120,
+              "errors": 0,
+              "p50Ms": 1.74,
+              "p95Ms": 2.3,
+              "medianDecodedBytes": 24636
+            },
+            "/notifications": {
+              "n": 120,
+              "errors": 0,
+              "p50Ms": 1.93,
+              "p95Ms": 2.58,
+              "medianDecodedBytes": 23492
+            },
+            "/profile": {
+              "n": 120,
+              "errors": 0,
+              "p50Ms": 1.96,
+              "p95Ms": 2.43,
+              "medianDecodedBytes": 32018
+            }
+          }
+        },
+        {
+          "concurrency": 8,
+          "n": 720,
+          "errors": 0,
+          "p50Ms": 8.61,
+          "p95Ms": 17.81,
+          "medianDecodedBytes": 27185,
+          "okResponsesPerSecond": 821.1,
+          "endpoints": {
+            "/overview": {
+              "n": 120,
+              "errors": 0,
+              "p50Ms": 9.61,
+              "p95Ms": 17.95,
+              "medianDecodedBytes": 53788
+            },
+            "/schedule": {
+              "n": 120,
+              "errors": 0,
+              "p50Ms": 9.04,
+              "p95Ms": 18.37,
+              "medianDecodedBytes": 27185
+            },
+            "/grades": {
+              "n": 120,
+              "errors": 0,
+              "p50Ms": 8.63,
+              "p95Ms": 17.81,
+              "medianDecodedBytes": 28281
+            },
+            "/requests": {
+              "n": 120,
+              "errors": 0,
+              "p50Ms": 7.82,
+              "p95Ms": 17.17,
+              "medianDecodedBytes": 24636
+            },
+            "/notifications": {
+              "n": 120,
+              "errors": 0,
+              "p50Ms": 8.12,
+              "p95Ms": 15.45,
+              "medianDecodedBytes": 23492
+            },
+            "/profile": {
+              "n": 120,
+              "errors": 0,
+              "p50Ms": 7.91,
+              "p95Ms": 16.55,
+              "medianDecodedBytes": 32018
+            }
+          }
+        },
+        {
+          "concurrency": 32,
+          "n": 720,
+          "errors": 0,
+          "p50Ms": 33.51,
+          "p95Ms": 55.83,
+          "medianDecodedBytes": 27185,
+          "okResponsesPerSecond": 870,
+          "endpoints": {
+            "/overview": {
+              "n": 120,
+              "errors": 0,
+              "p50Ms": 34.18,
+              "p95Ms": 56.68,
+              "medianDecodedBytes": 53788
+            },
+            "/schedule": {
+              "n": 120,
+              "errors": 0,
+              "p50Ms": 33.51,
+              "p95Ms": 56.04,
+              "medianDecodedBytes": 27185
+            },
+            "/grades": {
+              "n": 120,
+              "errors": 0,
+              "p50Ms": 33.5,
+              "p95Ms": 55.1,
+              "medianDecodedBytes": 28281
+            },
+            "/requests": {
+              "n": 120,
+              "errors": 0,
+              "p50Ms": 32.94,
+              "p95Ms": 54.88,
+              "medianDecodedBytes": 24636
+            },
+            "/notifications": {
+              "n": 120,
+              "errors": 0,
+              "p50Ms": 33.1,
+              "p95Ms": 54.99,
+              "medianDecodedBytes": 23492
+            },
+            "/profile": {
+              "n": 120,
+              "errors": 0,
+              "p50Ms": 33.45,
+              "p95Ms": 55.83,
+              "medianDecodedBytes": 32018
+            }
+          }
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-11-22T15:00:38.931Z",
+      "node": "v26.13.1",
+      "platform": "win32",
+      "cpu": "AMD Ryzen 9 9950X3D 16-Core Processor          ",
+      "protocol": "Loopback, authenticated SSR HTML, keep-alive, warm-up 5 requests per route",
+      "suites": [
+        {
+          "concurrency": 1,
+          "n": 720,
+          "errors": 0,
+          "p50Ms": 1.78,
+          "p95Ms": 3.41,
+          "medianDecodedBytes": 27185,
+          "okResponsesPerSecond": 482.19,
+          "endpoints": {
+            "/overview": {
+              "n": 120,
+              "errors": 0,
+              "p50Ms": 3.24,
+              "p95Ms": 3.94,
+              "medianDecodedBytes": 53788
+            },
+            "/schedule": {
+              "n": 120,
+              "errors": 0,
+              "p50Ms": 1.8,
+              "p95Ms": 2.19,
+              "medianDecodedBytes": 27185
+            },
+            "/grades": {
+              "n": 120,
+              "errors": 0,
+              "p50Ms": 1.7,
+              "p95Ms": 2.26,
+              "medianDecodedBytes": 28281
+            },
+            "/requests": {
+              "n": 120,
+              "errors": 0,
+              "p50Ms": 1.54,
+              "p95Ms": 2.01,
+              "medianDecodedBytes": 24636
+            },
+            "/notifications": {
+              "n": 120,
+              "errors": 0,
+              "p50Ms": 1.74,
+              "p95Ms": 2.05,
+              "medianDecodedBytes": 23492
+            },
+            "/profile": {
+              "n": 120,
+              "errors": 0,
+              "p50Ms": 1.81,
+              "p95Ms": 2.37,
+              "medianDecodedBytes": 32018
+            }
+          }
+        },
+        {
+          "concurrency": 8,
+          "n": 720,
+          "errors": 0,
+          "p50Ms": 8.23,
+          "p95Ms": 16.49,
+          "medianDecodedBytes": 27185,
+          "okResponsesPerSecond": 849,
+          "endpoints": {
+            "/overview": {
+              "n": 120,
+              "errors": 0,
+              "p50Ms": 9.05,
+              "p95Ms": 17.42,
+              "medianDecodedBytes": 53788
+            },
+            "/schedule": {
+              "n": 120,
+              "errors": 0,
+              "p50Ms": 8.53,
+              "p95Ms": 16.36,
+              "medianDecodedBytes": 27185
+            },
+            "/grades": {
+              "n": 120,
+              "errors": 0,
+              "p50Ms": 8.42,
+              "p95Ms": 15.71,
+              "medianDecodedBytes": 28281
+            },
+            "/requests": {
+              "n": 120,
+              "errors": 0,
+              "p50Ms": 7.35,
+              "p95Ms": 14.98,
+              "medianDecodedBytes": 24636
+            },
+            "/notifications": {
+              "n": 120,
+              "errors": 0,
+              "p50Ms": 7.73,
+              "p95Ms": 16.83,
+              "medianDecodedBytes": 23492
+            },
+            "/profile": {
+              "n": 120,
+              "errors": 0,
+              "p50Ms": 7.75,
+              "p95Ms": 16.49,
+              "medianDecodedBytes": 32018
+            }
+          }
+        },
+        {
+          "concurrency": 32,
+          "n": 720,
+          "errors": 0,
+          "p50Ms": 35.33,
+          "p95Ms": 57.11,
+          "medianDecodedBytes": 27185,
+          "okResponsesPerSecond": 839.27,
+          "endpoints": {
+            "/overview": {
+              "n": 120,
+              "errors": 0,
+              "p50Ms": 36.04,
+              "p95Ms": 58.44,
+              "medianDecodedBytes": 53788
+            },
+            "/schedule": {
+              "n": 120,
+              "errors": 0,
+              "p50Ms": 35.33,
+              "p95Ms": 56.64,
+              "medianDecodedBytes": 27185
+            },
+            "/grades": {
+              "n": 120,
+              "errors": 0,
+              "p50Ms": 35.27,
+              "p95Ms": 57.15,
+              "medianDecodedBytes": 28281
+            },
+            "/requests": {
+              "n": 120,
+              "errors": 0,
+              "p50Ms": 35.09,
+              "p95Ms": 54.21,
+              "medianDecodedBytes": 24636
+            },
+            "/notifications": {
+              "n": 120,
+              "errors": 0,
+              "p50Ms": 34.23,
+              "p95Ms": 56.83,
+              "medianDecodedBytes": 23492
+            },
+            "/profile": {
+              "n": 120,
+              "errors": 0,
+              "p50Ms": 35.14,
+              "p95Ms": 56.97,
+              "medianDecodedBytes": 32018
+            }
+          }
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-11-22T15:00:42.145Z",
+      "node": "v26.13.1",
+      "platform": "win32",
+      "cpu": "AMD Ryzen 9 9950X3D 16-Core Processor          ",
+      "protocol": "Loopback, authenticated SSR HTML, keep-alive, warm-up 5 requests per route",
+      "suites": [
+        {
+          "concurrency": 1,
+          "n": 720,
+          "errors": 0,
+          "p50Ms": 1.76,
+          "p95Ms": 3.4,
+          "medianDecodedBytes": 27185,
+          "okResponsesPerSecond": 485.59,
+          "endpoints": {
+            "/overview": {
+              "n": 120,
+              "errors": 0,
+              "p50Ms": 3.25,
+              "p95Ms": 3.69,
+              "medianDecodedBytes": 53788
+            },
+            "/schedule": {
+              "n": 120,
+              "errors": 0,
+              "p50Ms": 1.74,
+              "p95Ms": 2.23,
+              "medianDecodedBytes": 27185
+            },
+            "/grades": {
+              "n": 120,
+              "errors": 0,
+              "p50Ms": 1.68,
+              "p95Ms": 2.2,
+              "medianDecodedBytes": 28281
+            },
+            "/requests": {
+              "n": 120,
+              "errors": 0,
+              "p50Ms": 1.5,
+              "p95Ms": 2.24,
+              "medianDecodedBytes": 24636
+            },
+            "/notifications": {
+              "n": 120,
+              "errors": 0,
+              "p50Ms": 1.73,
+              "p95Ms": 2.55,
+              "medianDecodedBytes": 23492
+            },
+            "/profile": {
+              "n": 120,
+              "errors": 0,
+              "p50Ms": 1.77,
+              "p95Ms": 2.24,
+              "medianDecodedBytes": 32018
+            }
+          }
+        },
+        {
+          "concurrency": 8,
+          "n": 720,
+          "errors": 0,
+          "p50Ms": 8.33,
+          "p95Ms": 17.03,
+          "medianDecodedBytes": 27185,
+          "okResponsesPerSecond": 839.34,
+          "endpoints": {
+            "/overview": {
+              "n": 120,
+              "errors": 0,
+              "p50Ms": 9.01,
+              "p95Ms": 17.03,
+              "medianDecodedBytes": 53788
+            },
+            "/schedule": {
+              "n": 120,
+              "errors": 0,
+              "p50Ms": 8.6,
+              "p95Ms": 16.99,
+              "medianDecodedBytes": 27185
+            },
+            "/grades": {
+              "n": 120,
+              "errors": 0,
+              "p50Ms": 8.36,
+              "p95Ms": 17.65,
+              "medianDecodedBytes": 28281
+            },
+            "/requests": {
+              "n": 120,
+              "errors": 0,
+              "p50Ms": 7.57,
+              "p95Ms": 16.3,
+              "medianDecodedBytes": 24636
+            },
+            "/notifications": {
+              "n": 120,
+              "errors": 0,
+              "p50Ms": 7.6,
+              "p95Ms": 16.08,
+              "medianDecodedBytes": 23492
+            },
+            "/profile": {
+              "n": 120,
+              "errors": 0,
+              "p50Ms": 7.8,
+              "p95Ms": 16.34,
+              "medianDecodedBytes": 32018
+            }
+          }
+        },
+        {
+          "concurrency": 32,
+          "n": 720,
+          "errors": 0,
+          "p50Ms": 32.39,
+          "p95Ms": 45.87,
+          "medianDecodedBytes": 27185,
+          "okResponsesPerSecond": 933.83,
+          "endpoints": {
+            "/overview": {
+              "n": 120,
+              "errors": 0,
+              "p50Ms": 33.22,
+              "p95Ms": 45.57,
+              "medianDecodedBytes": 53788
+            },
+            "/schedule": {
+              "n": 120,
+              "errors": 0,
+              "p50Ms": 32.59,
+              "p95Ms": 45.43,
+              "medianDecodedBytes": 27185
+            },
+            "/grades": {
+              "n": 120,
+              "errors": 0,
+              "p50Ms": 32.36,
+              "p95Ms": 45.74,
+              "medianDecodedBytes": 28281
+            },
+            "/requests": {
+              "n": 120,
+              "errors": 0,
+              "p50Ms": 31.65,
+              "p95Ms": 45.87,
+              "medianDecodedBytes": 24636
+            },
+            "/notifications": {
+              "n": 120,
+              "errors": 0,
+              "p50Ms": 31.73,
+              "p95Ms": 45.87,
+              "medianDecodedBytes": 23492
+            },
+            "/profile": {
+              "n": 120,
+              "errors": 0,
+              "p50Ms": 32.19,
+              "p95Ms": 45.86,
+              "medianDecodedBytes": 32018
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "mobile": {
+    "browser": "Chrome/157.0.8103.79",
+    "runs": [
+      {
+        "run": 1,
+        "route": "/overview",
+        "lcp": 660,
+        "cls": 0.0042664475411370445,
+        "fcp": 660,
+        "ttfb": 153.80000000074506,
+        "transferBytes": 213704
+      },
+      {
+        "run": 1,
+        "route": "/schedule",
+        "lcp": 564,
+        "cls": 0,
+        "fcp": 564,
+        "ttfb": 161.09999999962747,
+        "transferBytes": 186319
+      },
+      {
+        "run": 2,
+        "route": "/overview",
+        "lcp": 664,
+        "cls": 0.0042664475411370445,
+        "fcp": 664,
+        "ttfb": 174.5,
+        "transferBytes": 223773
+      },
+      {
+        "run": 2,
+        "route": "/schedule",
+        "lcp": 564,
+        "cls": 0.00046689339695649796,
+        "fcp": 564,
+        "ttfb": 167.90000000037253,
+        "transferBytes": 186742
+      },
+      {
+        "run": 3,
+        "route": "/overview",
+        "lcp": 660,
+        "cls": 0.0042664475411370445,
+        "fcp": 660,
+        "ttfb": 168.7999999988824,
+        "transferBytes": 213704
+      },
+      {
+        "run": 3,
+        "route": "/schedule",
+        "lcp": 560,
+        "cls": 0.0003796152904476222,
+        "fcp": 560,
+        "ttfb": 171.80000000074506,
+        "transferBytes": 186319
+      },
+      {
+        "run": 4,
+        "route": "/overview",
+        "lcp": 600,
+        "cls": 0.0042664475411370445,
+        "fcp": 600,
+        "ttfb": 175.2000000011176,
+        "transferBytes": 213704
+      },
+      {
+        "run": 4,
+        "route": "/schedule",
+        "lcp": 580,
+        "cls": 0,
+        "fcp": 580,
+        "ttfb": 175.09999999962747,
+        "transferBytes": 189838
+      },
+      {
+        "run": 5,
+        "route": "/overview",
+        "lcp": 600,
+        "cls": 0.003911951001944993,
+        "fcp": 600,
+        "ttfb": 151.19999999925494,
+        "transferBytes": 220436
+      },
+      {
+        "run": 5,
+        "route": "/schedule",
+        "lcp": 592,
+        "cls": 0.0003796152904476222,
+        "fcp": 592,
+        "ttfb": 189.2999999988824,
+        "transferBytes": 141127
+      }
+    ]
+  }
+}

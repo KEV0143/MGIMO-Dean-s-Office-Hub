@@ -1,0 +1,6 @@
+# Replace deka.example.ru with the domain passed as --contest-origin.
+deka.example.ru {
+	reverse_proxy 127.0.0.1:5180
+	encode zstd gzip
+}
+

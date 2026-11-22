@@ -1,0 +1,375 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Дека — конкурсный кабинет студента и деканата. Посмотрите перенос пары, заказ справки и обработку заявления."
+    />
+    <meta name="theme-color" content="#f7f6ff" />
+    <meta name="deka-repository" content="" />
+    <meta name="deka-portal" content="" />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; object-src 'none'; base-uri 'none'; form-action 'none'"
+    />
+    <title>Дека — цифровой деканат</title>
+    <link rel="icon" href="./assets/mark.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="./styles.css" />
+    <script src="./demo.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Перейти к содержанию</a>
+    <header class="site-header">
+      <div class="wrap topbar">
+        <a class="brand" href="./" aria-label="Дека, главная">
+          <img src="./assets/mark.svg" alt="" width="32" height="32" /> Дека
+        </a>
+        <nav aria-label="Разделы">
+          <a href="#demo">Демо</a>
+          <a href="#screens">Экраны</a>
+          <a href="#results">Проверки</a>
+          <a data-repo="" hidden>Код ↗</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="hero" aria-labelledby="title">
+        <div class="wrap hero-grid">
+          <div class="hero-copy">
+            <p class="eyebrow">Номинация «Цифровой деканат» · МГИМО</p>
+            <h1 id="title">
+              Кабинет<br />
+              студента<br />
+              и деканата
+            </h1>
+            <p class="lead">
+              Студент видит аудиторию следующей пары и срок ответа по справке. Деканат видит
+              просроченные заявки и те, по которым требуется уточнение.
+            </p>
+            <div class="hero-actions">
+              <a class="button primary" href="#demo"
+                >Открыть демо <span aria-hidden="true">↓</span></a
+              >
+              <a class="button secondary" href="#screens">Смотреть экраны</a>
+              <a class="button secondary" data-portal hidden>Войти в кабинет ↗</a>
+            </div>
+            <p class="caption">Конкурсный проект. Данные вымышлены.</p>
+          </div>
+          <figure class="hero-screen">
+            <a
+              href="./assets/screenshots/today-desktop.webp"
+              aria-label="Открыть экран «Сегодня» целиком"
+            >
+              <picture>
+                <source
+                  media="(max-width: 43rem)"
+                  srcset="./assets/screenshots/today-mobile.webp"
+                  width="780"
+                  height="1740"
+                />
+                <img
+                  src="./assets/screenshots/today-desktop.webp"
+                  width="1440"
+                  height="821"
+                  alt="Экран «Сегодня» с расписанием, переносом пары и готовой справкой"
+                  fetchpriority="high"
+                />
+              </picture>
+            </a>
+            <figcaption>«Сегодня» · кабинет студента</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section class="section wrap" id="demo" aria-labelledby="demo-title">
+        <div class="section-intro">
+          <h2 id="demo-title">Три сценария</h2>
+          <p>
+            Интерактивный пример на вымышленных данных. Изменения действуют до перезагрузки
+            страницы.
+          </p>
+        </div>
+        <div class="demo" data-demo>
+          <div class="demo-tabs" role="tablist" aria-label="Сценарии" hidden>
+            <button
+              type="button"
+              role="tab"
+              id="tab-schedule"
+              aria-controls="panel-schedule"
+              aria-selected="true"
+            >
+              Перенос пары
+            </button>
+            <button
+              type="button"
+              role="tab"
+              id="tab-request"
+              aria-controls="panel-request"
+              aria-selected="false"
+              tabindex="-1"
+            >
+              Справка
+            </button>
+            <button
+              type="button"
+              role="tab"
+              id="tab-queue"
+              aria-controls="panel-queue"
+              aria-selected="false"
+              tabindex="-1"
+            >
+              Очередь деканата
+            </button>
+          </div>
+
+          <article
+            class="demo-panel"
+            role="tabpanel"
+            id="panel-schedule"
+            aria-labelledby="tab-schedule"
+            data-scenario="schedule"
+          >
+            <div>
+              <p class="eyebrow">Студент · расписание</p>
+              <h3>Пару перенесли на 10:45</h3>
+              <p>
+                Уведомление ведёт к занятию. Рядом с новым временем указаны прежняя аудитория и
+                причина переноса.
+              </p>
+              <dl class="facts">
+                <div>
+                  <dt>Было</dt>
+                  <dd>12:45 · ауд. 214</dd>
+                </div>
+                <div>
+                  <dt>Стало</dt>
+                  <dd>10:45 · ауд. 404</dd>
+                </div>
+                <div>
+                  <dt>Причина</dt>
+                  <dd>В аудитории 214 меняют проектор.</dd>
+                </div>
+              </dl>
+            </div>
+            <div class="demo-state">
+              <p class="eyebrow">Информационная безопасность</p>
+              <p class="state-title" data-state>Перенос занятия</p>
+              <p class="state-detail" data-detail>24 ноября · 10:45–12:15</p>
+              <p role="status" class="sr-only" data-status></p>
+              <div class="demo-actions" hidden>
+                <button type="button" class="button primary" data-next>Найти аудиторию</button>
+                <button type="button" class="button secondary" data-reset hidden>Сначала</button>
+              </div>
+              <a class="text-link" href="https://mgimo.ru/territory/map/?room=n404"
+                >Аудитория 404 на карте МГИМО ↗</a
+              >
+            </div>
+          </article>
+
+          <article
+            class="demo-panel"
+            role="tabpanel"
+            id="panel-request"
+            aria-labelledby="tab-request"
+            data-scenario="request"
+          >
+            <div>
+              <p class="eyebrow">Студент · заявления</p>
+              <h3>Справка к поездке</h3>
+              <p>
+                В карточке видны срок ответа, сообщения деканата и готовый документ. На уточнение
+                можно ответить там же.
+              </p>
+              <dl class="facts">
+                <div>
+                  <dt>Документ</dt>
+                  <dd>Справка об обучении</dd>
+                </div>
+                <div>
+                  <dt>Срок</dt>
+                  <dd>26 ноября</dd>
+                </div>
+              </dl>
+            </div>
+            <div class="demo-state">
+              <p class="eyebrow">Статус заявления</p>
+              <p class="state-title" data-state>Черновик</p>
+              <p class="state-detail" data-detail>Справка нужна для студенческой конференции.</p>
+              <p role="status" class="sr-only" data-status></p>
+              <div class="demo-actions" hidden>
+                <button type="button" class="button primary" data-next>Подать заявление</button>
+                <button type="button" class="button secondary" data-reset hidden>Сначала</button>
+              </div>
+            </div>
+          </article>
+
+          <article
+            class="demo-panel"
+            role="tabpanel"
+            id="panel-queue"
+            aria-labelledby="tab-queue"
+            data-scenario="queue"
+          >
+            <div>
+              <p class="eyebrow">Деканат · заявления</p>
+              <h3>Просроченные заявки идут первыми</h3>
+              <p>
+                У сотрудника отдельная очередь по факультету. Она показывает срок ответа и заявки,
+                по которым поступило уточнение.
+              </p>
+              <dl class="facts">
+                <div>
+                  <dt>Сегодня</dt>
+                  <dd>22 ноября</dd>
+                </div>
+                <div>
+                  <dt>Срок по справке</dt>
+                  <dd>21 ноября</dd>
+                </div>
+              </dl>
+            </div>
+            <div class="demo-state">
+              <p class="eyebrow">Справка об обучении</p>
+              <p class="state-title" data-state>Срок ответа прошёл</p>
+              <p class="state-detail" data-detail>Заявка в начале очереди деканата.</p>
+              <p role="status" class="sr-only" data-status></p>
+              <div class="demo-actions" hidden>
+                <button type="button" class="button primary" data-next>Запросить уточнение</button>
+                <button type="button" class="button secondary" data-reset hidden>Сначала</button>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section capture-section" id="screens" aria-labelledby="screens-title">
+        <div class="wrap">
+          <div class="section-intro">
+            <h2 id="screens-title">Кабинет на телефоне</h2>
+            <p>Снимки рабочей сборки. Нажмите на экран, чтобы открыть оригинал.</p>
+          </div>
+          <div class="screens">
+            <figure>
+              <a href="./assets/screenshots/today-mobile.webp">
+                <img
+                  src="./assets/screenshots/today-mobile.webp"
+                  width="780"
+                  height="1740"
+                  loading="lazy"
+                  alt="Главная студента с ближайшей парой, изменениями и сроками"
+                />
+              </a>
+              <figcaption>Ближайшая пара и изменения</figcaption>
+            </figure>
+            <figure>
+              <a href="./assets/screenshots/campus-mobile.webp">
+                <img
+                  src="./assets/screenshots/campus-mobile.webp"
+                  width="780"
+                  height="1740"
+                  loading="lazy"
+                  alt="Переход из расписания к плану МГИМО"
+                />
+              </a>
+              <figcaption>Аудитория на плане МГИМО</figcaption>
+            </figure>
+            <figure>
+              <a href="./assets/screenshots/request-status-mobile.webp">
+                <img
+                  src="./assets/screenshots/request-status-mobile.webp"
+                  width="780"
+                  height="1740"
+                  loading="lazy"
+                  alt="Карточка справки с текущим статусом и сроком ответа"
+                />
+              </a>
+              <figcaption>Срок ответа по справке</figcaption>
+            </figure>
+          </div>
+          <details class="video">
+            <summary>Видео показа · 43 с</summary>
+            <video
+              controls
+              playsinline
+              preload="none"
+              width="360"
+              height="832"
+              aria-label="Показ кабинета на телефоне"
+            >
+              <source src="./assets/demo.mp4" type="video/mp4" />
+              <a href="./assets/demo.mp4">Скачать видео показа</a>
+            </video>
+            <p>
+              На записи студент открывает перенос и план этажа, заказывает справку, отвечает на
+              вопрос деканата и открывает готовый документ.
+            </p>
+          </details>
+        </div>
+      </section>
+
+      <section class="section wrap" id="results" aria-labelledby="results-title">
+        <div class="section-intro">
+          <h2 id="results-title">Результаты проверок</h2>
+          <p>Проверки кабинета и сервера с вымышленными данными.</p>
+        </div>
+        <dl class="metrics">
+          <div>
+            <dt>57</dt>
+            <dd>автоматических тестов</dd>
+          </div>
+          <div>
+            <dt>360 px</dt>
+            <dd>ширина мобильного сценария</dd>
+          </div>
+          <div>
+            <dt>67,5 мс</dt>
+            <dd>p95 сервера при 32 одновременных запросах</dd>
+          </div>
+        </dl>
+        <p class="caption">
+          Замер от 22 ноября 2026 года. Node.js 26.13.1, PostgreSQL 18.7, Windows. Шесть
+          авторизованных страниц по loopback, 6 480 ответов без ошибок.
+        </p>
+        <p class="cohort-note">
+          На базе с 5 007 аккаунтами проверили 64 отдельные студенческие сессии одновременно. 834
+          ответа в секунду, p95 88,03 мс, 0 ошибок.
+        </p>
+        <div class="result-notes">
+          <div>
+            <h3>Студент видит свои данные</h3>
+            <p>
+              Сервер проверяет роль, владельца записи и факультет. Тесты проверяют доступ к чужим
+              заявлениям и сохранение истории при параллельных запросах.
+            </p>
+          </div>
+          <div>
+            <h3>Роли в полном кабинете</h3>
+            <p>
+              Для показа предусмотрены два студента с разными данными и сотрудник деканата.
+              Преподаватель ведёт оценки, администратор проверяет журнал изменений.
+            </p>
+          </div>
+        </div>
+        <div class="resource-links">
+          <a class="text-link" href="./assets/verification.json" download>Скачать замеры JSON</a>
+          <a class="text-link" data-repo="docs/contest/demo-guide.md" hidden>Маршрут для жюри ↗</a>
+          <a class="text-link" data-repo="docs/contest/technical-overview.pdf" hidden
+            >Техническое описание ↗</a
+          >
+          <a class="text-link" data-repo="docs/verification.md" hidden>Методика проверок ↗</a>
+          <a class="text-link" data-repo="docs/deployment.md" hidden>Запуск кабинета ↗</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="wrap footer-row">
+        <p><strong>Дека</strong> · независимый конкурсный проект</p>
+        <a href="#main">К началу ↑</a>
+      </div>
+    </footer>
+  </body>
+</html>

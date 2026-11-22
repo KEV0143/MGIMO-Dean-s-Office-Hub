@@ -1,0 +1,785 @@
+{
+  "release": [
+    {
+      "timestamp": "2026-11-22T16:12:37.835Z",
+      "node": "v26.13.1",
+      "platform": "win32",
+      "cpu": "AMD Ryzen 9 9950X3D 16-Core Processor          ",
+      "protocol": "Loopback, authenticated SSR HTML, keep-alive, warm-up 5 requests per route",
+      "suites": [
+        {
+          "concurrency": 1,
+          "n": 720,
+          "errors": 0,
+          "p50Ms": 2,
+          "p95Ms": 3.79,
+          "medianDecodedBytes": 28748,
+          "okResponsesPerSecond": 442.44,
+          "endpoints": {
+            "/overview": {
+              "n": 120,
+              "errors": 0,
+              "p50Ms": 3.54,
+              "p95Ms": 4.22,
+              "medianDecodedBytes": 56598
+            },
+            "/schedule": {
+              "n": 120,
+              "errors": 0,
+              "p50Ms": 1.9,
+              "p95Ms": 2.39,
+              "medianDecodedBytes": 28748
+            },
+            "/grades": {
+              "n": 120,
+              "errors": 0,
+              "p50Ms": 1.8,
+              "p95Ms": 2.28,
+              "medianDecodedBytes": 28281
+            },
+            "/requests": {
+              "n": 120,
+              "errors": 0,
+              "p50Ms": 1.61,
+              "p95Ms": 2.25,
+              "medianDecodedBytes": 24729
+            },
+            "/notifications": {
+              "n": 120,
+              "errors": 0,
+              "p50Ms": 2.07,
+              "p95Ms": 2.54,
+              "medianDecodedBytes": 28856
+            },
+            "/profile": {
+              "n": 120,
+              "errors": 0,
+              "p50Ms": 2.08,
+              "p95Ms": 2.64,
+              "medianDecodedBytes": 33025
+            }
+          }
+        },
+        {
+          "concurrency": 8,
+          "n": 720,
+          "errors": 0,
+          "p50Ms": 9.07,
+          "p95Ms": 15.76,
+          "medianDecodedBytes": 28748,
+          "okResponsesPerSecond": 816.06,
+          "endpoints": {
+            "/overview": {
+              "n": 120,
+              "errors": 0,
+              "p50Ms": 10.03,
+              "p95Ms": 15.68,
+              "medianDecodedBytes": 56598
+            },
+            "/schedule": {
+              "n": 120,
+              "errors": 0,
+              "p50Ms": 9.66,
+              "p95Ms": 14.81,
+              "medianDecodedBytes": 28748
+            },
+            "/grades": {
+              "n": 120,
+              "errors": 0,
+              "p50Ms": 8.77,
+              "p95Ms": 18.03,
+              "medianDecodedBytes": 28281
+            },
+            "/requests": {
+              "n": 120,
+              "errors": 0,
+              "p50Ms": 8.3,
+              "p95Ms": 15.26,
+              "medianDecodedBytes": 24729
+            },
+            "/notifications": {
+              "n": 120,
+              "errors": 0,
+              "p50Ms": 8.64,
+              "p95Ms": 13.21,
+              "medianDecodedBytes": 28856
+            },
+            "/profile": {
+              "n": 120,
+              "errors": 0,
+              "p50Ms": 8.58,
+              "p95Ms": 15.24,
+              "medianDecodedBytes": 33025
+            }
+          }
+        },
+        {
+          "concurrency": 32,
+          "n": 720,
+          "errors": 0,
+          "p50Ms": 36.51,
+          "p95Ms": 63.79,
+          "medianDecodedBytes": 28748,
+          "okResponsesPerSecond": 795.81,
+          "endpoints": {
+            "/overview": {
+              "n": 120,
+              "errors": 0,
+              "p50Ms": 36.87,
+              "p95Ms": 64.53,
+              "medianDecodedBytes": 56598
+            },
+            "/schedule": {
+              "n": 120,
+              "errors": 0,
+              "p50Ms": 36.47,
+              "p95Ms": 62.74,
+              "medianDecodedBytes": 28748
+            },
+            "/grades": {
+              "n": 120,
+              "errors": 0,
+              "p50Ms": 36.74,
+              "p95Ms": 63.32,
+              "medianDecodedBytes": 28281
+            },
+            "/requests": {
+              "n": 120,
+              "errors": 0,
+              "p50Ms": 35.57,
+              "p95Ms": 63.28,
+              "medianDecodedBytes": 24729
+            },
+            "/notifications": {
+              "n": 120,
+              "errors": 0,
+              "p50Ms": 36.14,
+              "p95Ms": 63.18,
+              "medianDecodedBytes": 28856
+            },
+            "/profile": {
+              "n": 120,
+              "errors": 0,
+              "p50Ms": 36.28,
+              "p95Ms": 63.79,
+              "medianDecodedBytes": 33025
+            }
+          }
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-11-22T16:12:41.165Z",
+      "node": "v26.13.1",
+      "platform": "win32",
+      "cpu": "AMD Ryzen 9 9950X3D 16-Core Processor          ",
+      "protocol": "Loopback, authenticated SSR HTML, keep-alive, warm-up 5 requests per route",
+      "suites": [
+        {
+          "concurrency": 1,
+          "n": 720,
+          "errors": 0,
+          "p50Ms": 1.85,
+          "p95Ms": 3.5,
+          "medianDecodedBytes": 28748,
+          "okResponsesPerSecond": 464.71,
+          "endpoints": {
+            "/overview": {
+              "n": 120,
+              "errors": 0,
+              "p50Ms": 3.37,
+              "p95Ms": 3.81,
+              "medianDecodedBytes": 56598
+            },
+            "/schedule": {
+              "n": 120,
+              "errors": 0,
+              "p50Ms": 1.8,
+              "p95Ms": 2.2,
+              "medianDecodedBytes": 28748
+            },
+            "/grades": {
+              "n": 120,
+              "errors": 0,
+              "p50Ms": 1.66,
+              "p95Ms": 2.01,
+              "medianDecodedBytes": 28281
+            },
+            "/requests": {
+              "n": 120,
+              "errors": 0,
+              "p50Ms": 1.45,
+              "p95Ms": 1.93,
+              "medianDecodedBytes": 24729
+            },
+            "/notifications": {
+              "n": 120,
+              "errors": 0,
+              "p50Ms": 1.92,
+              "p95Ms": 2.28,
+              "medianDecodedBytes": 28856
+            },
+            "/profile": {
+              "n": 120,
+              "errors": 0,
+              "p50Ms": 1.97,
+              "p95Ms": 2.42,
+              "medianDecodedBytes": 33025
+            }
+          }
+        },
+        {
+          "concurrency": 8,
+          "n": 720,
+          "errors": 0,
+          "p50Ms": 8.67,
+          "p95Ms": 11.25,
+          "medianDecodedBytes": 28748,
+          "okResponsesPerSecond": 857.35,
+          "endpoints": {
+            "/overview": {
+              "n": 120,
+              "errors": 0,
+              "p50Ms": 9.82,
+              "p95Ms": 11.63,
+              "medianDecodedBytes": 56598
+            },
+            "/schedule": {
+              "n": 120,
+              "errors": 0,
+              "p50Ms": 9.35,
+              "p95Ms": 11.59,
+              "medianDecodedBytes": 28748
+            },
+            "/grades": {
+              "n": 120,
+              "errors": 0,
+              "p50Ms": 8.62,
+              "p95Ms": 10.96,
+              "medianDecodedBytes": 28281
+            },
+            "/requests": {
+              "n": 120,
+              "errors": 0,
+              "p50Ms": 7.94,
+              "p95Ms": 10.45,
+              "medianDecodedBytes": 24729
+            },
+            "/notifications": {
+              "n": 120,
+              "errors": 0,
+              "p50Ms": 8.38,
+              "p95Ms": 10.33,
+              "medianDecodedBytes": 28856
+            },
+            "/profile": {
+              "n": 120,
+              "errors": 0,
+              "p50Ms": 8.36,
+              "p95Ms": 11.2,
+              "medianDecodedBytes": 33025
+            }
+          }
+        },
+        {
+          "concurrency": 32,
+          "n": 720,
+          "errors": 0,
+          "p50Ms": 35.13,
+          "p95Ms": 48.36,
+          "medianDecodedBytes": 28748,
+          "okResponsesPerSecond": 855.16,
+          "endpoints": {
+            "/overview": {
+              "n": 120,
+              "errors": 0,
+              "p50Ms": 36.33,
+              "p95Ms": 49.02,
+              "medianDecodedBytes": 56598
+            },
+            "/schedule": {
+              "n": 120,
+              "errors": 0,
+              "p50Ms": 35.15,
+              "p95Ms": 48,
+              "medianDecodedBytes": 28748
+            },
+            "/grades": {
+              "n": 120,
+              "errors": 0,
+              "p50Ms": 35.27,
+              "p95Ms": 48.29,
+              "medianDecodedBytes": 28281
+            },
+            "/requests": {
+              "n": 120,
+              "errors": 0,
+              "p50Ms": 34.46,
+              "p95Ms": 48.07,
+              "medianDecodedBytes": 24729
+            },
+            "/notifications": {
+              "n": 120,
+              "errors": 0,
+              "p50Ms": 34.69,
+              "p95Ms": 47.14,
+              "medianDecodedBytes": 28856
+            },
+            "/profile": {
+              "n": 120,
+              "errors": 0,
+              "p50Ms": 34.97,
+              "p95Ms": 47.48,
+              "medianDecodedBytes": 33025
+            }
+          }
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-11-22T16:12:44.491Z",
+      "node": "v26.13.1",
+      "platform": "win32",
+      "cpu": "AMD Ryzen 9 9950X3D 16-Core Processor          ",
+      "protocol": "Loopback, authenticated SSR HTML, keep-alive, warm-up 5 requests per route",
+      "suites": [
+        {
+          "concurrency": 1,
+          "n": 720,
+          "errors": 0,
+          "p50Ms": 1.85,
+          "p95Ms": 3.46,
+          "medianDecodedBytes": 28748,
+          "okResponsesPerSecond": 472.49,
+          "endpoints": {
+            "/overview": {
+              "n": 120,
+              "errors": 0,
+              "p50Ms": 3.37,
+              "p95Ms": 4.15,
+              "medianDecodedBytes": 56598
+            },
+            "/schedule": {
+              "n": 120,
+              "errors": 0,
+              "p50Ms": 1.82,
+              "p95Ms": 2.23,
+              "medianDecodedBytes": 28748
+            },
+            "/grades": {
+              "n": 120,
+              "errors": 0,
+              "p50Ms": 1.67,
+              "p95Ms": 2.03,
+              "medianDecodedBytes": 28281
+            },
+            "/requests": {
+              "n": 120,
+              "errors": 0,
+              "p50Ms": 1.45,
+              "p95Ms": 1.79,
+              "medianDecodedBytes": 24729
+            },
+            "/notifications": {
+              "n": 120,
+              "errors": 0,
+              "p50Ms": 1.93,
+              "p95Ms": 2.26,
+              "medianDecodedBytes": 28856
+            },
+            "/profile": {
+              "n": 120,
+              "errors": 0,
+              "p50Ms": 1.97,
+              "p95Ms": 2.23,
+              "medianDecodedBytes": 33025
+            }
+          }
+        },
+        {
+          "concurrency": 8,
+          "n": 720,
+          "errors": 0,
+          "p50Ms": 8.61,
+          "p95Ms": 11.38,
+          "medianDecodedBytes": 28748,
+          "okResponsesPerSecond": 866.92,
+          "endpoints": {
+            "/overview": {
+              "n": 120,
+              "errors": 0,
+              "p50Ms": 9.58,
+              "p95Ms": 12.35,
+              "medianDecodedBytes": 56598
+            },
+            "/schedule": {
+              "n": 120,
+              "errors": 0,
+              "p50Ms": 9.32,
+              "p95Ms": 11.29,
+              "medianDecodedBytes": 28748
+            },
+            "/grades": {
+              "n": 120,
+              "errors": 0,
+              "p50Ms": 8.5,
+              "p95Ms": 10.79,
+              "medianDecodedBytes": 28281
+            },
+            "/requests": {
+              "n": 120,
+              "errors": 0,
+              "p50Ms": 7.85,
+              "p95Ms": 9.73,
+              "medianDecodedBytes": 24729
+            },
+            "/notifications": {
+              "n": 120,
+              "errors": 0,
+              "p50Ms": 8.25,
+              "p95Ms": 10.5,
+              "medianDecodedBytes": 28856
+            },
+            "/profile": {
+              "n": 120,
+              "errors": 0,
+              "p50Ms": 8.31,
+              "p95Ms": 11.55,
+              "medianDecodedBytes": 33025
+            }
+          }
+        },
+        {
+          "concurrency": 32,
+          "n": 720,
+          "errors": 0,
+          "p50Ms": 35.42,
+          "p95Ms": 51.6,
+          "medianDecodedBytes": 28748,
+          "okResponsesPerSecond": 838.65,
+          "endpoints": {
+            "/overview": {
+              "n": 120,
+              "errors": 0,
+              "p50Ms": 36,
+              "p95Ms": 51.53,
+              "medianDecodedBytes": 56598
+            },
+            "/schedule": {
+              "n": 120,
+              "errors": 0,
+              "p50Ms": 35.73,
+              "p95Ms": 48.04,
+              "medianDecodedBytes": 28748
+            },
+            "/grades": {
+              "n": 120,
+              "errors": 0,
+              "p50Ms": 35.08,
+              "p95Ms": 51.94,
+              "medianDecodedBytes": 28281
+            },
+            "/requests": {
+              "n": 120,
+              "errors": 0,
+              "p50Ms": 34.72,
+              "p95Ms": 51.6,
+              "medianDecodedBytes": 24729
+            },
+            "/notifications": {
+              "n": 120,
+              "errors": 0,
+              "p50Ms": 35.36,
+              "p95Ms": 50.72,
+              "medianDecodedBytes": 28856
+            },
+            "/profile": {
+              "n": 120,
+              "errors": 0,
+              "p50Ms": 35.42,
+              "p95Ms": 48.72,
+              "medianDecodedBytes": 33025
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "browser": {
+    "name": "Chrome/157.0.8103.79",
+    "layouts": 35,
+    "accessibility": [
+      {
+        "route": "/login",
+        "violations": []
+      },
+      {
+        "route": "/overview",
+        "violations": []
+      },
+      {
+        "route": "/schedule",
+        "violations": []
+      },
+      {
+        "route": "/grades",
+        "violations": []
+      },
+      {
+        "route": "/requests",
+        "violations": []
+      },
+      {
+        "route": "/requests/new",
+        "violations": []
+      },
+      {
+        "route": "/notifications",
+        "violations": []
+      },
+      {
+        "route": "/profile",
+        "violations": []
+      },
+      {
+        "route": "/requests/triage",
+        "violations": []
+      }
+    ],
+    "mobile": [
+      {
+        "run": 1,
+        "route": "/overview",
+        "lcp": 676,
+        "cls": 0.0076799832723811095,
+        "fcp": 676,
+        "ttfb": 154.2000000011176,
+        "transferBytes": 220298
+      },
+      {
+        "run": 1,
+        "route": "/schedule",
+        "lcp": 632,
+        "cls": 0.0003796152904476222,
+        "fcp": 632,
+        "ttfb": 173.80000000074506,
+        "transferBytes": 192067
+      },
+      {
+        "run": 2,
+        "route": "/overview",
+        "lcp": 600,
+        "cls": 0.00795867276531339,
+        "fcp": 600,
+        "ttfb": 151.19999999925494,
+        "transferBytes": 215896
+      },
+      {
+        "run": 2,
+        "route": "/schedule",
+        "lcp": 600,
+        "cls": 0.00046689339695649796,
+        "fcp": 600,
+        "ttfb": 176.5,
+        "transferBytes": 188316
+      },
+      {
+        "run": 3,
+        "route": "/overview",
+        "lcp": 604,
+        "cls": 0.0076799832723811095,
+        "fcp": 604,
+        "ttfb": 163.2999999988824,
+        "transferBytes": 219797
+      },
+      {
+        "run": 3,
+        "route": "/schedule",
+        "lcp": 608,
+        "cls": 0.0003796152904476222,
+        "fcp": 608,
+        "ttfb": 175.09999999962747,
+        "transferBytes": 192067
+      },
+      {
+        "run": 4,
+        "route": "/overview",
+        "lcp": 596,
+        "cls": 0.007924507559673827,
+        "fcp": 596,
+        "ttfb": 151,
+        "transferBytes": 215896
+      },
+      {
+        "run": 4,
+        "route": "/schedule",
+        "lcp": 580,
+        "cls": 0,
+        "fcp": 580,
+        "ttfb": 178.7000000011176,
+        "transferBytes": 187893
+      },
+      {
+        "run": 5,
+        "route": "/overview",
+        "lcp": 588,
+        "cls": 0.00795867276531339,
+        "fcp": 588,
+        "ttfb": 158.09999999962747,
+        "transferBytes": 227494
+      },
+      {
+        "run": 5,
+        "route": "/schedule",
+        "lcp": 568,
+        "cls": 0,
+        "fcp": 568,
+        "ttfb": 165.5,
+        "transferBytes": 149869
+      }
+    ]
+  },
+  "mobileWorkflow": [
+    {
+      "name": "today-desktop",
+      "viewport": {
+        "width": 1440,
+        "height": 818
+      },
+      "route": "/overview"
+    },
+    {
+      "name": "login-mobile",
+      "viewport": {
+        "width": 390,
+        "height": 870
+      },
+      "route": "/login"
+    },
+    {
+      "name": "today-mobile",
+      "viewport": {
+        "width": 390,
+        "height": 870
+      },
+      "route": "/overview"
+    },
+    {
+      "name": "schedule-mobile",
+      "viewport": {
+        "width": 390,
+        "height": 870
+      },
+      "route": "/schedule"
+    },
+    {
+      "name": "route-mobile",
+      "viewport": {
+        "width": 390,
+        "height": 870
+      },
+      "route": "/campus"
+    },
+    {
+      "name": "request-status-mobile",
+      "viewport": {
+        "width": 390,
+        "height": 870
+      },
+      "route": "/requests/00000000-0000-4000-8000-000000000030"
+    },
+    {
+      "name": "request-overdue-mobile",
+      "viewport": {
+        "width": 390,
+        "height": 870
+      },
+      "route": "/requests/00000000-0000-4000-8000-000000000035"
+    },
+    {
+      "name": "triage-mobile",
+      "viewport": {
+        "width": 390,
+        "height": 870
+      },
+      "route": "/requests/triage"
+    },
+    {
+      "name": "request-reply-mobile",
+      "viewport": {
+        "width": 390,
+        "height": 870
+      },
+      "route": "/requests/ecb54d28-009f-4570-95b7-ec5672645e1b"
+    }
+  ],
+  "webkit": {
+    "browser": "Playwright WebKit 26.5",
+    "routes": [
+      {
+        "path": "/login",
+        "heading": "Попробуйте Деку",
+        "viewport": 360,
+        "scroll": 360,
+        "width": 360
+      },
+      {
+        "path": "/overview",
+        "heading": "Сегодня",
+        "viewport": 360,
+        "scroll": 360,
+        "width": 360
+      },
+      {
+        "path": "/schedule",
+        "heading": "Расписание",
+        "viewport": 360,
+        "scroll": 360,
+        "width": 360
+      },
+      {
+        "path": "/grades",
+        "heading": "Успеваемость",
+        "viewport": 360,
+        "scroll": 360,
+        "width": 360
+      },
+      {
+        "path": "/requests",
+        "heading": "Мои заявления",
+        "viewport": 360,
+        "scroll": 360,
+        "width": 360
+      },
+      {
+        "path": "/requests/new",
+        "heading": "Новое заявление",
+        "viewport": 360,
+        "scroll": 360,
+        "width": 360
+      },
+      {
+        "path": "/notifications",
+        "heading": "Уведомления",
+        "viewport": 360,
+        "scroll": 360,
+        "width": 360
+      },
+      {
+        "path": "/profile",
+        "heading": "Яров Егор Аркадьевич",
+        "viewport": 360,
+        "scroll": 360,
+        "width": 360
+      },
+      {
+        "path": "/schedule",
+        "heading": "Расписание",
+        "viewport": 360,
+        "scroll": 360,
+        "width": 360
+      }
+    ],
+    "errors": []
+  }
+}
